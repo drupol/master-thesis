@@ -1,0 +1,4 @@
+$ cd lib/scenario-9
+$ nix build
+$ nix build --rebuild --keep-failed
+$ # No more error message - the build is fully reproducible now.

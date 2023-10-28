@@ -1,0 +1,7 @@
+$ cd lib/scenario-7
+$ make -s build
+$ make -s check
+sha256-aOmj1feG5+7h8BDz+URLxr82DxZVrOakDR3B0ULW41c=
+$ make -s build
+$ make -s check
+sha256-CBeUSxEHXqHx0bsERt9cg8hO9qRR/qp2DS9/SrPTtMs=

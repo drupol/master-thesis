@@ -1,0 +1,5 @@
+$ gcc -o build1 datetime.c
+$ gcc -o build2 datetime.c
+$ sha256sum build*
+5d0b1ae966c719862971bd51b4c035a478863a409caa605b2c529d45f2ac137d  build1
+7cbfd989b49c7336dc495a055db223253f0c1d6dc232b66b0fe0f7b6103c274c  build2

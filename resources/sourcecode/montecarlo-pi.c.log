@@ -1,0 +1,9 @@
+$ gcc montecarlo-pi.c -o montecarlo-pi
+$ ./montecarlo-pi 10
+3.6
+$ ./montecarlo-pi 10
+4
+$ ./montecarlo-pi 1000000
+3.13989
+$ ./montecarlo-pi 1000000
+3.14048

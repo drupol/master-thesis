@@ -1,0 +1,16 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
+    "features": {
+      "ghcr.io/devcontainers/features/nix:1": {
+        "extraNixConfig": "experimental-features = nix-command flakes"
+      }
+    },
+    "onCreateCommand": "nix shell nixpkgs#gitMinimal -c nix run nixpkgs#home-manager -- switch --flake git+https://code.europa.eu/ecphp/devs-profile#light --impure",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "fish"
+        }
+      }
+    }
+  }

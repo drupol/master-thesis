@@ -1,0 +1,5 @@
+$ cd lib/scenario-8
+$ nix build
+$ nix build --rebuild --keep-failed
+note: keeping build directory '/tmp/nix-build-typst-hello-world.drv-0'
+error: derivation '/nix/store/bsg67bk2csqbjbkib6jfqjqxyncq3l2q-typst-hello-world.drv' may not be deterministic: output '/nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world' differs from '/nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world.check'

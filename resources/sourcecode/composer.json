@@ -1,0 +1,7 @@
+{
+    "name": "awesome/php-library",
+    "require": {
+        "foo/http": "^1",
+        "foo/bar": "1.2.3"
+    }
+}

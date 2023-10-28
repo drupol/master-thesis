@@ -1,0 +1,20 @@
+digraph G {
+  layout="twopi";
+  root = "step6";
+  node [shape="circle" fixedsize=true width=".8"]
+  graph [pad=".25" nodesep="1" ranksep="1.3"]
+  ordering="in"
+  edge [dir="back"];
+
+  step1 -> step0 -> step5 -> step4 -> step3 -> step2 -> step1;
+
+  step0 -> step6 [style=invis];
+  step1 -> step6 [style=invis];
+  step2 -> step6 [style=invis];
+  step3 -> step6 [style=invis];
+  step5 -> step6 [dir=forward penwidth=3];
+  step4 -> step6 [penwidth=3];
+  step5 -> step6 [style=invis];
+
+  step6 [penwidth=3];
+}

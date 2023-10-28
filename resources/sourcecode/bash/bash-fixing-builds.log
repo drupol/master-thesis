@@ -1,0 +1,6 @@
+$ export SOURCE_DATE_EPOCH=1709373544
+$ gcc -o build1 datetime.c
+$ gcc -o build2 datetime.c
+$ sha256sum build*
+98f0419783bb3b06b45eaf5cc0efeef9408c4dad1e9eec9eb153dc7a6cc6962f  build1
+98f0419783bb3b06b45eaf5cc0efeef9408c4dad1e9eec9eb153dc7a6cc6962f  build2

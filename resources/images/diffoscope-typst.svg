@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="361.244mm" height="206.375mm"
+ viewBox="0 0 1024 535"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>Qt Svg Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M0,0 L1024,0 L1024,585 L0,585 L0,0"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M0,0 L1024,0 L1024,585 L0,585 L0,0"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M0,0 L1024,0 L1024,585 L0,585 L0,0"/>
+</g>
+
+<g fill="#000000" fill-opacity="0.0980392" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M8,8 L1016,8 L1016,550 L8,550 L8,8"/>
+</g>
+
+<g fill="#888888" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M8,8 L1016,8 L1016,9 L8,9 L8,8"/>
+</g>
+
+<g fill="#343434" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M8,549 L1016,549 L1016,550 L8,550 L8,549"/>
+</g>
+
+<g fill="#888888" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M8,8 L8,550 L9,549 L9,8 L8,8"/>
+</g>
+
+<g fill="#343434" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1015,9 L1015,550 L1016,550 L1016,8 L1015,9"/>
+</g>
+
+<g fill="#000000" fill-opacity="0.0980392" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M17,73 L1007,73 L1007,533 L17,533 L17,73"/>
+</g>
+
+<g fill="#888888" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M17,73 L1007,73 L1007,74 L17,74 L17,73"/>
+</g>
+
+<g fill="#343434" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M17,532 L1007,532 L1007,533 L17,533 L17,532"/>
+</g>
+
+<g fill="#888888" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M17,73 L17,533 L18,532 L18,73 L17,73"/>
+</g>
+
+<g fill="#343434" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1006,74 L1006,533 L1007,533 L1007,73 L1006,74"/>
+</g>
+
+<g fill="#000000" fill-opacity="0.0980392" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M26,138 L998,138 L998,516 L26,516 L26,138"/>
+</g>
+
+<g fill="#888888" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M26,138 L998,138 L998,139 L26,139 L26,138"/>
+</g>
+
+<g fill="#343434" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M26,515 L998,515 L998,516 L26,516 L26,515"/>
+</g>
+
+<g fill="#888888" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M26,138 L26,516 L27,515 L27,138 L26,138"/>
+</g>
+
+<g fill="#343434" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M997,139 L997,516 L998,516 L998,138 L997,139"/>
+</g>
+
+<g fill="#a0a0a0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,147 L512,147 L512,167 L35,167 L35,147"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,147 L989,147 L989,167 L512,167 L512,147"/>
+</g>
+
+<g fill="#d0d0e0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,167 L71,167 L71,187 L35,187 L35,167"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,167 L512,167 L512,187 L71,187 L71,167"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,167 L548,167 L548,187 L512,187 L512,167"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,167 L989,167 L989,187 L548,187 L548,167"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,187 L512,187 L512,207 L35,207 L35,187"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,187 L989,187 L989,207 L512,207 L512,187"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,207 L71,207 L71,227 L35,227 L35,207"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,207 L512,207 L512,227 L71,227 L71,207"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,207 L548,207 L548,227 L512,227 L512,207"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,207 L989,207 L989,227 L548,227 L548,207"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,227 L71,227 L71,247 L35,247 L35,227"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,227 L512,227 L512,247 L71,247 L71,227"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,227 L548,227 L548,247 L512,247 L512,227"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,227 L989,227 L989,247 L548,247 L548,227"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,247 L71,247 L71,267 L35,267 L35,247"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,247 L512,247 L512,267 L71,267 L71,247"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,247 L548,247 L548,267 L512,267 L512,247"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,247 L989,247 L989,267 L548,267 L548,247"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,267 L71,267 L71,287 L35,287 L35,267"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,267 L512,267 L512,287 L71,287 L71,267"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,267 L548,267 L548,287 L512,287 L512,267"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,267 L989,267 L989,287 L548,287 L548,267"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,287 L71,287 L71,307 L35,307 L35,287"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,287 L512,287 L512,307 L71,307 L71,287"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,287 L548,287 L548,307 L512,307 L512,287"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,287 L989,287 L989,307 L548,307 L548,287"/>
+</g>
+
+<g fill="#ffffa0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,307 L71,307 L71,327 L35,327 L35,307"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,307 L512,307 L512,327 L71,327 L71,307"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,307 L548,307 L548,327 L512,327 L512,307"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,307 L989,307 L989,327 L548,327 L548,307"/>
+</g>
+
+<g fill="#d0d0e0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,327 L71,327 L71,347 L35,347 L35,327"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,327 L512,327 L512,347 L71,347 L71,327"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,327 L548,327 L548,347 L512,347 L512,327"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,327 L989,327 L989,347 L548,347 L548,327"/>
+</g>
+
+<g fill="#ffffa0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,347 L71,347 L71,367 L35,367 L35,347"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,347 L512,347 L512,367 L71,367 L71,347"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,347 L548,347 L548,367 L512,367 L512,347"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,347 L989,347 L989,367 L548,367 L548,347"/>
+</g>
+
+<g fill="#d0d0e0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,367 L71,367 L71,387 L35,387 L35,367"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,367 L512,367 L512,387 L71,387 L71,367"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,367 L548,367 L548,387 L512,387 L512,367"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,367 L989,367 L989,387 L548,387 L548,367"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,387 L71,387 L71,407 L35,407 L35,387"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,387 L512,387 L512,407 L71,407 L71,387"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,387 L548,387 L548,407 L512,407 L512,387"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,387 L989,387 L989,407 L548,407 L548,387"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,407 L512,407 L512,427 L35,427 L35,407"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,407 L989,407 L989,427 L512,427 L512,407"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,427 L71,427 L71,447 L35,447 L35,427"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,427 L512,427 L512,447 L71,447 L71,427"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,427 L548,427 L548,447 L512,447 L512,427"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,427 L989,427 L989,447 L548,447 L548,427"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,447 L71,447 L71,467 L35,467 L35,447"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,447 L512,447 L512,467 L71,467 L71,447"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,447 L548,447 L548,467 L512,467 L512,447"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,447 L989,447 L989,467 L548,467 L548,447"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,467 L71,467 L71,487 L35,487 L35,467"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,467 L512,467 L512,487 L71,487 L71,467"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,467 L548,467 L548,487 L512,487 L512,467"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,467 L989,467 L989,487 L548,487 L548,467"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M35,487 L71,487 L71,507 L35,507 L35,487"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M71,487 L512,487 L512,507 L71,507 L71,487"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M512,487 L548,487 L548,507 L512,507 L512,487"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M548,487 L989,487 L989,507 L548,507 L548,487"/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="951" y="36" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+ >5.84</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="951" y="60" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+ >KB</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="951" y="101" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+ >5.72</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="951" y="125" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+ >KB</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="17" y="36" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+ >/nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="783" y="36" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+ > vs.</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="17" y="60" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+ >/nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world.check</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="26" y="101" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+ >/nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world/hello-world.pdf</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="783" y="101" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="400" font-style="normal"
+ > vs.</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="26" y="125" font-family="Inconsolata Nerd Font Mono" font-size="16" font-weight="700" font-style="normal"
+ >/nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world.check/hello-world.pdf</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="162" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >Offset 768, 17 lines modified</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="162" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >Offset 768, 17 lines modified</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="182" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >768</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="182" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;/object&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="182" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >768</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="182" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;/object&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="202" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="202" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >769</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;object</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="111" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="114" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >id=&quot;29&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >769</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;object</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="588" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="591" y="222" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >id=&quot;29&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >770</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;dict</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="98" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="101" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;3&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >770</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;dict</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="575" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="578" y="242" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;3&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="262" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >771</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="262" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;key&gt;Creator&lt;/key&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="262" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >771</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="262" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;key&gt;Creator&lt;/key&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >772</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;value&gt;&lt;string</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="151" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="154" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;12&quot;&gt;Typst</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="241" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="244" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >0.11.0&lt;/string&gt;&lt;/value&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >772</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;value&gt;&lt;string</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="631" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;12&quot;&gt;Typst</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="718" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="721" y="282" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >0.11.0&lt;/string&gt;&lt;/value&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="302" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >773</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="302" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;key&gt;CreationDate&lt;/key&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="302" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >773</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="302" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;key&gt;CreationDate&lt;/key&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >774</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;value&gt;&lt;string</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="151" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="154" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;17&quot;&gt;D:202403201</text>
+</g>
+
+<g fill="#e0c880" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M283,308 L316,308 L316,326 L283,326 L283,308"/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="283" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >75712</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="316" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >Z&lt;/string&gt;&lt;/value&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >774</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;value&gt;&lt;string</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="631" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;17&quot;&gt;D:202403201</text>
+</g>
+
+<g fill="#e0c880" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M760,308 L793,308 L793,326 L760,326 L760,308"/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="760" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >81055</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="793" y="322" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >Z&lt;/string&gt;&lt;/value&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="342" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >775</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="342" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;key&gt;ModDate&lt;/key&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="342" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >775</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="342" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;key&gt;ModDate&lt;/key&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >776</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;value&gt;&lt;string</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="151" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="154" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;17&quot;&gt;D:202403201</text>
+</g>
+
+<g fill="#e0c880" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M283,348 L316,348 L316,366 L283,366 L283,348"/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="283" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >75712</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="316" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >Z&lt;/string&gt;&lt;/value&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >776</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;value&gt;&lt;string</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="631" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;17&quot;&gt;D:202403201</text>
+</g>
+
+<g fill="#e0c880" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M760,348 L793,348 L793,366 L760,366 L760,348"/>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="760" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >81055</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="793" y="362" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >Z&lt;/string&gt;&lt;/value&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="382" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >777</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="382" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;/dict&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="382" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >777</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="382" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;/dict&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="402" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >778</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="402" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;/object&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="402" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >778</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="402" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;/object&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="422" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="422" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >779</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;object</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="111" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="114" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >id=&quot;30&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >779</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;object</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="588" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="591" y="442" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >id=&quot;30&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="462" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >780</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="462" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;stream&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="462" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >780</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="462" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;stream&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="482" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >781</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="482" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;props&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="482" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >781</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="482" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;props&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36" y="502" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >782</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="72" y="502" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;dict</text>
+</g>
+
+<g fill="#b08080" fill-opacity="1" stroke="#b08080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#b08080" fill-opacity="1" stroke="none" xml:space="preserve" x="98" y="502" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >·</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="101" y="502" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >size=&quot;3&quot;&gt;</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="513" y="502" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >782</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="549" y="502" font-family="Inconsolata Nerd Font Mono" font-size="12" font-weight="400" font-style="normal"
+ >&lt;dict</text>
+</g>
+
+</g>
+</svg>

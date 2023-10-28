@@ -1,0 +1,66 @@
+digraph G {
+
+rankdir="BT"
+node [ style="filled", margin=.05];
+edge [ dir="back" ];
+ratio=.5
+
+"pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [label = "python3-3.10.12"];
+"6947mfg2jlid97cnvzvc6cvv6wpj2yhg-bzip2-1.0.8" [label = "bzip2-1.0.8"];
+"d48d0ppksa6gwxjlkwf2i93rilyv9jvq-ncurses-6.4" [label = "ncurses-6.4"];
+"dk5vk3c9zknbjzzxmiglzv46qgv32gb0-tzdata-2023c" [label = "tzdata-2023c"];
+"fmh3s032bcsbfcdp82zsjlmkj1kp72j6-sqlite-3.43.1" [label = "sqlite-3.43.1"];
+"g3dx6xjlvkg2njyxjsx9dswx5wjvkrm5-readline-8.2p1" [label = "readline-8.2p1"];
+"ig0kkzw4n2pws12dj7szjm71f1a43if6-zlib-1.3" [label = "zlib-1.3"];
+"jhqflhc7k4jwz5s13cj219pvwywzc6j9-gdbm-1.23" [label = "gdbm-1.23"];
+"l7f1pf2dysadqpdxhsb9li01h5jwn5xr-openssl-3.0.10" [label = "openssl-3.0.10"];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" [label = "glibc-2.37-8"];
+"8ny01r2xa5mv5brk9srdmv91wrjvxila-libidn2-2.3.4" [label = "libidn2-2.3.4"];
+"br1p5pan2pgmgrm81kj43qawd9b9nns1-libunistring-1.1" [label = "libunistring-1.1"];
+"ml12av0bi52w2nyrpay8l47xwm1m6i7b-libxcrypt-4.4.36" [label = "libxcrypt-4.4.36"];
+"pfqk28f0yaq18ha10ri9d3a8z5kv8s6l-mailcap-2.1.53" [label = "mailcap-2.1.53"];
+"q7gkbmmxwai8idqigl9kyv2a7vhppz92-expat-2.5.0" [label = "expat-2.5.0"];
+"rfckdjskd983ylf05jm9mlsw7y618hyr-xgcc-12.3.0-libgcc" [label = "xgcc-12.3.0-libgcc"];
+"xa1bg4dk78cx7g9zqqs0akhv0my9l7w5-xz-5.4.4" [label = "xz-5.4.4"];
+"xdqlrixlspkks50m9b0mpvag65m3pf2w-bash-5.2-p15" [label = "bash-5.2-p15"];
+"xq05361kqwzcdamcsxr4gzg8ksxrb8sg-gcc-12.3.0-lib" [label = "gcc-12.3.0-lib"];
+"xvxaw8q1b4dja27ljmynmc9818aagjz3-gcc-12.3.0-libgcc" [label = "gcc-12.3.0-libgcc"];
+"35badg7gpxkhyzcrdyh2dfi9wfd43phz-libffi-3.4.4" [label = "libffi-3.4.4"];
+
+"35badg7gpxkhyzcrdyh2dfi9wfd43phz-libffi-3.4.4" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"6947mfg2jlid97cnvzvc6cvv6wpj2yhg-bzip2-1.0.8" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"d48d0ppksa6gwxjlkwf2i93rilyv9jvq-ncurses-6.4" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"dk5vk3c9zknbjzzxmiglzv46qgv32gb0-tzdata-2023c" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"fmh3s032bcsbfcdp82zsjlmkj1kp72j6-sqlite-3.43.1" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"g3dx6xjlvkg2njyxjsx9dswx5wjvkrm5-readline-8.2p1" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"ig0kkzw4n2pws12dj7szjm71f1a43if6-zlib-1.3" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"jhqflhc7k4jwz5s13cj219pvwywzc6j9-gdbm-1.23" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"l7f1pf2dysadqpdxhsb9li01h5jwn5xr-openssl-3.0.10" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"ml12av0bi52w2nyrpay8l47xwm1m6i7b-libxcrypt-4.4.36" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"pfqk28f0yaq18ha10ri9d3a8z5kv8s6l-mailcap-2.1.53" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"q7gkbmmxwai8idqigl9kyv2a7vhppz92-expat-2.5.0" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"xa1bg4dk78cx7g9zqqs0akhv0my9l7w5-xz-5.4.4" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"xdqlrixlspkks50m9b0mpvag65m3pf2w-bash-5.2-p15" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+"xq05361kqwzcdamcsxr4gzg8ksxrb8sg-gcc-12.3.0-lib" -> "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12" [];
+
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "35badg7gpxkhyzcrdyh2dfi9wfd43phz-libffi-3.4.4" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "6947mfg2jlid97cnvzvc6cvv6wpj2yhg-bzip2-1.0.8" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "d48d0ppksa6gwxjlkwf2i93rilyv9jvq-ncurses-6.4" [];
+"ig0kkzw4n2pws12dj7szjm71f1a43if6-zlib-1.3" -> "fmh3s032bcsbfcdp82zsjlmkj1kp72j6-sqlite-3.43.1" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "fmh3s032bcsbfcdp82zsjlmkj1kp72j6-sqlite-3.43.1" [];
+"d48d0ppksa6gwxjlkwf2i93rilyv9jvq-ncurses-6.4" -> "g3dx6xjlvkg2njyxjsx9dswx5wjvkrm5-readline-8.2p1" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "g3dx6xjlvkg2njyxjsx9dswx5wjvkrm5-readline-8.2p1" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "ig0kkzw4n2pws12dj7szjm71f1a43if6-zlib-1.3" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "jhqflhc7k4jwz5s13cj219pvwywzc6j9-gdbm-1.23" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "l7f1pf2dysadqpdxhsb9li01h5jwn5xr-openssl-3.0.10" [];
+"8ny01r2xa5mv5brk9srdmv91wrjvxila-libidn2-2.3.4" -> "ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" [];
+"rfckdjskd983ylf05jm9mlsw7y618hyr-xgcc-12.3.0-libgcc" -> "ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" [];
+"br1p5pan2pgmgrm81kj43qawd9b9nns1-libunistring-1.1" -> "8ny01r2xa5mv5brk9srdmv91wrjvxila-libidn2-2.3.4" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "ml12av0bi52w2nyrpay8l47xwm1m6i7b-libxcrypt-4.4.36" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "q7gkbmmxwai8idqigl9kyv2a7vhppz92-expat-2.5.0" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "xa1bg4dk78cx7g9zqqs0akhv0my9l7w5-xz-5.4.4" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "xdqlrixlspkks50m9b0mpvag65m3pf2w-bash-5.2-p15" [];
+"ld03l52xq2ssn4x0g5asypsxqls40497-glibc-2.37-8" -> "xq05361kqwzcdamcsxr4gzg8ksxrb8sg-gcc-12.3.0-lib" [];
+"xvxaw8q1b4dja27ljmynmc9818aagjz3-gcc-12.3.0-libgcc" -> "xq05361kqwzcdamcsxr4gzg8ksxrb8sg-gcc-12.3.0-lib" [];
+}

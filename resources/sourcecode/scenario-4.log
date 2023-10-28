@@ -1,0 +1,13 @@
+$ cd lib/scenario-4
+$ make -s build
+/nix/store/kr0wn1hsxj0hx86ybxbqda25zza1805p-datetime
+$ make -s check
+sha256-UiRzZFmePpkBYnAFZe9NeKRb1h1XUJ80OBxv9fRPQCQ=
+$ make -s run
+Built the Jan  1 1980 at 00:00:00.
+$ make -s build
+/nix/store/kr0wn1hsxj0hx86ybxbqda25zza1805p-datetime
+$ make -s check
+sha256-UiRzZFmePpkBYnAFZe9NeKRb1h1XUJ80OBxv9fRPQCQ=
+$ make -s run
+Built the Jan  1 1980 at 00:00:00.

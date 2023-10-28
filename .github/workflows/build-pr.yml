@@ -1,0 +1,46 @@
+name: Build PR
+
+on:
+    push:
+
+jobs:
+    build:
+        name: Build PDF files
+        runs-on: ubuntu-latest
+        if: github.ref != 'refs/heads/main'
+
+        steps:
+            - name: Set git to use LF
+              run: |
+                  git config --global core.autocrlf false
+                  git config --global core.eol lf
+
+            - name: Check out source files
+              uses: actions/checkout@v4
+
+            - name: Install Nix
+              uses: DeterminateSystems/nix-installer-action@main
+
+            - name: Extract branch name
+              shell: bash
+              run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+              id: extract_branch
+
+            - name: Build document
+              run: |
+                  nix build .#thesis --out-link result-thesis --quiet
+                  cp -vr --dereference $(readlink -f result-thesis) thesis
+                  mkdir -p artefacts
+                  cp -ar thesis/* artefacts/
+
+            - name: Rename files
+              working-directory: artefacts
+              run: |
+                  for f in *.pdf; do mv ${f} $(printf '%s\n' "${{ github.run_number }}--${f%.pdf}--${{ github.sha }}.pdf"); done
+
+            - name: Upload build assets
+              uses: actions/upload-artifact@v4
+              with:
+                  name: pdf--branch-${{ steps.extract_branch.outputs.branch }}--${{ github.sha }}
+                  path: artefacts
+                  if-no-files-found: error

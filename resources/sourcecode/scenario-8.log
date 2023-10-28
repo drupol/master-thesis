@@ -1,0 +1,7 @@
+$ cd lib/scenario-8
+$ make -s build
+$ make -s check
+sha256-7c79JDFrrC+MJJd2WavQD1kCsM9wh+knRUOOdAeqMyk=
+$ make -s build
+$ make -s check
+sha256-aq9cxJiiRUxBqxGGV1JjR6+m2JYR7M9h/90R8GGnyxs=

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: Reproducibility in Software Engineering
+authors:
+  - given-names: Pol
+    family-names: Dellaiera
+    email: pol.dellaiera@protonmail.com
+    orcid: 'https://orcid.org/0009-0008-7972-7160'
+url: "https://github.com/drupol/master-thesis"
+repository-code: 'https://github.com/drupol/master-thesis'
+doi: 10.0000/00000
+date-released: 2024-07-01
+keywords:
+  - reproducibility
+  - software engineering
+preferred-citation:
+  type: thesis
+  thesis-type: Msc
+  department: "Faculty Of Sciences"
+  authors:
+  - family-names: "Dellaiera"
+    given-names: "Pol"
+    orcid: "https://orcid.org/0009-0008-7972-7160"
+  institution:
+  - name: "University Of Mons"
+    city: Mons
+    country: BE
+  doi: "10.0000/00000"
+  month: 6
+  title: "Reproducibility in Software Engineering"
+  year: 2024

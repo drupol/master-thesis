@@ -1,0 +1,8 @@
+$ lsb_release -a
+Distributor ID: Debian
+Description:    Debian GNU/Linux 12 (bookworm)
+Release:        12
+Codename:       bookworm
+$ sudo apt-get -yq install nix
+$ nix --version
+nix (Nix) 2.8.0

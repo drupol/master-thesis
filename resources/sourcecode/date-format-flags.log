@@ -1,0 +1,6 @@
+$ date -d@2147483647
+Tue Jan 19 04:14:07 AM CET 2038
+$ date -d@2147483647 -u
+Tue Jan 19 03:14:07 AM UTC 2038
+$ LC_ALL=C date -d@2147483647 -u
+Tue Jan 19 03:14:07 UTC 2038

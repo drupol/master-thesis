@@ -1,0 +1,13 @@
+$ cd lib/scenario-6
+$ make -s build
+load image: datetime
+$ make -s check
+sha256-dJ3nqJW2bsnSnAca1tOivmWEbk6005mu14N3soM1xxQ=
+$ make -s run
+Built the Jan  1 1980 at 00:00:00.
+$ make -s build
+load image: datetime
+$ make -s check
+sha256-dJ3nqJW2bsnSnAca1tOivmWEbk6005mu14N3soM1xxQ=
+$ make -s run
+Built the Jan  1 1980 at 00:00:00.

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="446.70538"
+   height="163.37875"
+   viewBox="0 0 446.70538 163.37875"
+   sodipodi:docname="UMONS-logo.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.84375"
+     inkscape:cx="157.55932"
+     inkscape:cy="139.11864"
+     inkscape:window-width="1920"
+     inkscape:window-height="1128"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="UMONS"
+     transform="translate(-26.846088,-37.825034)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:126.625px;font-family:'Liberation Sans';-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:10.5521"
+       x="18.461226"
+       y="130.13466"
+       id="text344"><tspan
+         sodipodi:role="line"
+         id="tspan342"
+         x="18.461226"
+         y="130.13466"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:126.625px;font-family:'Liberation Sans';-inkscape-font-specification:'Inter, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:10.5521"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:126.625px;font-family:'Liberation Sans';-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#87a2ad;fill-opacity:1;stroke-width:10.5521"
+           id="tspan2418">U</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:126.625px;font-family:'Liberation Sans';-inkscape-font-specification:'Inter, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#b20147;fill-opacity:1;stroke-width:10.5521"
+           id="tspan1608">MONS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:45.2277px;fill:#666666;stroke-width:3.76898"
+       x="114.80774"
+       y="192.56529"
+       id="text189"><tspan
+         sodipodi:role="line"
+         id="tspan187"
+         x="114.80774"
+         y="192.56529"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:45.2277px;font-family:'Liberation Sans';-inkscape-font-specification:'Inter, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#87a2ad;fill-opacity:1;stroke-width:3.76898">University of Mons</tspan></text>
+    <path
+       style="fill:#b20147;fill-opacity:1;stroke-width:0.383516"
+       d="m 26.846088,149.57106 v -3.45164 H 62.896549 98.94701 v 3.45164 3.45164 H 62.896549 26.846088 Z"
+       id="path2009" />
+  </g>
+</svg>

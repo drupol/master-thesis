@@ -1,0 +1,2 @@
+$ diffoscope /nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world \
+             /nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world.check

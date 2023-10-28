@@ -1,0 +1,26 @@
+--- /nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world
++++ /nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world.check
+│   --- /nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world/hello-world.pdf
+├── +++ /nix/store/1n4g9gsq34xzmg351r7sa87rrcazh8gf-typst-hello-world.check/hello-world.pdf
+│┄ 'pdftotext' not available in path. Falling back to binary comparison.
+│┄ Installing the 'pypdf' Python module may produce a better output.
+│ @@ -9457,17 +9457,17 @@
+│  00024f00: 6e65 730a 2020 2f46 6972 7374 2032 3820  nes.  /First 28
+│  00024f10: 3020 520a 2020 2f4c 6173 7420 3238 2030  0 R.  /Last 28 0
+│  00024f20: 2052 0a20 202f 436f 756e 7420 310a 3e3e   R.  /Count 1.>>
+│  00024f30: 0a65 6e64 6f62 6a0a 0a32 3920 3020 6f62  .endobj..29 0 ob
+│  00024f40: 6a0a 3c3c 0a20 202f 4372 6561 746f 7220  j.<<.  /Creator
+│  00024f50: 2854 7970 7374 2030 2e31 312e 3029 0a20  (Typst 0.11.0).
+│  00024f60: 202f 4372 6561 7469 6f6e 4461 7465 2028   /CreationDate (
+│ -00024f70: 443a 3230 3234 3033 3230 3137 3537 3132  D:20240320175712
+│ +00024f70: 443a 3230 3234 3033 3230 3138 3130 3535  D:20240320181055
+│  00024f80: 5a29 0a20 202f 4d6f 6444 6174 6520 2844  Z).  /ModDate (D
+│ -00024f90: 3a32 3032 3430 3332 3031 3735 3731 325a  :20240320175712Z
+│ +00024f90: 3a32 3032 3430 3332 3031 3831 3035 355a  :20240320181055Z
+│  00024fa0: 290a 3e3e 0a65 6e64 6f62 6a0a 0a33 3020  ).>>.endobj..30
+│  00024fb0: 3020 6f62 6a0a 3c3c 0a20 202f 4c65 6e67  0 obj.<<.  /Leng
+│  00024fc0: 7468 2039 3836 0a20 202f 5479 7065 202f  th 986.  /Type /
+│  00024fd0: 4d65 7461 6461 7461 0a20 202f 5375 6274  Metadata.  /Subt
+│  00024fe0: 7970 6520 2f58 4d4c 0a3e 3e0a 7374 7265  ype /XML.>>.stre
+│  00024ff0: 616d 0a3c 3f78 7061 636b 6574 2062 6567  am.<?xpacket beg
+│  00025000: 696e 3d22 efbb bf22 2069 643d 2257 354d  in="..." id="W5M

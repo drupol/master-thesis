@@ -1,0 +1,7 @@
+$ gcc montecarlo-pi.c -o montecarlo-pi
+$ sha256sum montecarlo-pi
+241d0d05314472c6472fd90814f253ccc1b4fd10366ab828201aab1ac1a0d376  montecarlo-pi
+$ rm montecarlo-pi
+$ gcc montecarlo-pi.c -o montecarlo-pi
+$ sha256sum montecarlo-pi
+241d0d05314472c6472fd90814f253ccc1b4fd10366ab828201aab1ac1a0d376  montecarlo-pi

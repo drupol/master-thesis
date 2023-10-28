@@ -1,0 +1,11 @@
+$ gcc datetime.c -o datetime
+$ sha256sum datetime
+a123b...c8dba  datetime
+$ rm datetime
+$ gcc datetime.c -o datetime
+$ sha256sum datetime
+937da...1284f datetime
+$ ./datetime
+Built the Nov 21 2023 at 17:19:34.
+$ ./datetime
+Built the Nov 21 2023 at 17:19:34.

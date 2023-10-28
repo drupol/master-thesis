@@ -1,0 +1,13 @@
+$ cd lib/scenario-3
+$ make -s build
+/gnu/store/d3gnj6zakm7kwfcrzfdbjxqq41j0x3j1-datetime-1.0
+$ make -s check
+sha256-iOGz7Lg3BlQLjIi+RMCSqhL6c1UHPLg4U/W0HSQJsJA=
+$ make -s run
+Built the Jan  1 1970 at 00:00:01.
+$ make -s build
+/gnu/store/d3gnj6zakm7kwfcrzfdbjxqq41j0x3j1-datetime-1.0
+$ make -s check
+sha256-iOGz7Lg3BlQLjIi+RMCSqhL6c1UHPLg4U/W0HSQJsJA=
+$ make -s run
+Built the Jan  1 1970 at 00:00:01.
