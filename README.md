@@ -2,10 +2,11 @@
 [![CC BY License badge](https://img.shields.io/badge/License-CC--BY--4.0-brightgreen?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 [![HL3 License badge](https://img.shields.io/badge/License-HL3--full-brightgreen?style=flat-square)](https://firstdonoharm.dev/version/3/0/full.html)
 
-# UMons Master Thesis - Reproducibility in Software Engineering (RiSE)
+# Reproducibility in Software Engineering (RiSE)
 
-This repository contains the sources of my master's thesis, completed in June
-2024 at the [University Of Mons] under the supervision of [Tom Mens].
+This repository contains the sources of my master's thesis in computer science, entitled "Reproducibility in Software Engineering",
+that was completed in June 2024 at the [University Of Mons] under the supervision of Professor [Tom Mens],
+director of the Software Engineering Lab.
 
 ## Abstract
 
