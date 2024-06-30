@@ -4,9 +4,16 @@
 
 # Reproducibility in Software Engineering (RiSE)
 
-This repository contains the sources of my master's thesis in computer science, entitled "Reproducibility in Software Engineering",
-that was completed in June 2024 at the [University Of Mons] under the supervision of Professor [Tom Mens],
-director of the Software Engineering Lab.
+This repository contains the sources of my master's thesis in computer science,
+entitled "Reproducibility in Software Engineering", that was completed in June
+2024 at the [University Of Mons] under the supervision of Professor [Tom Mens],
+director of the [Software Engineering Lab].
+
+Founded in October 2003, the [Software Engineering Lab] carries out research in
+the domains of open source software, empirical software engineering, software
+ecosystems, software evolution, and software modeling. The lab is directed by
+Professor [Tom Mens], and is part of the [Department of Computer Science] of the
+[Faculty of Sciences] of the [University of Mons], Belgium.
 
 ## Abstract
 
@@ -89,6 +96,8 @@ primary language of the document is British English.
 [Nix]: https://nixos.org/
 [Typst]: https://typst.app/
 [University Of Mons]: https://www.umons.ac.be/
-[Tom Mens]: https://informatique.umons.ac.be/perso/Mens.Tom/
+[Tom Mens]: https://staff.umons.ac.be/tom.mens/
 [CC BY 4.0]: https://creativecommons.org/licenses/by/4.0/
 [HL3]: https://firstdonoharm.dev/version/3/0/full.html
+[Software Engineering Lab]: https://informatique-umons.be/genlog/
+[Department of Computer Science]: https://informatique.umons.ac.be/
