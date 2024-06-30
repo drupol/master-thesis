@@ -1333,7 +1333,7 @@ frequently unattainable in practice.
 
 One of the primary impediments in achieving reproducibility lies in the
 dependency on hardware architecture. Software compiled for different
-architectures, such as `x86` and `ARM,` inherently produces disparate binaries.
+architectures, such as `x86` and `ARM,` inherently produces disparate binaries #cite(<patterson2013>,form:"normal").
 These differences stem from the instruction sets and optimizations that are
 specific to each platform, leading to divergent outputs despite using identical
 source code. This variance highlights a significant reproducibility challenge,

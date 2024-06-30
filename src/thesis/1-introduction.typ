@@ -44,10 +44,10 @@ Association for Computing Machinery (ACM) Turing Award Banquet. Since his talk,
 the landscape of software has undergone a radical metamorphosis. The simplicity
 of his advice to #emph[trust people] has become significantly more complex
 in the current era. The modern software supply chain is extensive, often
-encompassing dependencies the often lies beneath the surface. Despite the
-prevalence of open-source software within this supply chain, it is uncommon for
-end-users to compile their own software. As a result, the build systems became a
-prime vector for malicious exploitation
+encompassing dependencies that lies beneath the surface. Despite the prevalence
+of open-source software within this supply chain, it is uncommon for end-users
+to compile their own software. As a result, the build systems became a prime
+vector for malicious exploitation
 #cite(<MarcelFourne2023>, form: "normal", supplement: [p.1]). This underscores
 the vital importance of software reproducibility which ensures that software can
 be reliably built and verified from its source across different environments and
@@ -148,7 +148,7 @@ boy, constantly delving into the mechanics of how things work. This curiosity
 often led to disassembling devices to uncover their hidden secrets, followed by
 a harder quest to reassemble them. While my father played a pivotal role in this
 journey of discovery, and I simply cannot recall a single moment when he
-responded with #emph["I don't know"] it was my mother who truly ignited my
+responded with #emph["I don't know"]; it was my mother who truly ignited my
 path to computers. Her encouragement and unwavering belief in pursuing my
 passions were instrumental in shaping my journey towards a deeper understanding
 of the world around me, especially computers.
