@@ -13,7 +13,7 @@ Founded in October 2003, the [Software Engineering Lab] carries out research in
 the domains of open source software, empirical software engineering, software
 ecosystems, software evolution, and software modeling. The lab is directed by
 Professor [Tom Mens], and is part of the [Department of Computer Science] of the
-[Faculty of Sciences] of the [University of Mons], Belgium.
+Faculty of Sciences of the [University of Mons], Belgium.
 
 ## Abstract
 
