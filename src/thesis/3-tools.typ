@@ -869,7 +869,7 @@ Compile it twice and observe the outcome:
 At lines 4 and 7 of @ch3-hello-world-typst-build, we notice that compiling
 twice a Typst document with Nix produces two different #gls("PDF") files, their
 respective checksums are different. While the visual output appears identical,
-the underlying files are not. At line 3 of @ch3-hellow-world-typst-rebuild, we
+the underlying files are not. At line 3 of @ch3-hello-world-typst-rebuild, we
 leverage a command with specific flags to verify if a build output is
 reproducible.
 
@@ -880,7 +880,7 @@ reproducible.
   supplement: "Terminal session",
   kind: "terminal",
   caption: [Checking if a build output is reproducible],
-) <ch3-hellow-world-typst-rebuild>
+) <ch3-hello-world-typst-rebuild>
 
 Nix will build the document once (line 2), then a second time (line 3) and then
 compare the output hashes. Thanks to the `--keep-failed` argument, we inform Nix
