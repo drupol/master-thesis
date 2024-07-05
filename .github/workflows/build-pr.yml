@@ -7,7 +7,6 @@ jobs:
     build:
         name: Build PDF files
         runs-on: ubuntu-latest
-        if: github.ref != 'refs/heads/main'
 
         steps:
             - name: Set git to use LF
