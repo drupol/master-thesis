@@ -7,7 +7,7 @@ authors:
     orcid: 'https://orcid.org/0009-0008-7972-7160'
 url: "https://github.com/drupol/master-thesis"
 repository-code: 'https://github.com/drupol/master-thesis'
-doi: 10.0000/00000
+doi: 10.5281/zenodo.12666899
 date-released: 2024-07-01
 keywords:
   - reproducibility
@@ -24,7 +24,7 @@ preferred-citation:
   - name: "University Of Mons"
     city: Mons
     country: BE
-  doi: "10.0000/00000"
+  doi: "10.5281/zenodo.12666899"
   month: 6
   title: "Reproducibility in Software Engineering"
   year: 2024

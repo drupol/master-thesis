@@ -30,6 +30,7 @@
   author: author,
   startDate: startDate,
   submissionDate: submissionDate,
+  doi: doi,
   disclaimer: include "disclaimer.typ",
   acknowledgement: include "acknowledgement.typ",
   abstract: include "abstract.typ",

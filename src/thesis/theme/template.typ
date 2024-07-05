@@ -103,6 +103,7 @@
   supervisor: "",
   advisors: (),
   author: "",
+  doi: none,
   startDate: none,
   submissionDate: none,
   disclaimer: none,
@@ -139,6 +140,7 @@
     rev: rev,
     shortRev: shortRev,
     builddate: builddate,
+    doi: doi,
   )
 
   // --- Typography ---

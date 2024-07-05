@@ -11,6 +11,7 @@
   advisors: (),
   author: "",
   authorOrcId: "",
+  doi: none,
   startDate: none,
   submissionDate: none,
   rev: none,
@@ -89,6 +90,16 @@
       },
       ..if builddate != "" {
         (strong("Build date"), ":", builddate)
+      },
+      ..if doi != none {
+        (
+          strong("DOI"),
+          ":",
+          link(
+            "https://doi.org/" + doi,
+            doi,
+          ),
+        )
       },
       ..if shortRev != "" {
         (
