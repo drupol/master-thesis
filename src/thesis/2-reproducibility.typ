@@ -343,7 +343,6 @@ reproducibility at build time, but not at run time.
 
 #figure(
   {
-    set text(size: .9em)
     shell(read("../../resources/sourcecode/montecarlo-pi-compilation.log"))
   },
   caption: [
