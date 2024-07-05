@@ -167,7 +167,7 @@ also not reproducible.
   the system. This creates a strong likelihood of like environments diverging
   over time in a process known as #emph[configuration drift]. The declarative
   approach to configuration management reduces the possibility of configuration
-  drift by favoring idempotence, explicit dependency graphs, and maintaining a
+  drift by favouring idempotence, explicit dependency graphs, and maintaining a
   strong awareness of the current state of the environment
   #cite(<HunterGCP>,form:"normal", supplement: [p.348]).
 ]

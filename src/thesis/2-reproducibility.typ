@@ -1197,7 +1197,7 @@ There are multiple existing formats and standards, the most common ones are:
   emphasises simplicity and efficiency, supporting formats such as XML, JSON,
   and ProtoBuf, and is particularly tailored towards the identification of
   software components, their vulnerabilities, and risk assessments, making it a
-  favorite in the application security and #gls("DevSecOps") communities.
+  favourite in the application security and #gls("DevSecOps") communities.
 
 The key differences between the #gls("SPDX") and #gls("CycloneDX") formats lie
 primarily in their focus, structure, and community support. The choice between

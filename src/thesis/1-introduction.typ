@@ -355,7 +355,7 @@ acknowledging that a complete examination of every aspect of reproducibility is
 beyond our scope.
 
 I will explore a selection of tools and methodologies that promote
-reproducibility or, at least, create favorable conditions for facilitating it.
+reproducibility or, at least, create favourable conditions for facilitating it.
 Moreover, this document is intended to enlighten and hopefully convince the
 reader that the construction of reproducible software should be a fundamental
 principle, not merely a secondary consideration, within the software development
