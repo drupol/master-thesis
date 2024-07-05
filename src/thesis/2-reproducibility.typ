@@ -1171,7 +1171,7 @@ This traceability is particularly relevant in light of the executive order
 cybersecurity across federal agencies and emphasises the integrity of the
 software supply chain.
 
-The european counterpart, the #gls("CRA") by the European Union reinforces these
+The European counterpart, the #gls("CRA") by the European Union reinforces these
 efforts by setting cybersecurity requirements for software. This act aims to
 reduce vulnerabilities in software products, enhancing security throughout their
 lifecycle. Software must come with clear information on their features and
