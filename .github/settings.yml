@@ -52,4 +52,4 @@ repository:
     has_projects: false
     has_wiki: false
     name: master-thesis
-    private: true
+    private: false
