@@ -356,7 +356,7 @@ reproducibility at build time, but not at run time.
 
 The Monte Carlo algorithm is inherently stochastic, it uses random sampling or
 probabilistic simulation as a core part of its computation. This randomness is
-intrisic to the algorithm's design and purpose.
+intrinsic to the algorithm's design and purpose.
 
 The distinction between build time and run time reproducibility for the Monte
 Carlo algorithm arises from its usage of a random source. While the algorithm
