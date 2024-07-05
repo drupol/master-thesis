@@ -36,10 +36,10 @@ method ensures the reliability and integrity of scientific knowledge. It
 establishes a framework where hypotheses are not just tested but also subjected
 to repeated verification, underpinning the trust and credibility that society
 places in scientific discoveries. The journey of reproducibility, originating
-from the earliest scientific endeavors, has evolved to adapt to the complexities
-and nuances of modern research methodologies. This evolution mirrors the
-progression of scientific thought and technology, from rudimentary experiments
-to sophisticated, computer-assisted analyses.
+from the earliest scientific endeavours, has evolved to adapt to the
+complexities and nuances of modern research methodologies. This evolution
+mirrors the progression of scientific thought and technology, from rudimentary
+experiments to sophisticated, computer-assisted analyses.
 
 One can observe the glimpse of the first traces of this concept in @kpopper1934.
 The concept of reproducibility is far from new and has been a cornerstone in the
@@ -1136,7 +1136,7 @@ meticulously control or normalise the environment in which computations occur.
 By ensuring that ideally environment remains constant, we can more closely
 approximate the behaviour of pure computations in practical software systems.
 This approach does not merely aim to simplify the computational model but serves
-as a strategic endeavor to minimise the unpredictability introduced by varying
+as a strategic endeavour to minimise the unpredictability introduced by varying
 environments.
 
 In conclusion, while the formalism of computations' purity and reproducibility
