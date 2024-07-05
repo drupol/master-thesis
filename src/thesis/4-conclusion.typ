@@ -491,7 +491,7 @@ confidence in computational results.
 Future work on this issue should focus on developing techniques to identify and
 mitigate flaky tests, ensuring that test outcomes are consistent and reliable.
 Research could explore advanced methods for detecting flakiness, such as machine
-learning algorithms that analyze test behavior patterns. Additionally, creating
+learning algorithms that analyse test behavior patterns. Additionally, creating
 tools to automatically stabilize flaky tests and integrating these solutions
 into continuous integration pipelines would significantly enhance the
 reliability and trustworthiness of software testing processes.
