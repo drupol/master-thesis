@@ -188,7 +188,7 @@ contributing to open-source projects that emphasise reproducible builds. It is
 this profound interest that has inspired me to dedicate my master's thesis to
 exploring the depths and implications of reproducibility in #gls("SE").
 
-Here's a non-exhausive list of projects I have contributed to:
+Here's a non-exhaustive list of projects I have contributed to:
 - In the Linux NixOS operating system:
   - I created around 430 pull requests #cite(<drupolPrOnNix>, form: "normal").
   - I made around 1800 reviews #cite(<drupolReviewOnNix>, form: "normal").
