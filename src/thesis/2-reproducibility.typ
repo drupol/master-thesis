@@ -766,7 +766,7 @@ nature of computational processes.
   include "../../resources/typst/inputs-and-outputs-part3.typ",
   caption: [
     The input is now composed of the program and its parameters and the
-    environment where it is going to be evalued.
+    environment where it is going to be evaluated.
   ],
 ) <inputs-outputs-part3>
 
