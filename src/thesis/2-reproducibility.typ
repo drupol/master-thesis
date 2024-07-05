@@ -1437,7 +1437,7 @@ generated each time the computation is executed, thereby guaranteeing
 reproducibility.
 
 Hardcoding the seed in the source code would be nonsensical because it wouldn't
-be random anymore, the seed should be passed as a parameter to the computation.
+be random any more, the seed should be passed as a parameter to the computation.
 This parameter can be passed as a command-line argument, an environment
 variable, or a configuration file, leaving the responsibility to the user to
 provide a seed.
