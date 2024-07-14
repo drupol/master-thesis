@@ -106,7 +106,7 @@
           strong("Revision"),
           ":",
           link(
-            "https://github.com/drupol/master-thesis/commit/" + rev,
+            "https://codeberg.org/p1ld7a/master-thesis/commit/" + rev,
             shortRev,
           ),
         )
