@@ -511,6 +511,26 @@ general-purpose functional programming language but offers extensive flexibility
 for those familiar with Lisp-like languages. That said, users are free to extend
 Guix with custom packages, free or not.
 
+#info-box(kind: "note", ref: "info-box-proprietary-software")[
+  Proprietary software does not expose its source code to the public, which may
+  seem counter-intuitive to the principles of reproducibility. Proprietary
+  software "typically cannot be distributed, inspected, or modified by others.
+  It is, thus, reliant on a single supplier and prone to proprietary
+  obsolescence" #cite(<9403875>, form: "normal", supplement: [p. 3]).
+
+  Ensuring the reproducibility of such software is challenging, as users lack
+  access to the build process and the software's lifespan is often limited due
+  to its proprietary nature. Pre-built binaries will work only as long as there
+  are no breaking changes in dependencies like the GNU C library, making their
+  reproducibility capabilities time-limited.
+
+  Being aware of the broader implications of using proprietary software is
+  crucial but does not necessarily compromise reproducibility at short term.
+  However, relying on proprietary software for long-term reproducibility is
+  risky due to the lack of transparency and control over the software's
+  evolution.
+]
+
 Guix is committed to ensuring reproducibility and reliability, based on the
 functional deployment model first introduced by @Dolstra2006. It assures
 reproducible builds by treating software environments as immutable entities,
