@@ -1469,10 +1469,11 @@ Package managers are tools that automate the process of installing, upgrading,
 configuring, and removing packages, typically from a central repository or
 package registry. They are widely used in software development to manage
 dependencies and facilitate the build process. For example, `Cargo` for Rust,
-`Composer` for PHP, `NPM` for NodeJS, `Dune` for OCaml. They are also used to
-manage software at the operating system level like: `apt` in Debian based
-distributions, `pacman` in Arch Linux, `dnf` in Fedora, `brew` in macOS,
-`chocolatey` in Windows.
+`Composer` for PHP, `NPM` for NodeJS, `Dune` for OCaml, `tlmgr` for #LaTeX.
+Package managers are also used to manage software at the operating system level
+like: `apt` in Debian based distributions, `pacman` in Arch Linux, `dnf` in
+Fedora, `brew` in macOS, `chocolatey` in Windows
+#cite(<9403875>, form: "normal", supplement: [p. 10]).
 
 Package managers can inadvertently introduce non-determinism by automatically
 downloading or updating dependencies to their latest versions. This process can
@@ -1526,21 +1527,26 @@ issue applies to operating system's package managers. For example, in Debian
 based distributions, there are multiple package managers: `apt`, `aptitude`,
 `dpkg`.
 
-The solution would be to use a universal package manager that would work for all
-Linux distributions and programming languages. This is what tools like
-`AppImage`, `snap` and `flatpak` are trying to solve, only at the level of the
-operating system. These tools are partially fixing the issue by just being
-available only for installing package at the operating system level.
+A potential solution would be to use a universal package manager that would work
+across all Linux distributions and programming languages. Tools like `AppImage`,
+`snap` and `flatpak` aim to address this challenge, albeit at the operating
+system level. These tools simplify the process of transferring a single piece of
+software and its pre-built dependencies to various systems. However, they do not
+include the C library, leading to potential compatibility issues on newer or
+older systems, depending on the version on which the software was originally
+built #cite(<9403875>, form: "normal", supplement: [p. 11]). Furthermore, while
+these tools represent a step in the right direction, they introduce their own
+set of challenges, such as a lack of standardisation among them, limited
+adoption, and insufficient support from major distributions.
 
-These tools, while being a step in the right direction, are also coming with
-their own set of issues, like the lack of standardisation between them, the lack
-of adoption and the lack of support from major distributions.
-
-There are also package managers like `Nix` and `Guix` that are trying to solve
-the issue by being universal. They provide a way to build and install packages
-in a sandboxed environment, which means that packages are isolated from the rest
-of the system at build time. This is a great way to ensure reproducibility, we
-will discover them in @chapter4
+There are also package managers such as `Nix` and `Guix` that tackle the issue
+by being independent and universal. These can be installed and used on GNU/Linux
+operating systems, with Nix additionally supporting macOS and FreeBSD. These
+package managers offer a method to build and install packages within a sandboxed
+environment, thereby isolating them from the rest of the system during build
+time #cite(<9403875>, form: "normal", supplement: [p. 11]). This approach
+significantly enhances reproducibility. We will explore these package managers
+further in @chapter4.
 
 ==== Version Information
 

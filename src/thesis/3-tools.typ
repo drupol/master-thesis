@@ -360,10 +360,11 @@ container images and a runtime environment, aiming to create a standard that
 supports portability and consistency across various platforms and cloud
 environments.
 
-Due to its popularity, Docker is a key player in modern software development,
-enabling efficient, consistent, and scalable applications through
-containerization, supporting agile and #gls("DevOps") practices, and
-accelerating the transition from development to production.
+Due to its popularity #cite(<9403875>, form: "normal", supplement: [p. 9]),
+Docker is a key player in modern software development, enabling efficient,
+consistent, and scalable applications through containerization, supporting agile
+and #gls("DevOps") practices, and accelerating the transition from development
+to production.
 
 #figure(
   sourcefile(
@@ -413,7 +414,8 @@ reliable in the short term, can face challenges over time. Docker images are
 built on layers, often starting from base images provided by specific vendors.
 These base images can receive updates that alter their contents, meaning a
 `Dockerfile` that successfully built an image at one time might not produce an
-identical image later due to changes in its base layers. Additionally, not
+identical image later due to changes in its base layers
+#cite(<9403875>, form: "normal", supplement: [p. 1]). Additionally, not
 pinning specific versions of base images and external dependencies in the
 `Dockerfile` can lead to inconsistencies, making the exact reproduction of a
 Docker environment challenging if not managed carefully. Therefore, while Docker
