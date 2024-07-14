@@ -196,17 +196,24 @@ to manage, especially when dealing with networking, storage and security.
 Guix has been an interesting tool to evaluate. While the learning curve is
 steeper than Docker, the benefits are significant. I appreciated the strict and
 declarative approach to package management, which aligns well with the
-reproducibility goals. The idea of using an existing general purpose language
-for declaring packages and configurations is a powerful idea. The community is
-small but active, however since no proprietary tools are packaged, it can be a
-challenge for users to find the software they need. There are workarounds
-existing but it is not advertised by the Guix community which tend to focus and
-adhere to the free software philosophy #cite(<fsfwebsite>, form: "normal"). The
-performance of Guix is great, since no containerization is involved, the
-software runs natively on the system and accessing storage and network is a
-breeze. Guix extensively uses `git` #cite(<git>, form: "normal") for fetching
-packages and configurations, and the information displayed to the user while
-running it is very clean and clear.
+reproducibility goals. The idea of using an existing general-purpose language
+for declaring packages and configurations is a powerful idea. The Guix community
+is small but active. The absence of proprietary tools in the official repository
+can pose challenges for users who require specific software, and while there are
+workarounds for using proprietary software, these are not highlighted by the
+Guix community, which remains dedicated to free software. However, this strong
+adherence to the GNU philosophy and the principles of the @fsfwebsite ensures
+that Guix maintains its commitment to software freedom and user respect. This
+has an immediate consequence on long-term and archivable reproducibility by
+mitigating issues associated with proprietary software, which may become
+unavailable or unmaintained over time
+#cite(<9403875>, form: "normal", supplement: [Criterion 8]). The performance of
+Guix are great; since no containerization is involved, the software runs
+natively on the system, making accessing storage and network services
+straightforward. Guix extensively uses `git` #cite(<git>, form: "normal") for
+fetching package configurations. The command line user interface is very
+intuitive, and the information displayed to the user while running it is very
+clean and clear.
 
 Nix has been the most interesting approaches to evaluate, technically but also
 politically. The learning curve is steep, but the benefits are significant.
