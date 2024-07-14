@@ -508,10 +508,11 @@ implementation, allowing for more expressive and programmable package
 definitions. This choice reflects Guix’s emphasis on customization and alignment
 with the @fsfwebsite project's philosophy, rejecting proprietary blobs and
 aiming for complete software freedom, which may limit hardware compatibility.
-Guix’s approach can pose a high entry barrier due to its use of a
-general-purpose functional programming language but offers extensive flexibility
-for those familiar with Lisp-like languages. That said, users are free to extend
-Guix with custom packages, free or not.
+Nonetheless, users have the liberty to extend Guix with custom packages,
+whether free or not, without compromising the tool’s reproducibility
+capabilities. While Guix's reliance on a general-purpose functional programming
+language may present a steep learning curve, it offers extensive flexibility
+for those proficient in Lisp-like languages.
 
 #info-box(kind: "note", ref: "info-box-proprietary-software")[
   Proprietary software does not expose its source code to the public, which may
