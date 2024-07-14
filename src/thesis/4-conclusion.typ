@@ -644,6 +644,15 @@ reproducibility can help disseminate best practices and foster a community
 dedicated to high standards in research. These events serve as platforms for
 discussion, collaboration, and the sharing of new tools and techniques.
 
+Adopting the FAIR principles (Findable, Accessible, Interoperable, and Reusable)
+#cite(<Wilkinson2016>, form: "normal") can significantly enhance reproducibility
+in research. Ensuring that metadata and data are easily discoverable and
+accessible helps others understand and reuse them, thereby maintaining a
+transparent and verifiable scientific process. Moreover, interoperability and
+reusability ensure that data and associated methodologies can be integrated
+across various platforms and reused effectively, contributing to a robust
+research ecosystem.
+
 Furthermore, experienced researchers mentoring early-career scientists can pass
 on valuable knowledge and emphasise the importance of reproducibility in their
 work. Mentorship provides hands-on guidance and support, helping to build a
