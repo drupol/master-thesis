@@ -118,9 +118,10 @@ to Docker, users have been introduced to the concept of containerization,
 immutability, and to some extent, reproducibility.
 
 While discussing Docker with people, I noticed a common misconception about
-reproducibility that is worth noting. To illustrate this, let's consider a
-project shipping builds of their open-source software through Docker images. At
-each release, they publish a new version of their image. These Docker images are
+reproducibility that is worth noting, similar to @info-box-proprietary-software.
+To illustrate this, let's consider a project shipping builds of their
+open-source software through Docker images hosted on Docker Hub. At each
+release, they publish a new version of their image. These Docker images are
 immutable, and users can use and reuse them at will. However, it is simply
 impossible to reproduce those images themselves from the sources. While this
 illustrates the Docker leitmotif #emph["build once, use everywhere"], it does
