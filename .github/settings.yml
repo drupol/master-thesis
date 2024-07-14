@@ -44,7 +44,7 @@ repository:
     allow_squash_merge: true
     default_branch: main
     description: "Pol Dellaiera's Master Thesis - Reproducibility In Software Engineering"
-    homepage: https://github.com/drupol/master-thesis
+    homepage: https://codeberg.org/p1ld7a/master-thesis
     topics: master-thesis,umons
     has_downloads: true
     has_issues: true

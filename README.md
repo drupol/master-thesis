@@ -78,8 +78,34 @@ precedence.
 
 ## How To Contribute
 
-We welcome contributions! If you'd like to contribute to this repository, please
-feel free to send a pull request.
+I welcome and appreciate contributions from the community! Here are the ways
+you can contribute:
+
+1. **Codeberg (Preferred)**
+   - Visit the main repository on Codeberg: https://codeberg.org/p1ld7a/master-thesis
+   - Fork the repository and make your changes.
+   - Submit a pull request for review.
+   - Ensure your code adheres to our coding guidelines and is well-documented.
+
+2. **GitHub**
+   - Visit the mirror repository on GitHub: https://github.com/drupol/master-thesis
+   - Fork the repository and make your changes.
+   - Submit a pull request for review.
+   - Ensure your code adheres to our coding guidelines and is well-documented.
+
+3. **Email**
+   - If you prefer, you can also contribute by sending me patches or suggestions
+     via email.
+   - Please include a detailed description of your changes and any relevant
+     attachments.
+   - My email address: pol.dellaiera@protonmail.com
+
+### Contribution Guidelines
+
+To ensure a smooth contribution process, please follow these guidelines:
+
+- **Code Quality:** Make sure your changes are clean and readable.
+- **Commit Messages:** Write clear and descriptive commit messages.
 
 ### Setting Up Your Development Environment
 
