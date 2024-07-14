@@ -201,7 +201,7 @@ Our testing environments supports three distinct architectures:
   ARM-based Apple Silicon processors.
 
 This selection encompasses both `x86` and `ARM` architectures, as well as Linux
-and MacOS operating systems, providing a comprehensive view of reproducibility
+and macOS operating systems, providing a comprehensive view of reproducibility
 across the most commonly used development platforms in #gls("SE"). The choice of
 these architectures ensures the results are relevant to a broad spectrum of
 development environments and application targets.

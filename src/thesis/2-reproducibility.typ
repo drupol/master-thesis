@@ -1471,7 +1471,7 @@ package registry. They are widely used in software development to manage
 dependencies and facilitate the build process. For example, `Cargo` for Rust,
 `Composer` for PHP, `NPM` for NodeJS, `Dune` for OCaml. They are also used to
 manage software at the operating system level like: `apt` in Debian based
-distributions, `pacman` in Arch Linux, `dnf` in Fedora, `brew` in MacOS,
+distributions, `pacman` in Arch Linux, `dnf` in Fedora, `brew` in macOS,
 `chocolatey` in Windows.
 
 Package managers can inadvertently introduce non-determinism by automatically
