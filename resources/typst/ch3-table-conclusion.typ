@@ -24,7 +24,7 @@
     [Environment],
     table.hline(stroke: .5pt),
   ),
-  table.cell(align: horizon + left)[1. #link(<ch3-tool1>)[Bare compilation]],
+  table.cell(align: horizon + left)[1. #link(<ch3-tool1>)[Bare\ compilation]],
   [
     - Full control over compilation
     - Direct understanding of dependencies inherited from host system
@@ -58,12 +58,12 @@
     - Immutable software environments
     - Isolation and environment reproducibility
     - No containerization overhead
+    - Prone to long-term reproducibility
   ],
   [
     - Steep learning curve
     - Paradigm shift from traditional package management systems required
-    - Very limited package availability
-    - Unfree packages are not officially allowed
+    - Limited repository of packages
   ],
   table.cell(align: horizon + center, rowspan: 2, text(size: 2em)[\u{2713}]),
   table.cell(align: horizon + center, rowspan: 2, text(size: 2em)[\u{2713}]),
@@ -76,7 +76,7 @@
     - Immutable software environments
     - Isolation and environment reproducibility
     - No containerization overhead
-    - Vast repository of packages, unfree packages are authorized.
+    - Vast repository of packages
   ],
   [
     - Steep learning curve
