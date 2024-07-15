@@ -147,8 +147,8 @@ also not reproducible.
   achieve the desired state.
 
   In contrast, #emph[imperative configuration management]
-  #cite(<HunterGCP>,form:"normal")involves detailing the exact steps required to
-  transition a system from its current state to a desired state, providing
+  #cite(<HunterGCP>,form:"normal") involves detailing the exact steps required
+  to transition a system from its current state to a desired state, providing
   granular control over the configuration process. Tools such as Ansible
   #cite(<ansible>, form: "normal"), Chef #cite(<chef>, form: "normal"), Puppet
   #cite(<puppet>, form: "normal"), and Bash scripts exemplify this approach.
