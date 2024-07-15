@@ -627,13 +627,13 @@ Educating students in best practices is crucial for fostering a culture of
 reproducibility. We can draw a compelling parallel with mathematics, where
 reproducibility is inherently embedded. Just as mathematical proofs and
 solutions can be independently verified by anyone following the same steps and
-logic, reproducibility in #gls("SE") aims for the same level of
-transparency and verifiability. This bridge underscores that reproducibility is
-a desirable trait and a foundational principle that should be rigorously applied
-in computational research. For example, a professor might provide students with
-the necessary data, software, and materials for a specific course through fully
-reproducible methods and tools. This could involve using open-source software,
-version control systems, and detailed documentation to ensure that students can
+logic, reproducibility in #gls("SE") aims for the same level of transparency and
+verifiability. This bridge underscores that reproducibility is a desirable trait
+and a foundational principle that should be rigorously applied in computational
+research. For example, a professor might provide students with the necessary
+data, software, and materials for a specific course through fully reproducible
+methods and tools. This could involve using open-source software, version
+control systems, and detailed documentation to ensure that students can
 reproduce the outcome in any space and any time.
 
 Incorporating ethics education into research training programmes helps instil
