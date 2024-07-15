@@ -189,7 +189,7 @@ test scenarios described in this chapter are executed through GitHub Actions
 #cite(<ghActions>, form: "normal"). GitHub Actions is an automation platform
 that enables #gls("CICD"), allowing builds to be performed, tested, and deployed
 across various machines and architectures directly from GitHub repositories
-  #cite(<9978190>,form:"normal").
+#cite(<9978190>,form:"normal").
 
 Our testing environments supports three distinct architectures:
 
