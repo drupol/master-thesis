@@ -3,9 +3,9 @@
 #heading("Open Source", level: 1, outlined: false)
 
 This master thesis has been developed exclusively using open-source tools.
-Similar to an open-source project, it was maintained in a private Git repository
-#cite(<PolMasterThesis>, form:"normal"). That repository will be made public
-after the oral defense and necessary internal cleanup. Automated and
+Similar to an open-source project, it was maintained in a private `git`
+repository #cite(<PolMasterThesis>, form:"normal"). That repository will be made
+public after the oral defense and necessary internal cleanup. Automated and
 reproducible builds were managed via GitHub Actions
 #cite(<ghActions>,form:"normal"), ensuring that a new compiled version was
 published at each commit to the project. Additionally, I'm planning to publish
