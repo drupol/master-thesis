@@ -1,4 +1,4 @@
-#import "imports/preamble.typ": *
+ #import "imports/preamble.typ": *
 #import "theme/template.typ": *
 #import "theme/common/titlepage.typ": *
 #import "theme/common/metadata.typ": *
@@ -366,22 +366,32 @@ reproducibility becomes increasingly challenging, as software packages may
 become obsolete or unavailable over time.
 
 To circumvent this limitation, researchers and developers can adopt proactive
-measures to ensure the reproducibility of their software builds. One approach is
-to archive the source code and dependencies of the software package, preserving
-them in a secure and accessible repository. This is what projects like Software
-Heritage #cite(<swh>, form: "normal") is trying to achieve. By archiving the
-source code and dependencies, researchers and developers can safeguard against
-the loss of critical software components and maintain the reproducibility of
-their builds over time. Additionally, implementing a caching layer to store
-build outputs can significantly enhance reproducibility. This allows users to
-retrieve precompiled build outputs, thereby avoiding the need to compile the
-source code on their machines if the corresponding cached build exists.
-Nix facilitates the creation of such cached build layers due to its principles
-(@def-functional-package-management), as it produces immutable directories based
-on sources. This means that modifying existing cached builds is not possible,
-mitigating potential security issues related to accidental modifications. It's
-worth noting that this level of immutability and reproducibility is not the case
-with all package managers.
+measures to ensure the long-term reproducibility of their software builds. One
+approach is to archive the source code and dependencies of the software package,
+preserving them in a secure and accessible repository. This is what projects
+like Software Heritage #cite(<swh>, form: "normal") is trying to achieve. By
+archiving the source code and dependencies, researchers and developers can
+safeguard against the loss of critical software components and maintain the
+long-term reproducibility of their builds over time. Since November 2018, Guix
+has incorporated support for Software Heritage, "making it the first free
+software distribution backed by a stable archive"
+#cite(<swguix2018>, form:"normal"). This integration allows Guix to fall back to
+the Software Heritage archive if it fails to download source code from its
+original location. As a result, package definitions in Guix do not need to be
+modified; they still refer to the original source code URL, but the downloading
+machinery will transparently access Software Heritage when necessary. This
+feature significantly enhances the robustness of software builds in Guix by
+ensuring that source code remains accessible even if the original URLs become
+unavailable. Alternatively, implementing a caching layer to store build outputs
+can significantly enhance reproducibility. This allows users to retrieve
+precompiled build outputs, thereby avoiding the need to compile the source code
+on their machines if the corresponding cached build exists. Nix extensively uses
+that feature and facilitates the creation of such cached build layers due to its
+principles (@def-functional-package-management), as it produces immutable
+directories based on sources. This means that modifying existing cached builds
+is not possible, mitigating potential security issues related to accidental
+modifications. It's worth noting that this level of immutability and
+reproducibility is not the case with all package managers.
 
 ==== Standardisation
 
