@@ -493,7 +493,7 @@ closer to achieving true reproducibility in containerised environments.
 user-controlled, and transparent package management. It leverages functional
 programming concepts to ensure reproducibility and reliability, using the GNU
 Guile #cite(<guile>, form:"normal") programming language for its core daemon,
-package definitions and system configurations (@courtes2013functional).
+package definitions and system configurations #cite(<courtes2013functional>,form:"normal").
 
 Central to Guix's philosophy is the concept of reproducible builds and
 environments. This ensures that software can be built in a deterministic manner,
@@ -503,16 +503,21 @@ and libraries, in a way that they can be precisely recreated. It supports
 transactional package upgrades and rollbacks, making system modifications
 risk-free by allowing users to revert to previous states easily.
 
-Guix uses @guile, a Scheme #cite(<dybvig2009scheme>, form:"normal")
-implementation, allowing for more expressive and programmable package
-definitions. This choice reflects Guix’s emphasis on customization and alignment
-with the @fsfwebsite project's philosophy, rejecting proprietary blobs and
-aiming for complete software freedom, which may limit hardware compatibility.
-Nonetheless, users have the liberty to extend Guix with custom packages,
-whether free or not, without compromising the tool’s reproducibility
-capabilities. While Guix's reliance on a general-purpose functional programming
-language may present a steep learning curve, it offers extensive flexibility
-for those proficient in Lisp-like languages.
+Guix uses GNU Guile #cite(<guile>,form:"normal"), a Scheme
+#cite(<scheme>,form:"normal") implementation, allowing for more expressive and
+programmable package definitions. This choice reflects Guix’s emphasis on
+customization and alignment with the @fsfwebsite project's philosophy, rejecting
+proprietary blobs and
+aiming for complete software freedom, which may limit hardware compatibility but
+enhance long-term reproducibility #cite(<9403875>,form:"normal"). Nonetheless,
+users have the liberty to extend Guix with custom packages, whether free or not,
+without compromising the tool’s reproducibility capabilities. In case of
+disappearing upstream sources, Guix can leverage Software Heritage
+#cite(<swh>, form:"normal") to retrieve source code, ensuring long-term
+accessibility even if the original source disappears. While Guix's reliance on a
+general-purpose functional programming language may present a steep learning
+curve, it offers extensive flexibility for those proficient in Lisp-like
+languages.
 
 #info-box(kind: "note", ref: "info-box-proprietary-software")[
   Proprietary software does not expose its source code to the public, which may
