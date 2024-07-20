@@ -360,10 +360,11 @@ container images and a runtime environment, aiming to create a standard that
 supports portability and consistency across various platforms and cloud
 environments.
 
-Due to its popularity, Docker is a key player in modern software development,
-enabling efficient, consistent, and scalable applications through
-containerization, supporting agile and #gls("DevOps") practices, and
-accelerating the transition from development to production.
+Due to its popularity #cite(<9403875>, form: "normal", supplement: [p. 9]),
+Docker is a key player in modern software development, enabling efficient,
+consistent, and scalable applications through containerization, supporting agile
+and #gls("DevOps") practices, and accelerating the transition from development
+to production.
 
 #figure(
   sourcefile(
@@ -413,7 +414,8 @@ reliable in the short term, can face challenges over time. Docker images are
 built on layers, often starting from base images provided by specific vendors.
 These base images can receive updates that alter their contents, meaning a
 `Dockerfile` that successfully built an image at one time might not produce an
-identical image later due to changes in its base layers. Additionally, not
+identical image later due to changes in its base layers
+#cite(<9403875>, form: "normal", supplement: [p. 1]). Additionally, not
 pinning specific versions of base images and external dependencies in the
 `Dockerfile` can lead to inconsistencies, making the exact reproduction of a
 Docker environment challenging if not managed carefully. Therefore, while Docker
@@ -491,7 +493,7 @@ closer to achieving true reproducibility in containerised environments.
 user-controlled, and transparent package management. It leverages functional
 programming concepts to ensure reproducibility and reliability, using the GNU
 Guile #cite(<guile>, form:"normal") programming language for its core daemon,
-package definitions and system configurations (@courtes2013functional).
+package definitions and system configurations #cite(<courtes2013functional>,form:"normal").
 
 Central to Guix's philosophy is the concept of reproducible builds and
 environments. This ensures that software can be built in a deterministic manner,
@@ -501,15 +503,41 @@ and libraries, in a way that they can be precisely recreated. It supports
 transactional package upgrades and rollbacks, making system modifications
 risk-free by allowing users to revert to previous states easily.
 
-Guix uses @guile, a Scheme #cite(<dybvig2009scheme>, form:"normal")
-implementation, allowing for more expressive and programmable package
-definitions. This choice reflects Guix’s emphasis on customization and alignment
-with the @fsfwebsite project's philosophy, rejecting proprietary blobs and
-aiming for complete software freedom, which may limit hardware compatibility.
-Guix’s approach can pose a high entry barrier due to its use of a
-general-purpose functional programming language but offers extensive flexibility
-for those familiar with Lisp-like languages. That said, users are free to extend
-Guix with custom packages, free or not.
+Guix uses GNU Guile #cite(<guile>,form:"normal"), a Scheme
+#cite(<scheme>,form:"normal") implementation, allowing for more expressive and
+programmable package definitions. This choice reflects Guix's emphasis on
+customization and alignment with the @fsfwebsite project's philosophy, rejecting
+proprietary blobs and
+aiming for complete software freedom, which may limit hardware compatibility but
+enhance long-term reproducibility #cite(<9403875>,form:"normal"). Nonetheless,
+users have the liberty to extend Guix with custom packages, whether free or not,
+without compromising the tool's reproducibility capabilities. In case of
+disappearing upstream sources, Guix can leverage Software Heritage
+#cite(<swh>, form:"normal") to retrieve source code, ensuring long-term
+accessibility even if the original source disappears. While Guix's reliance on a
+general-purpose functional programming language may present a steep learning
+curve, it offers extensive flexibility for those proficient in Lisp-like
+languages.
+
+#info-box(kind: "note", ref: "info-box-proprietary-software")[
+  Proprietary software does not expose its source code to the public, which may
+  seem counter-intuitive to the principles of reproducibility. Proprietary
+  software "typically cannot be distributed, inspected, or modified by others.
+  It is, thus, reliant on a single supplier and prone to proprietary
+  obsolescence" #cite(<9403875>, form: "normal", supplement: [p. 3]).
+
+  Ensuring the reproducibility of such software is challenging, as users lack
+  access to the build process and the software's lifespan is often limited due
+  to its proprietary nature. Pre-built binaries will work only as long as there
+  are no breaking changes in dependencies like the GNU C library, making their
+  reproducibility capabilities time-limited.
+
+  Being aware of the broader implications of using proprietary software is
+  crucial but does not necessarily compromise reproducibility at short term.
+  However, relying on proprietary software for long-term reproducibility is
+  risky due to the lack of transparency and control over the software's
+  evolution.
+]
 
 Guix is committed to ensuring reproducibility and reliability, based on the
 functional deployment model first introduced by @Dolstra2006. It assures

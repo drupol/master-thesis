@@ -36,7 +36,7 @@
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 @inproceedings{MarcelFourne2023,
-  title     = {It’s like flossing your teeth: On the Importance and Challenges of Reproducible Builds for Software Supply Chain Security},
+  title     = {It's like flossing your teeth: On the Importance and Challenges of Reproducible Builds for Software Supply Chain Security},
   author    = {Fourné, Marcel and Wermke, Dominik and Enck, William and Fahl, Sascha and Acar, Yasemin},
   year      = 2023,
   booktitle = {2023 IEEE Symposium on Security and Privacy (SP)},
@@ -162,7 +162,7 @@
   doi        = {10.1145/3186266},
   issn       = {0360-0300},
   issue_date = {May 2019},
-  abstract   = {Reproducibility is widely considered to be an essential requirement of the scientific process. However, a number of serious concerns have been raised recently, questioning whether today’s computational work is adequately reproducible. In principle, it should be possible to specify a computation to sufficient detail that anyone should be able to reproduce it exactly. But in practice, there are fundamental, technical, and social barriers to doing so. The many objectives and meanings of reproducibility are discussed within the context of scientific computing. Technical barriers to reproducibility are described, extant approaches surveyed, and open areas of research are identified.},
+  abstract   = {Reproducibility is widely considered to be an essential requirement of the scientific process. However, a number of serious concerns have been raised recently, questioning whether today's computational work is adequately reproducible. In principle, it should be possible to specify a computation to sufficient detail that anyone should be able to reproduce it exactly. But in practice, there are fundamental, technical, and social barriers to doing so. The many objectives and meanings of reproducibility are discussed within the context of scientific computing. Technical barriers to reproducibility are described, extant approaches surveyed, and open areas of research are identified.},
   articleno  = 63,
   numpages   = 36,
   keywords   = {computational science, replicability, reproducible, workflows, scientific computing, scientific workflow, scientific workflows, workflow, Reproducibility}
@@ -775,17 +775,17 @@
 }
 
 @software{guile,
+  author = {Jaffer, Aubrey and Lord, Tom and Bader, Miles},
   title  = {GNU Guile},
-  author = {{GNU Guile}},
   year   = 1993,
   url    = {https://www.gnu.org/software/guile/}
 }
 
-@book{dybvig2009scheme,
-  title     = {The SCHEME programming language},
-  author    = {Dybvig, R Kent},
-  year      = {2009},
-  publisher = {Mit Press}
+@misc{scheme,
+  author = {Sussman, Gerald Jay and Steele, Guy Lewis},
+  title = {{T}he {S}cheme {P}rogramming {L}anguage},
+  url = {https://www.scheme.org},
+  year = 1975
 }
 
 @phdthesis{PolMasterThesis,
@@ -976,4 +976,47 @@
   pages     = {235-245},
   keywords  = {Software maintenance;Automation;Codes;Collaborative software;Ecosystems;Semantics;Collaboration;GitHub Actions;continuous integration;collaborative software development;workflow automation},
   doi       = {10.1109/ICSME55016.2022.00029}
+}
+
+@article{9403875,
+  author   = {Akhlaghi, Mohammad and Infante-Sainz, Raúl and Roukema, Boudewijn F. and Khellat, Mohammadreza and Valls-Gabaud, David and Baena-Gallé, Roberto},
+  journal  = {Computing in Science & Engineering},
+  title    = {Toward Long-Term and Archivable Reproducibility},
+  year     = {2021},
+  volume   = {23},
+  number   = {3},
+  pages    = {82-91},
+  keywords = {Data engineering;Computer applications;Database systems;Information technology;Virtual machining;Knowledge management;Workflow management software;Workflow management;Systems;Database Management;Information Technology and Systems;Knowledge and data engineering tools and techniques;Computers in Other Systems;Computer Applications},
+  doi      = {10.1109/MCSE.2021.3072860}
+}
+
+@article{Wilkinson2016,
+  author = {Wilkinson, Mark D. and Dumontier, Michel and Aalbersberg, IJsbrand Jan and Appleton, Gabrielle and Axton, Myles
+    and Baak, Arie and Blomberg, Niklas and Boiten, Jan-Willem and da Silva Santos, Luiz Bonino and Bourne, Philip E.
+    and Bouwman, Jildau and Brookes, Anthony J. and Clark, Tim and Crosas, Merc{\`e} and Dillo, Ingrid and Dumon, Olivier
+    and Edmunds, Scott and Evelo, Chris T. and Finkers, Richard and Gonzalez-Beltran, Alejandra and Gray, Alasdair J.G.
+    and Groth, Paul and Goble, Carole and Grethe, Jeffrey S. and Heringa, Jaap and 't Hoen, Peter A.C and Hooft, Rob
+    and Kuhn, Tobias and Kok, Ruben and Kok, Joost and Lusher, Scott J. and Martone, Maryann E. and Mons, Albert and Packer, Abel L.
+    and Persson, Bengt and Rocca-Serra, Philippe and Roos, Marco and van Schaik, Rene and Sansone, Susanna-Assunta and Schultes, Erik
+    and Sengstag, Thierry and Slater, Ted and Strawn, George and Swertz, Morris A. and Thompson, Mark and van der Lei, Johan
+    and van Mulligen, Erik and Velterop, Jan and Waagmeester, Andra and Wittenburg, Peter and Wolstencroft, Katherine
+    and Zhao, Jun and Mons, Barend},
+  title    = {The FAIR Guiding Principles for scientific data management and stewardship},
+  journal  = {Scientific Data},
+  year     = {2016},
+  month    = {Mar},
+  day      = {15},
+  volume   = {3},
+  number   = {1},
+  pages    = {160018},
+  abstract = {There is an urgent need to improve the infrastructure supporting the reuse of scholarly data. A diverse set of stakeholders---representing academia, industry, funding agencies, and scholarly publishers---have come together to design and jointly endorse a concise and measureable set of principles that we refer to as the FAIR Data Principles. The intent is that these may act as a guideline for those wishing to enhance the reusability of their data holdings. Distinct from peer initiatives that focus on the human scholar, the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals. This Comment is the first formal publication of the FAIR Principles, and includes the rationale behind them, and some exemplar implementations in the community.},
+  issn     = {2052-4463},
+  doi      = {10.1038/sdata.2016.18},
+}
+
+@misc{swguix2018,
+  author = {{Software Heritage}},
+  title  = {{S}oftware {H}eritage and {G}{N}{U} {G}uix join forces to enable long term reproducibility},
+  url    = {https://www.softwareheritage.org/2019/04/18/software-heritage-and-gnu-guix-join-forces-to-enable-long-term-reproducibility/},
+  year   = {2019},
 }

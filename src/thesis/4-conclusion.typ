@@ -1,4 +1,4 @@
-#import "imports/preamble.typ": *
+ #import "imports/preamble.typ": *
 #import "theme/template.typ": *
 #import "theme/common/titlepage.typ": *
 #import "theme/common/metadata.typ": *
@@ -118,9 +118,10 @@ to Docker, users have been introduced to the concept of containerization,
 immutability, and to some extent, reproducibility.
 
 While discussing Docker with people, I noticed a common misconception about
-reproducibility that is worth noting. To illustrate this, let's consider a
-project shipping builds of their open-source software through Docker images. At
-each release, they publish a new version of their image. These Docker images are
+reproducibility that is worth noting, similar to @info-box-proprietary-software.
+To illustrate this, let's consider a project shipping builds of their
+open-source software through Docker images hosted on Docker Hub. At each
+release, they publish a new version of their image. These Docker images are
 immutable, and users can use and reuse them at will. However, it is simply
 impossible to reproduce those images themselves from the sources. While this
 illustrates the Docker leitmotif #emph["build once, use everywhere"], it does
@@ -195,17 +196,24 @@ to manage, especially when dealing with networking, storage and security.
 Guix has been an interesting tool to evaluate. While the learning curve is
 steeper than Docker, the benefits are significant. I appreciated the strict and
 declarative approach to package management, which aligns well with the
-reproducibility goals. The idea of using an existing general purpose language
-for declaring packages and configurations is a powerful idea. The community is
-small but active, however since no proprietary tools are packaged, it can be a
-challenge for users to find the software they need. There are workarounds
-existing but it is not advertised by the Guix community which tend to focus and
-adhere to the free software philosophy #cite(<fsfwebsite>, form: "normal"). The
-performance of Guix is great, since no containerization is involved, the
-software runs natively on the system and accessing storage and network is a
-breeze. Guix extensively uses `git` #cite(<git>, form: "normal") for fetching
-packages and configurations, and the information displayed to the user while
-running it is very clean and clear.
+reproducibility goals. The idea of using an existing general-purpose language
+for declaring packages and configurations is a powerful idea. The Guix community
+is small but active. The absence of proprietary tools in the official repository
+can pose challenges for users who require specific software, and while there are
+workarounds for using proprietary software, these are not highlighted by the
+Guix community, which remains dedicated to free software. However, this strong
+adherence to the GNU philosophy and the principles of the @fsfwebsite ensures
+that Guix maintains its commitment to software freedom and user respect. This
+has an immediate consequence on long-term and archivable reproducibility by
+mitigating issues associated with proprietary software, which may become
+unavailable or unmaintained over time
+#cite(<9403875>, form: "normal", supplement: [Criterion 8]). The performance of
+Guix are great; since no containerization is involved, the software runs
+natively on the system, making accessing storage and network services
+straightforward. Guix extensively uses `git` #cite(<git>, form: "normal") for
+fetching package configurations. The command line user interface is very
+intuitive, and the information displayed to the user while running it is very
+clean and clear.
 
 Nix has been the most interesting approaches to evaluate, technically but also
 politically. The learning curve is steep, but the benefits are significant.
@@ -358,22 +366,32 @@ reproducibility becomes increasingly challenging, as software packages may
 become obsolete or unavailable over time.
 
 To circumvent this limitation, researchers and developers can adopt proactive
-measures to ensure the reproducibility of their software builds. One approach is
-to archive the source code and dependencies of the software package, preserving
-them in a secure and accessible repository. This is what projects like Software
-Heritage #cite(<swh>, form: "normal") is trying to achieve. By archiving the
-source code and dependencies, researchers and developers can safeguard against
-the loss of critical software components and maintain the reproducibility of
-their builds over time. Additionally, implementing a caching layer to store
-build outputs can significantly enhance reproducibility. This allows users to
-retrieve precompiled build outputs, thereby avoiding the need to compile the
-source code on their machines if the corresponding cached build exists.
-Nix facilitates the creation of such cached build layers due to its principles
-(@def-functional-package-management), as it produces immutable directories based
-on sources. This means that modifying existing cached builds is not possible,
-mitigating potential security issues related to accidental modifications. It's
-worth noting that this level of immutability and reproducibility is not the case
-with all package managers.
+measures to ensure the long-term reproducibility of their software builds. One
+approach is to archive the source code and dependencies of the software package,
+preserving them in a secure and accessible repository. This is what projects
+like Software Heritage #cite(<swh>, form: "normal") is trying to achieve. By
+archiving the source code and dependencies, researchers and developers can
+safeguard against the loss of critical software components and maintain the
+long-term reproducibility of their builds over time. Since November 2018, Guix
+has incorporated support for Software Heritage, "making it the first free
+software distribution backed by a stable archive"
+#cite(<swguix2018>, form:"normal"). This integration allows Guix to fall back to
+the Software Heritage archive if it fails to download source code from its
+original location. As a result, package definitions in Guix do not need to be
+modified; they still refer to the original source code URL, but the downloading
+machinery will transparently access Software Heritage when necessary. This
+feature significantly enhances the robustness of software builds in Guix by
+ensuring that source code remains accessible even if the original URLs become
+unavailable. Alternatively, implementing a caching layer to store build outputs
+can significantly enhance reproducibility. This allows users to retrieve
+precompiled build outputs, thereby avoiding the need to compile the source code
+on their machines if the corresponding cached build exists. Nix extensively uses
+that feature and facilitates the creation of such cached build layers due to its
+principles (@def-functional-package-management), as it produces immutable
+directories based on sources. This means that modifying existing cached builds
+is not possible, mitigating potential security issues related to accidental
+modifications. It's worth noting that this level of immutability and
+reproducibility is not the case with all package managers.
 
 ==== Standardisation
 
@@ -608,11 +626,11 @@ within scientific research: the cost and feasibility of reproducibility often
 depend on the availability and accessibility of resources.
 
 To illustrate this, consider the manual replication of a painting, where the
-scarcity of the original artist’s brushstrokes and techniques makes it
+scarcity of the original artist's brushstrokes and techniques makes it
 challenging to reproduce the artwork with the same precision and quality. It
 would take a significant investment of time, effort, and resources to manually
 replicate the painting accurately. Choosing the proper materials, mastering the
-techniques, and recreating the environment and artist’s vision are all essential
+techniques, and recreating the environment and artist's vision are all essential
 factors that contribute to the cost and feasibility of reproducing the painting.
 In contrast, a mass-produced item, such as a digital photograph, can be
 replicated with relative ease and at a lower cost.
@@ -643,6 +661,15 @@ verifiable and reliable results. Organising workshops and seminars focused on
 reproducibility can help disseminate best practices and foster a community
 dedicated to high standards in research. These events serve as platforms for
 discussion, collaboration, and the sharing of new tools and techniques.
+
+Adopting the FAIR principles (Findable, Accessible, Interoperable, and Reusable)
+#cite(<Wilkinson2016>, form: "normal") can significantly enhance reproducibility
+in research. Ensuring that metadata and data are easily discoverable and
+accessible helps others understand and reuse them, thereby maintaining a
+transparent and verifiable scientific process. Moreover, interoperability and
+reusability ensure that data and associated methodologies can be integrated
+across various platforms and reused effectively, contributing to a robust
+research ecosystem.
 
 Furthermore, experienced researchers mentoring early-career scientists can pass
 on valuable knowledge and emphasise the importance of reproducibility in their
