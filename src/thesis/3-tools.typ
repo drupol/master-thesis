@@ -505,13 +505,13 @@ risk-free by allowing users to revert to previous states easily.
 
 Guix uses GNU Guile #cite(<guile>,form:"normal"), a Scheme
 #cite(<scheme>,form:"normal") implementation, allowing for more expressive and
-programmable package definitions. This choice reflects Guix’s emphasis on
+programmable package definitions. This choice reflects Guix's emphasis on
 customization and alignment with the @fsfwebsite project's philosophy, rejecting
 proprietary blobs and
 aiming for complete software freedom, which may limit hardware compatibility but
 enhance long-term reproducibility #cite(<9403875>,form:"normal"). Nonetheless,
 users have the liberty to extend Guix with custom packages, whether free or not,
-without compromising the tool’s reproducibility capabilities. In case of
+without compromising the tool's reproducibility capabilities. In case of
 disappearing upstream sources, Guix can leverage Software Heritage
 #cite(<swh>, form:"normal") to retrieve source code, ensuring long-term
 accessibility even if the original source disappears. While Guix's reliance on a

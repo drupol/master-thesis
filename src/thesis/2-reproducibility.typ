@@ -115,7 +115,7 @@ According to @ESSAWY2020104753, reproducibility is organised in four levels:
 
 - *Repeatability*: Achieved upon obtaining consistent results using the same
   input data, computational steps, methods, and code on the original
-  researcher’s machine. This level is normally achieved in scientific papers.
+  researcher's machine. This level is normally achieved in scientific papers.
 - *Runnability*: Achieved when the author of the research can obtain consistent
   results using the same input data, computational steps, methods, code and
   conditions of analysis on a new machine.
@@ -176,7 +176,7 @@ necessitates an incremental investment of resources, time, and effort.
 
 #info-box(kind: "cite", footer: [@Barba2018])[
   In their vision of reproducible research, readers should be able to rebuild
-  published results using the author’s underlying programs and raw data.
+  published results using the author's underlying programs and raw data.
   Implicitly, they are advocating for open code and data.
 ]
 
@@ -230,7 +230,7 @@ distinct category.
   using the same measurement procedure, the same measuring system, under the
   same operating conditions, in the same or a different location on multiple
   trials. For computational experiments, this means that an independent group
-  can obtain the same result using the author’s own artefacts.
+  can obtain the same result using the author's own artefacts.
 ]
 
 The term #emph[reproducibility] in the context of #gls("CS") has been refined
@@ -490,7 +490,7 @@ and #emph[Reproducible] boundaries.
 
 #info-box(kind: "cite", footer: [@Donoho2009])[
   If everyone on a research team knows that everything they do is going to
-  someday be published for reproducibility, they’ll behave differently from day
+  someday be published for reproducibility, they'll behave differently from day
   one. Striving for reproducibility imposes a discipline that leads to better
   work.
 ]
@@ -529,7 +529,7 @@ and trust in scientific research.
 
 Furthermore, open-source software promotes a culture of collaboration and
 community involvement. Active communities that grow around open-source projects
-contribute to the software’s continual improvement. This community-driven
+contribute to the software's continual improvement. This community-driven
 development leads to the identification and resolution of bugs, thereby
 enhancing the software's reliability and, consequently, the reproducibility
 outcomes that depend on it.

@@ -6,7 +6,7 @@
 #let faculty = "Faculty of Sciences"
 #let degree = "Master"
 #let program = "Computer Science"
-#let view = degree + "’s Thesis in " + program
+#let view = degree + "'s Thesis in " + program
 #let supervisor = [#link("https://orcid.org/0000-0003-3636-5020")[Prof. Dr. Tom Mens#box(image("../../../../resources/images/ORCIDiD_iconvector.svg", width: 10pt))]]
 #let advisors = none
 #let author = "Pol Dellaiera"

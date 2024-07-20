@@ -626,11 +626,11 @@ within scientific research: the cost and feasibility of reproducibility often
 depend on the availability and accessibility of resources.
 
 To illustrate this, consider the manual replication of a painting, where the
-scarcity of the original artist’s brushstrokes and techniques makes it
+scarcity of the original artist's brushstrokes and techniques makes it
 challenging to reproduce the artwork with the same precision and quality. It
 would take a significant investment of time, effort, and resources to manually
 replicate the painting accurately. Choosing the proper materials, mastering the
-techniques, and recreating the environment and artist’s vision are all essential
+techniques, and recreating the environment and artist's vision are all essential
 factors that contribute to the cost and feasibility of reproducing the painting.
 In contrast, a mass-produced item, such as a digital photograph, can be
 replicated with relative ease and at a lower cost.
