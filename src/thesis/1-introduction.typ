@@ -168,11 +168,12 @@ constant along the passing years, sadly.
 Transitioning from BASIC, I briefly jumped on Microsoft Windows before moving to
 Linux, a platform that has since become my daily driver. In 2019, I found myself
 grappling with a sluggish laptop running a popular Linux distribution. In search
-of a faster, binary-based alternative, I transitioned to NixOS
-#cite(<NixOS>, form: "normal"). This shift marked the beginning of a totally new
-perspective on software development for me. It was through NixOS that I
-encountered the concept of "reproducibility" which opened my eyes to the
-possibilities of making and shipping more reliable software.
+of a faster, binary-based alternative, I transitioned to NixOS, a Linux
+distribution #cite(<hemel_2024_12906987>,form:"normal") managed by the Nix
+package manager #cite(<NixOS>, form: "normal"). This shift marked the beginning
+of a totally new perspective on software development for me. It was through
+NixOS that I encountered the concept of "reproducibility" which opened my eyes
+to the possibilities of making and shipping more reliable software.
 
 We've seen in the previous section and will detail further in the next chapters
 that this concept originates from researchers and the scientific method. This
