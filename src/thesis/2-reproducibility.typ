@@ -540,10 +540,10 @@ of software without legal or technical barriers. This flexibility is vital for
 verifying and replicating studies, as researchers can adapt the software for
 their specific needs without restrictions, though some licences may impose
 certain conditions. Additionally, open-source development tools provide
-excellent record-keeping capabilities, like version control systems (e.g., `git`,
-Mercurial, Pijul), enabling researchers to track changes and understand the
-context of each update. This aspect is essential for reproducing and validating
-research findings.
+excellent record-keeping capabilities, like version control systems (e.g.,
+`git`, Mercurial, Pijul), enabling researchers to track changes and understand
+the context of each update. This aspect is essential for reproducing and
+validating research findings.
 
 Lastly, the open source approach aligns well with the scientific values of
 openness and sharing, promoting a culture that values transparency and
@@ -551,10 +551,23 @@ reproducibility in scientific inquiry. Moreover, the community-driven nature of
 open-source software reduces the risk of obsolescence, ensuring that research
 tools remain accessible and up-to-date for future replication efforts.
 
-In essence, open-source software embodies a framework that is not only conducive
-to the scientific pursuit of knowledge but also reinforces the integrity and
+Open-source software embodies a framework that is not only conducive to the
+scientific pursuit of knowledge but also reinforces the integrity and
 sustainability of #gls("SE") through its emphasis on transparency,
-collaboration, and adaptability.
+collaboration, and adaptability. Therefore, open source is key for facilitating
+reproducibility as highlighted in @hinsenKonradFramework2020's framework on
+reproducible scientific computations. This framework provides a structured
+approach to understanding and addressing reproducibility. He proposes four
+essential possibilities which can only be achieved with open-source software:
+
+- Inspectability: the possibility to inspect all input data and source code
+- Executability: the possibility to run the code on a suitable computer to
+  verify the results
+- Explorability: the possibility to explore the behavior of the code by
+  inspecting intermediate results, making small modifications, or using code
+  analysis tools
+- Verifiability: the possibility to verify that the published executable
+  versions correspond to the available source code
 
 Open-source development, by its nature of allowing anyone to build, verify and
 use software, stands out as an effective, if not the best, approach to
@@ -1134,9 +1147,9 @@ This singularity highlights the essence of reproducibility: the need to
 meticulously control or normalise the environment in which computations occur.
 By ensuring that ideally environment remains constant, we can more closely
 approximate the behaviour of pure computations in practical software systems.
-This approach does not merely aim to simplify the computational model but serves
-as a strategic endeavour to minimise the unpredictability introduced by varying
-environments.
+
+This approach aim to simplify the computational model and serves as a strategic
+endeavour to minimise the unpredictability introduced by varying environments.
 
 In conclusion, while the formalism of computations' purity and reproducibility
 provides the basis of a theoretical framework, the practical application in
