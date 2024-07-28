@@ -1547,19 +1547,19 @@ system level. These tools simplify the process of transferring a single piece of
 software and its pre-built dependencies to various systems. However, they do not
 include the C library, leading to potential compatibility issues on newer or
 older systems, depending on the version on which the software was originally
-built #cite(<9403875>, form: "normal", supplement: [p. 11]). Furthermore, while
-these tools represent a step in the right direction, they introduce their own
-set of challenges, such as a lack of standardisation among them, limited
-adoption, and insufficient support from major distributions.
+built #cite(<9403875>, form: "normal", supplement: [Appendix A.B.2)]).
+Furthermore, while these tools represent a step in the right direction, they
+introduce their own set of challenges, such as a lack of standardisation among
+them, limited adoption, and insufficient support from major distributions.
 
 There are also package managers such as `Nix` and `Guix` that tackle the issue
 by being independent and universal. These can be installed and used on GNU/Linux
 operating systems, with Nix additionally supporting macOS and FreeBSD. These
 package managers offer a method to build and install packages within a sandboxed
 environment, thereby isolating them from the rest of the system during build
-time #cite(<9403875>, form: "normal", supplement: [p. 11]). This approach
-significantly enhances reproducibility. We will explore these package managers
-further in @chapter4.
+time #cite(<9403875>, form: "normal", supplement: [Appendix A.B.3)]). This
+approach significantly enhances reproducibility. We will explore these package
+managers further in @chapter4.
 
 ==== Version Information
 
