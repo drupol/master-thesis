@@ -1,7 +1,7 @@
 [![Download latest](https://img.shields.io/badge/Download-Latest-brightgreen?style=flat-square)](https://github.com/drupol/master-thesis/releases/latest)
 [![CC BY License badge](https://img.shields.io/badge/License-CC--BY--4.0-brightgreen?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 [![HL3 License badge](https://img.shields.io/badge/License-HL3--full-brightgreen?style=flat-square)](https://firstdonoharm.dev/version/3/0/full.html)
-[![Static Badge](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.12666899-brightgreen?style=flat-square)](https://doi.org/10.5281/zenodo.12666899)
+[![Static Badge](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.12666898-brightgreen?style=flat-square)](https://doi.org/10.5281/zenodo.12666898)
 
 # Reproducibility in Software Engineering (RiSE)
 
@@ -65,14 +65,14 @@ precedence.
 
 ```
 @masterthesis{dellaieraMasterThesis2024,
-  title  = {Reproducibility in Software Engineering},
-  author = {Dellaiera, Pol},
-  year   = 2024,
-  month  = {June},
-  note   = {Available at \url{TODO}},
-  school = {University of Mons},
-  type   = {Master's thesis},
-  doi    = {10.5281/zenodo.12666899}
+  title   = {Reproducibility in Software Engineering},
+  author  = {Dellaiera, Pol},
+  year    = 2024,
+  month   = {June},
+  school  = {University of Mons},
+  address = {Mons, Belgium},
+  type    = {Master's thesis},
+  doi     = {10.5281/zenodo.12666898}
 }
 ```
 

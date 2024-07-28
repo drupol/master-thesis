@@ -1,7 +1,7 @@
 // Enter your thesis data here:
 #let title = "Reproducibility in Software Engineering"
 #let subtitle = none
-#let doi = "10.5281/zenodo.12666899"
+#let doi = "10.5281/zenodo.12666898"
 #let university = "University of Mons"
 #let faculty = "Faculty of Sciences"
 #let degree = "Master"
