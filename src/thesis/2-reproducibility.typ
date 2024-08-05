@@ -1147,7 +1147,6 @@ This singularity highlights the essence of reproducibility: the need to
 meticulously control or normalise the environment in which computations occur.
 By ensuring that ideally environment remains constant, we can more closely
 approximate the behaviour of pure computations in practical software systems.
-
 This approach aim to simplify the computational model and serves as a strategic
 endeavour to minimise the unpredictability introduced by varying environments.
 
