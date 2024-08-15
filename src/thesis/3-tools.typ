@@ -390,6 +390,17 @@ the checksum of the resulting binary, the `check` step also outputs the checksum
 of the image.
 
 #figure(
+  {
+    sourcefile(
+      file: "Makefile",
+      lang: "Makefile",
+      read("../../lib/scenario-2/Makefile"),
+    )
+  },
+  caption: [`Makefile` of Scenario 2],
+) <ch3-makefile-scenario2>
+
+#figure(
   shell(read("../../resources/sourcecode/scenario-2.log")),
   supplement: "Terminal session",
   kind: "terminal",
@@ -572,6 +583,17 @@ considering Guix.
 
 #figure(
   {
+    sourcefile(
+      file: "Makefile",
+      lang: "Makefile",
+      read("../../lib/scenario-3/Makefile"),
+    )
+  },
+  caption: [`Makefile` of Scenario 3],
+) <ch3-makefile-scenario3>
+
+#figure(
+  {
     shell(read("../../resources/sourcecode/scenario-3.log"))
   },
   supplement: "Terminal session",
@@ -677,6 +699,17 @@ environment.
 
 #figure(
   {
+    sourcefile(
+      file: "Makefile",
+      lang: "Makefile",
+      read("../../lib/scenario-4/Makefile"),
+    )
+  },
+  caption: [`Makefile` of Scenario 4],
+) <ch3-makefile-scenario4>
+
+#figure(
+  {
     shell(read("../../resources/sourcecode/scenario-4.log"))
   },
   supplement: "Terminal session",
@@ -736,6 +769,17 @@ dependencies could drift to newer versions.
   },
   caption: [The Nix Flake file (`flake.nix`) from Scenario 5],
 ) <ch3-flake-nix>
+
+#figure(
+  {
+    sourcefile(
+      file: "Makefile",
+      lang: "Makefile",
+      read("../../lib/scenario-5/Makefile"),
+    )
+  },
+  caption: [`Makefile` of Scenario 5],
+) <ch3-makefile-scenario5>
 
 #figure(
   {
