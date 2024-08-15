@@ -220,23 +220,30 @@ specific shell commands.
       read("../../resources/sourcecode/example-makefile"),
     )
   },
-  caption: [An example of `Makefile` used in a scenario.],
+  caption: [An example of `Makefile`],
 ) <ch3-example-makefile>
 
-Each scenario's `Makefile` essentially contain four essential steps:
+Each scenario's `Makefile` essentially contain four essential steps only:
 
 - `clean`: Removes the build artefact of a build process, if any.
 - `build`: Executes a build process, generating an output artefact.
 - `check`: Prints the checksum of the build artefact.
 - `run`: Execute the artefact
 
-Incorporating these `Makefile` steps into our GitHub Actions workflows not only
-automates the execution of each scenario, ensuring consistency and repeatability
-in our testing process, but also empowers the reader with the ability to locally
-reproduce the steps outlined in this document in full transparency. This
-approach facilitates and encourages the direct replication of methods and
-scenarios, aligning with best practices in #gls("SE") for reproducibility, but
-also extends these principles to broader scientific research practices.
+#info-box[
+  All source code and scenario files are available for reference under the
+  `lib/` directory of this master's thesis source code
+  #cite(<PolMasterThesis>, form:"normal"). Each scenario's directory contains
+  its own `Makefile`. These makefiles can be used to locally reproduce the
+  commands and results outlined in this document.
+]
+
+Our GitHub Actions workflows #cite(<r13yBuildScenarios>,form:"normal") use
+these Makefiles, automating the execution of each scenario and ensuring
+consistency and repeatability in the process. By doing so, they empower users to
+locally reproduce the steps outlined in this document with full transparency.
+This approach aligns with best practices in #gls("SE") for reproducibility, and
+extends those principles to broader scientific research practices.
 
 === Output Comparison
 
