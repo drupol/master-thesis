@@ -230,7 +230,7 @@
     // --- Table of Contents ---
     {
       set par(
-        leading: 0.45em,
+        leading: 0.4em,
         justify: true,
       )
       show outline.entry.where(level: 1): it => {
@@ -238,7 +238,7 @@
         strong(it)
       }
 
-      heading(numbering: none, outlined: false)[Contents]
+      heading(numbering: none, outlined: false, )[Contents]
       outline(title: "", indent: 1.5em, depth: 3)
     }
 
@@ -277,9 +277,6 @@
       v(1em, weak: true)
       it
     }
-
-    // --- Raw text configuration ---
-    show raw.line: set text(font: "Inconsolata Nerd Font Mono")
 
     // --- Equations ---
     show math.equation: set text(weight: 400)

@@ -1,13 +1,47 @@
 #import "@preview/codelst:2.0.2": sourcecode, sourcefile
+#import "@preview/codly:1.1.1": *
+#import "@preview/codly-languages:0.1.1": *
+#import "../theme/common/metadata.typ": *
 
-#let shell(body) = {
-  let body = raw(body)
+#let sourcefile(file: none, lang: none) = {
+  set par(justify:false)
+  set align(left)
+
+  show: codly-init.with()
+
+  // --- Raw text configuration ---
+  show raw: set text(size: font.raw)
+
+  codly(
+    languages: codly-languages,
+    number-format: (number) => {
+      text(fill: luma(75%), [#number])
+    },
+    zebra-fill: none,
+    stroke: .6pt + luma(200),
+    fill: luma(250),
+    inset: .25em,
+    radius: 3pt,
+    lang-outset: (x: 0pt, y: 2pt),
+    skip-last-empty: true,
+  )
+
+  raw(read(file), lang: lang, block: true)
+}
+
+#let shell(file: none) = {
+  // --- Raw text configuration ---
+  show raw: set text(size: font.raw)
+
+  let body = [#read(file)]
+
   let kinds = (
     "$": green.darken(30%),
     "#": blue.darken(10%),
     ">": luma(40%),
     " ": luma(100%),
   )
+
   let lines = body.text.split("\n").map(line => {
     if line.at(0, default: "") in kinds and line.at(1, default: "") == " " {
       (line.at(0), line.slice(2))
@@ -16,26 +50,32 @@
     }
   })
 
-  set par(justify: false)
-
   show raw.line: it => [
     #let (kind, line) = lines.at(it.number - 1)
     #if kind != none {
-      text(fill: kinds.at(kind), kind) + " " + it.body
+      text(fill: kinds.at(kind), kind) + " " + line
     } else {
       text(fill: luma(50%), it.text)
     }
   ]
 
-  show raw.line: set text(font: "Inconsolata Nerd Font Mono")
+  show: codly-init.with()
 
-  sourcecode(numbers-style: line-no => text(
-    fill: luma(160),
-    size: .5em,
-    str(line-no),
-  ))[
-    #raw(lang: "sh", lines.map(((_, line)) => line).join("\n"))
-  ]
+  codly(
+    languages: codly-languages,
+    number-format: (number) => {
+      text(fill: luma(75%), [#number])
+    },
+    zebra-fill: none,
+    stroke: .6pt + luma(200),
+    fill: luma(250),
+    inset: .4em,
+    radius: 3pt,
+    lang-outset: (x: 0pt, y: 0pt),
+    skip-last-empty: true,
+  )
+
+  raw(read(file), lang: "bash", block: true)
 }
 
 #let LaTeX = {

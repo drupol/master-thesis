@@ -7,7 +7,7 @@
     typst-dev.url = "github:typst/typst";
     typst-packages = {
       flake = false;
-      url = "github:typst/packages";
+      url = "github:typst/packages/main";
     };
     pkgs-by-name-for-flake-parts.url = "github:drupol/pkgs-by-name-for-flake-parts";
   };

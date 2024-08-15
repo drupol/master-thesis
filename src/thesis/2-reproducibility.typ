@@ -332,17 +332,16 @@ reproducibility at build time, but not at run time.
 #figure(
   {
     sourcefile(
-      file: "montecarlo-pi.c",
-      lang: "c",
-      read("../../resources/sourcecode/montecarlo-pi.c"),
+      lang: "C",
+      file: "../../../resources/sourcecode/montecarlo-pi.c",
     )
   },
-  caption: [`montecarlo-pi.c`],
+  caption: [Sourcecode of montecarlo-pi.c],
 ) <montecarlo-pi.c>
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/montecarlo-pi-compilation.log"))
+    shell(file: "../../../resources/sourcecode/montecarlo-pi-compilation.log")
   },
   caption: [
     Building the same source code multiple times always yields the same binary
@@ -365,7 +364,7 @@ the validity of the algorithm but rather is a characteristic of its
 probabilistic approach to problem-solving.
 
 #figure(
-  shell(read("../../resources/sourcecode/montecarlo-pi.c.log")),
+  shell(file: "../../../resources/sourcecode/montecarlo-pi.c.log"),
   caption: [
     Running the binary multiple times does not always yields the same result
   ],
@@ -398,9 +397,8 @@ key attributes for creating reliable and maintainable systems in the long run.
 #figure(
   {
     sourcefile(
-      file: "montecarlo-pi.c",
-      lang: "c",
-      read("../../resources/sourcecode/montecarlo-pi-fix.c"),
+      file: "../../../resources/sourcecode/montecarlo-pi-fix.c",
+      lang: "C",
     )
   },
   caption: [`montecarlo-pi-fix.c` with deterministic random number generator],
@@ -418,9 +416,8 @@ build time.
 #figure(
   {
     sourcefile(
-      file: "datetime.c",
-      lang: "c",
-      read("../../resources/sourcecode/datetime.c"),
+      lang: "C",
+      file: "../../../resources/sourcecode/datetime.c",
     )
   },
   caption: [Sourcecode of `datetime.c`, a C program with macros],
@@ -433,7 +430,7 @@ code. In such a case, runtime reproducibility between the original and another
 user is not assured.
 
 #figure(
-  shell(read("../../resources/sourcecode/datetime.c.log")),
+  shell(file: "../../../resources/sourcecode/datetime.c.log"),
   caption: [
     An example of program that it neither reproducible at build time and
     run time.
@@ -468,9 +465,8 @@ pretty much impossible. We will consider these challenges in more detail in
 
 #figure(
   sourcefile(
-    file: "nodejs.dockerfile",
-    lang: "dockerfile",
-    read("../../resources/sourcecode/nodejs.dockerfile"),
+    lang: "Dockerfile",
+    file: "../../../resources/sourcecode/nodejs.dockerfile",
   ),
   caption: [An example of `Dockerfile`],
 ) <dockerfile-example>
@@ -1550,9 +1546,8 @@ reproducibility.
 
 #figure(
   sourcefile(
-    file: "composer.json",
     lang: "json",
-    read("../../resources/sourcecode/composer.json"),
+    file: "../../../resources/sourcecode/composer.json",
   ),
   caption: [A `composer.json` file, used by the PHP package manager, Composer],
 ) <composer-json>
@@ -1608,7 +1603,7 @@ Version information like commit identifiers can be used to precisely identify
 the source code used to build a program.
 
 #figure(
-  shell(read("../../resources/sourcecode/listing-typst-version.log")),
+  shell(file: "../../../resources/sourcecode/listing-typst-version.log"),
   caption: [Example of program including a commit ID],
 ) <listing-typst-version>
 
@@ -1665,7 +1660,7 @@ the directory based on a specific criterion, such as their names or modification
 timestamps.
 
 #figure(
-  shell(read("../../resources/sourcecode/tar-sort-name-flag.log")),
+  shell(file: "../../../resources/sourcecode/tar-sort-name-flag.log"),
   caption: [
     Use of `--sort=name` flag to ensure a stable order of files in an archive
   ],
@@ -1703,7 +1698,7 @@ file system ordering, from specific file and archive formats.
 ==== Locale Environment Variables
 
 #figure(
-  shell(read("../../resources/sourcecode/date-format-flags.log")),
+  shell(file: "../../../resources/sourcecode/date-format-flags.log"),
   caption: [Use `LC_ALL` and `-u` flags to configure the date format],
 ) <listing-date-format-flags>
 
@@ -1745,7 +1740,7 @@ First, we compile the sourcecode twice, creating `build1` and `build2`:
 
 #figure(
   shell(
-    read("../../resources/sourcecode/bash/bash-gcc-not-reproducible-builds.log"),
+    file: "../../../resources/sourcecode/bash/bash-gcc-not-reproducible-builds.log",
   ),
   caption: [
     Compilation of non-reproducible programs and the use of their checksums for
@@ -1756,7 +1751,7 @@ First, we compile the sourcecode twice, creating `build1` and `build2`:
 Then, we use `diffoscope` to compare these builds:
 
 #figure(
-  shell(read("../../resources/sourcecode/bash/bash-diffoscope-comparison.log")),
+  shell(file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log"),
 ) <bash-diffoscope-comparison>
 
 The tool will generate a detailed report (@diffoscope-report) highlighting the
@@ -1789,7 +1784,7 @@ during the build process, ensuring consistency across compilations and thus
 contributing to reproducibility.
 
 #figure(
-  shell(read("../../resources/sourcecode/bash/bash-fixing-builds.log")),
+  shell(file: "../../../resources/sourcecode/bash/bash-fixing-builds.log"),
   caption: [Fix builds using an environment variable],
 ) <bash-fixing-builds>
 

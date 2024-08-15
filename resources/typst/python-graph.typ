@@ -7,7 +7,7 @@
       size: 1em,
     )
     render(
-      read("../../resources/graphviz/python.dot"),
+      file: "../../../resources/graphviz/python.dot"),
       labels: (
         "pzf6dnxg8gf04xazzjdwarm7s03cbrgz-python3-3.10.12": [python3-3.10.12],
         "6947mfg2jlid97cnvzvc6cvv6wpj2yhg-bzip2-1.0.8": [bzip2-1.0.8],

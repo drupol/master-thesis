@@ -53,4 +53,5 @@
   small: font-defaults.small,
   normal: font-defaults.normalsize,
   script: font-defaults.scriptsize,
+  raw: font-defaults.tiny,
 )

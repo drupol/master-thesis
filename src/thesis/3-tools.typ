@@ -214,9 +214,8 @@ specific shell commands.
 #figure(
   {
     sourcefile(
-      file: "Makefile",
       lang: "Makefile",
-      read("../../resources/sourcecode/example-makefile"),
+      file: "../../../resources/sourcecode/example-makefile",
     )
   },
   caption: [An example of `Makefile`],
@@ -233,8 +232,9 @@ Each scenario's `Makefile` essentially contain four essential steps only:
   All source code and scenario files are available for reference under the
   `lib/` directory of this master's thesis source code
   #cite(<PolMasterThesis>, form:"normal"). Each scenario's directory contains
-  its own `Makefile`. These makefiles can be used to locally reproduce the
-  commands and results outlined in this document.
+  its own `Makefile`, which is not included in this document for brevity
+  reasons. However, these makefiles can be used to locally reproduce the steps
+  outlined in this document.
 ]
 
 Our GitHub Actions workflows #cite(<r13yBuildScenarios>,form:"normal") use
@@ -288,9 +288,8 @@ check and run the build are detailed.
 #figure(
   {
     sourcefile(
-      file: "Makefile",
       lang: "Makefile",
-      read("../../lib/scenario-1/Makefile"),
+      file: "../../../lib/scenario-1/Makefile",
     )
   },
   caption: [`Makefile` of Scenario 1],
@@ -298,7 +297,7 @@ check and run the build are detailed.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-1.log"))
+    shell(file: "../../../resources/sourcecode/scenario-1.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -374,9 +373,8 @@ to production.
 
 #figure(
   sourcefile(
-    file: "Dockerfile",
-    lang: "dockerfile",
-    read("../../lib/scenario-2/Dockerfile"),
+    lang: "Dockerfile",
+    file: "../../../lib/scenario-2/Dockerfile",
   ),
   caption: [From Scenario 2, the `dockerfile` used by Docker],
 ) <ch3-dockerfile>
@@ -391,16 +389,15 @@ of the image.
 #figure(
   {
     sourcefile(
-      file: "Makefile",
+      file: "../../../lib/scenario-2/Makefile",
       lang: "Makefile",
-      read("../../lib/scenario-2/Makefile"),
     )
   },
   caption: [`Makefile` of Scenario 2],
 ) <ch3-makefile-scenario2>
 
 #figure(
-  shell(read("../../resources/sourcecode/scenario-2.log")),
+  shell(file: "../../../resources/sourcecode/scenario-2.log"),
   supplement: "Terminal session",
   kind: "terminal",
   caption: [Terminal log of the steps to build, check and run Scenario 2],
@@ -579,9 +576,8 @@ considering Guix.
 #figure(
   {
     sourcefile(
-      file: "guix.scm",
-      lang: "Lisp",
-      read("../../lib/scenario-3/guix.scm"),
+      lang: "lisp",
+      file: "../../../lib/scenario-3/guix.scm",
     )
   },
   caption: [From Scenario 3, the Guix build file (`guix.scm`)],
@@ -590,9 +586,8 @@ considering Guix.
 #figure(
   {
     sourcefile(
-      file: "Makefile",
+      file: "../../../lib/scenario-3/Makefile",
       lang: "Makefile",
-      read("../../lib/scenario-3/Makefile"),
     )
   },
   caption: [`Makefile` of Scenario 3],
@@ -600,7 +595,7 @@ considering Guix.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-3.log"))
+    shell(file: "../../../resources/sourcecode/scenario-3.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -695,9 +690,8 @@ build environment.
   {
     set text(size: .85em)
     sourcefile(
-      file: "default.nix",
       lang: "nix",
-      read("../../lib/scenario-4/default.nix"),
+      file: "../../../lib/scenario-4/default.nix",
     )
   },
   caption: [The Nix build file (`default.nix`) from Scenario 4],
@@ -706,9 +700,8 @@ build environment.
 #figure(
   {
     sourcefile(
-      file: "Makefile",
+      file: "../../../lib/scenario-4/Makefile",
       lang: "Makefile",
-      read("../../lib/scenario-4/Makefile"),
     )
   },
   caption: [`Makefile` of Scenario 4],
@@ -716,7 +709,7 @@ build environment.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-4.log"))
+    shell(file: "../../../resources/sourcecode/scenario-4.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -768,9 +761,8 @@ dependencies could drift to newer versions.
 #figure(
   {
     sourcefile(
-      file: "flake.nix",
       lang: "nix",
-      read("../../lib/scenario-5/flake.nix"),
+      file: "../../../lib/scenario-5/flake.nix",
     )
   },
   caption: [The Nix Flake file (`flake.nix`) from Scenario 5],
@@ -779,9 +771,8 @@ dependencies could drift to newer versions.
 #figure(
   {
     sourcefile(
-      file: "Makefile",
+      file: "../../../lib/scenario-5/Makefile",
       lang: "Makefile",
-      read("../../lib/scenario-5/Makefile"),
     )
   },
   caption: [`Makefile` of Scenario 5],
@@ -789,7 +780,7 @@ dependencies could drift to newer versions.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-5.log"))
+    shell(file: "../../../resources/sourcecode/scenario-5.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -850,9 +841,8 @@ due to the nature of the build process. In scenario 6, we will build an
 #figure(
   {
     sourcefile(
-      file: "flake.nix",
       lang: "nix",
-      read("../../lib/scenario-6/flake.nix"),
+      file: "../../../lib/scenario-6/flake.nix",
     )
   },
   caption: [
@@ -862,7 +852,7 @@ due to the nature of the build process. In scenario 6, we will build an
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-6.log"))
+    shell(file: "../../../resources/sourcecode/scenario-6.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -887,9 +877,8 @@ right:
   figure(
     {
       sourcefile(
-        file: "hello-world.typst",
         lang: "typst",
-        read("../../lib/scenario-7/src/hello-world.typst"),
+        file: "../../../lib/scenario-7/src/hello-world.typst",
       )
     },
     caption: [Typst document],
@@ -908,7 +897,7 @@ twice yields different resulting files.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-7.log"))
+    shell(file: "../../../resources/sourcecode/scenario-7.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -930,9 +919,8 @@ discrepancy.
 #figure(
   {
     sourcefile(
-      file: "flake.nix",
       lang: "nix",
-      read("../../lib/scenario-8/flake.nix"),
+      file: "../../../lib/scenario-8/flake.nix",
     )
   },
   caption: [
@@ -944,7 +932,7 @@ Compile it twice and observe the outcome:
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-8.log"))
+    shell(file: "../../../resources/sourcecode/scenario-8.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -960,7 +948,7 @@ reproducible.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-8-rebuild.log"))
+    shell(file: "../../../resources/sourcecode/scenario-8-rebuild.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -976,7 +964,7 @@ issue and try to find the root cause of the discrepancy, for example, using
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-8-diffoscope.log"))
+    shell(file: "../../../resources/sourcecode/scenario-8-diffoscope.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
@@ -1000,9 +988,8 @@ that Typst is able to change the creation date of the output file.
 #figure(
   {
     sourcefile(
-      file: "hello-world.typst",
       lang: "typst",
-      read("../../lib/scenario-9/src/hello-world.typst"),
+      file: "../../../lib/scenario-9/src/hello-world.typst",
     )
   },
   caption: [On line 1, the Typst document date is now set to `none`],
@@ -1010,7 +997,7 @@ that Typst is able to change the creation date of the output file.
 
 #figure(
   {
-    shell(read("../../resources/sourcecode/scenario-9-rebuild.log"))
+    shell(file: "../../../resources/sourcecode/scenario-9-rebuild.log")
   },
   supplement: "Terminal session",
   kind: "terminal",
