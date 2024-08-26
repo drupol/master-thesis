@@ -1233,10 +1233,12 @@ effectively. Nevertheless, this reliance on external components leads to the
 accumulation of both direct and indirect dependencies, complicating the software
 supply chain significantly. The build environments, which encompass all
 necessary components and their precise versions for software compilation, become
-intricate and challenging to replicate across different systems and over time.
-This complexity is often described as #emph[dependency hell]. While Semantic
-Versioning (@package-managers) offers a strategy to mitigate these issues, it
-alone is insufficient to ensure reproducibility
+intricate and difficult to replicate across different systems and over time.
+This growing complexity, "politely called #emph[dependency management]"
+#cite(<8509170>, form:"normal") but more colloquially known as
+#emph[dependency hell], is a phenomenon that developers have become all too
+familiar with. While Semantic Versioning (@package-managers) offers a strategy
+to mitigate these issues, it alone is insufficient to ensure reproducibility
 #cite(<TSE2019>, form: "normal", supplement: [p.11]).
 
 To illustrate this concept, the graph in
