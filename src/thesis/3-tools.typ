@@ -819,7 +819,7 @@ they have abstracted this issue behind the scenes. The scenarios that will be
 used are:
 
 - Scenario 6: Building an #gls("OCI") image with Nix
-- Scenario 7: Compiling a Typst document tp a PDF file
+- Scenario 7: Compiling a Typst document to a PDF file
 - Scenario 8: Compiling a Typst document to a PDF file with Nix, showing how Nix
   abstracts the issue of non-deterministic builds.
 - Scenario 9: Compiling a Typst document with Nix, fixing the issue of
