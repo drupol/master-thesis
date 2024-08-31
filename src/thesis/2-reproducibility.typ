@@ -6,7 +6,6 @@
 #import "theme/leftblank.typ": *
 #import "theme/acknowledgement.typ": *
 #import "theme/abstract.typ": *
-#import "theme/glossary.typ": *
 #import "theme/infos.typ": *
 #import "theme/definition.typ": *
 

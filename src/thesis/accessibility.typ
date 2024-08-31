@@ -1,4 +1,4 @@
-#import "theme/glossary.typ": *
+#import "imports/preamble.typ": *
 
 #pagebreak(weak: true)
 

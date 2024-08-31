@@ -1,4 +1,4 @@
-#import "theme/glossary.typ": *
+#import "imports/preamble.typ": *
 
 #heading("Open Source", level: 1, outlined: false)
 

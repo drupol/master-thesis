@@ -8,9 +8,9 @@
 #import selectors: *
 
 #let getHeader() = {
-  locate(loc => {
+  context {
     let page-counter = counter(page)
-    let current = page-counter.at(loc).first()
+    let current = page-counter.at(here()).first()
 
     let chapter = hydra(
       1,
@@ -36,13 +36,13 @@
     if (chapter != none) {
       [#line(length: 100%, stroke: .2pt + rgb("#000000").lighten(65%))]
     }
-  })
+  }
 }
 
 #let getFooter() = {
-  locate(loc => {
+  context {
     let page-counter = counter(page)
-    let current = page-counter.at(loc).first()
+    let current = page-counter.at(here()).first()
     let items = ([#current], h(1fr), emph(title))
 
     if calc.even(current) {
@@ -50,7 +50,7 @@
     } else {
       items.rev()
     }.join()
-  })
+  }
 }
 
 #let chapterquote(
@@ -61,7 +61,7 @@
 ) = {
   pagebreak()
 
-  place(top + left, dx: 45pt, dy:45pt)[
+  place(top + left, dx: 45pt, dy: 45pt)[
     #rect(width: 50pt, height: 50pt, fill: rgb(125, 125, 125))
   ]
 
@@ -109,11 +109,13 @@
   disclaimer: none,
   acknowledgement: none,
   abstract: none,
-  glossary: none,
   accessibility: none,
   extra: none,
+  terms: (),
   body,
 ) = {
+  register-glossary(terms)
+
   // --- Page configuration ---
   set page(
     margin: page-margin,
@@ -154,7 +156,7 @@
   // --- Paragraphs ---
   // Source: https://typst.app/docs/guides/guide-for-latex-users/
   set par(justify: true)
-  show par: set block(spacing: 1em)
+  set par(spacing: 1em)
 
   show ref: it => {
     let el = it.element
@@ -208,7 +210,19 @@
   leftblank(weak: false)
   [#accessibility]
   [#extra]
-  [#glossary]
+  {
+    pagebreak(weak: true)
+
+    [
+      #{
+        heading(level: 1, "Glossary", outlined: false)
+      } <glossary>
+    ]
+
+    v(10mm)
+
+    print-glossary(show-all: true, terms)
+  }
 
   leftblank(weak: false)
 
@@ -271,7 +285,9 @@
     show math.equation: set text(weight: 400)
 
     // --- Figures ---
-    show figure.caption: it => [*#it.supplement #it.counter.display()*: #it.body]
+    show figure.caption: it => (
+      context [*#it.supplement #it.counter.display()*: #it.body]
+    )
     show figure.where(kind: "table"): set figure.caption(position: top)
     body
   }
