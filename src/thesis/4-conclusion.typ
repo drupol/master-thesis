@@ -81,7 +81,8 @@ control over environment configurations. The chapter concluded with a
 comparative analysis that ranked these strategies according to their
 reproducibility potential. This evaluation serves as a resource for developers
 making decisions about which tools and strategies to implement in their projects
-to enhance reproducibility.
+to enhance the stability, reliability and security of their developments through
+reproducibility.
 
 In the remaining sections of this conclusion chapter, we will summarise the key
 findings and the broader implications of my research. Additionally, I will
@@ -186,12 +187,13 @@ Additionally, networking configurations and capabilities can vary significantly,
 causing more complex setups and potential connectivity issues. Resource
 allocation and management can be less efficient on non-Linux platforms due to
 the intermediary VM layer. On Linux based architectures, the performance are not
-as good as running the software natively, but it is still acceptable for most
-use cases. However, while initiatives such as DevContainer
-#cite(<devcontainer>, form: "normal") are trying to provide a more integrated
-experience with Visual Studio Code #cite(<vscode>, form: "normal"), working with
-and inside a container adds an extra layer of complexity that can be challenging
-to manage, especially when dealing with networking, storage and security.
+as good as running the software natively without containerisation, but it
+remains acceptable for most use cases. Although initiatives like DevContainer
+#cite(<devcontainer>, form: "normal") aim to offer a more integrated experience
+with #glspl("IDE", long: false) (e.g., Visual Studio Code
+#cite(<vscode>, form: "normal")), working within a container introduces an
+additional layer of complexity. This can be particularly challenging to manage
+when dealing with aspects such as networking, storage, and security.
 
 Guix has been an interesting tool to evaluate. While the learning curve is
 steeper than Docker, the benefits are significant. I appreciated the strict and
