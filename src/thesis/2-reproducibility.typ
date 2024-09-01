@@ -1183,11 +1183,15 @@ cybersecurity across federal agencies and emphasises the integrity of the
 software supply chain.
 
 The European counterpart, the #gls("CRA") by the European Union reinforces these
-efforts by setting cybersecurity requirements for software. This act aims to
-reduce vulnerabilities in software products, enhancing security throughout their
-lifecycle. Software must come with clear information on their features and
-instructions for secure installation, operation, and maintenance. This strategy
-reflects a commitment to producing and using reproducible software.
+efforts by setting cybersecurity requirements for software. It is the first
+European regulation imposing minimum cybersecurity requirements on all
+interconnected products put on the European market
+#footnote[https://ccb.belgium.be/en/cyber-resilience-act-cra], to make them more
+secure. This act aims to reduce vulnerabilities in software products, enhancing
+security throughout their lifecycle. Software must come with clear information
+on their features and instructions for secure installation, operation, and
+maintenance. This strategy reflects a commitment to producing and using
+reproducible software.
 
 ==== Software Bill Of Materials
 
@@ -1215,6 +1219,20 @@ primarily in their focus, structure, and community support. The choice between
 #gls("SPDX") and #gls("CycloneDX") should be guided by an organisation's
 specific needs, whether the focus is on extensive licensing compliance or
 streamlined security and risk management within the software supply chain.
+
+The #gls("CRA") #cite(<CRA>, form:"normal") mandates the incorporation of a
+#gls("SBOM") in software products, highlighting its important role in bolstering
+software security and transparency. This requirement marks a significant
+advancement in enhancing the integrity and security of software, ensuring that
+all components are meticulously documented and traceable throughout the software
+lifecycle. While the #gls("CRA") encompasses various provisions, much of it will
+become enforceable three years after its passage, likely in early 2027.
+Specifically, regarding #gls("SBOM"), the following applies to products with
+digital elements available: #quote[identify and document vulnerabilities and
+components contained in products with digital elements, including by drawing up
+a software bill of materials in a commonly used and machine-readable format
+covering at the very least the top-level dependencies of the products]
+#cite(<CRA>, supplement: "Annex I, Part II (1)", form:"normal").
 
 ==== Supply Chain <ch2-supply-chain>
 
