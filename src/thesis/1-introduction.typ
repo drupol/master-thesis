@@ -191,16 +191,15 @@ exploring the depths and implications of reproducibility in #gls("SE").
 
 Here's a non-exhaustive list of projects I have contributed to:
 - In the Linux NixOS operating system:
-  - I created around 430 pull requests #cite(<drupolPrOnNix>, form: "normal").
-  - I made around 1800 reviews #cite(<drupolReviewOnNix>, form: "normal").
+  - I created around 500 pull requests #cite(<drupolPrOnNix>, form: "normal").
+  - I made around 2050 reviews #cite(<drupolReviewOnNix>, form: "normal").
   - After several months of dedicated effort, I developed a wrapper for building
     reproducible Composer-based PHP applications
     #cite(<drupolPhpBuilderOnNix>, form: "normal"), resolving a significant
     obstacle and positioning Nix as the preferred distribution for self-hosting
-    PHP applications. An updated version is in preparation
-    #cite(<drupolPhpBuilderOnNixV2>, form: "normal"), which will be more
-    user-friendly and will provide a more comprehensive solution for PHP
-    developers while being at least twice faster than the previous version.
+    PHP applications. An updated version has been published
+    #cite(<drupolPhpBuilderOnNixV2>, form: "normal"), but introduced instability
+    in the builds. I am currently working on a fix to address the issue.
 
 - In the PHP #cite(<php>, form: "normal") community:
   - In Composer #cite(<composer>, form: "normal"), the PHP package manager, I
