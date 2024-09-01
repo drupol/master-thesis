@@ -73,6 +73,14 @@
     desc: [The Hippocratic Licence 3.0 #cite(<HypocraticLicence>,form:"normal") is a software license that ensures that software is not used to contribute to human rights abuses or other unethical practices. It is designed to protect users and communities from the potential misuse of software.],
   ),
   (
+    key: "IDE",
+    short: "IDE",
+    long: "Integrated Development Environment",
+    plural: "IDEs",
+    longplural: "Integrated Development Environments",
+    desc: [An integrated development environment is a software application that provides comprehensive facilities to computer programmers for software development.],
+  ),
+  (
     key: "IEEE",
     short: "IEEE",
     long: "Institute of Electrical and Electronics Engineers",
