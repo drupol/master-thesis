@@ -1552,8 +1552,8 @@ standardisation. For example, in the Python realm#footnote[
   https://linuxfr.org/news/l-installation-et-la-distribution-de-paquets-python-1-4
 ], there have been and there are still multiple package manager ecosystems:
 `distutils`, `setuptools`, `pip`, `pypi`, `venv`, `conda`, `anaconda`, `poetry`,
-`hatch`, `rye`. Each of these has its own configuration file format, which can
-be used to specify the version of each dependency. However, there is no
+`hatch`, `rye`, `uv`. Each of these has its own configuration file format, which
+can be used to specify the version of each dependency. However, there is no
 standardisation which makes it difficult to ensure reproducibility. The same
 issue applies to operating system's package managers. For example, in Debian
 based distributions, there are multiple package managers: `apt`, `aptitude`,
