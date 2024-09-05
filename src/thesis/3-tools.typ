@@ -462,17 +462,24 @@ been pinned to a specific commit at lines 1 and 7.
 
   For example, specifying `FROM alpine:3.19.1` in a `Dockerfile` instead of
   `FROM alpine` ensures that the Alpine 3.19.1 version is always used, providing
-  stability. This mechanism applies similarly across different programming
+  stability. Additionally, to minimize the risk of variation, the `build-base`
+  package used in the `Dockerfile` (@ch3-dockerfile) is pinned to version
+  `0.5-r3`. This mechanism applies similarly across different programming
   language ecosystems. However, it is important to note that version tags, like
-  `3.19.1`, can be replaced or updated by the maintainers, potentially altering
-  the contents associated with a #emph[pinned] version.
+  `3.19.1` or `0.5-r3`, can be replaced or updated by the maintainers, without
+  users' awareness, potentially altering the contents of a "pinned" version and
+  impacting reproducibility.
 
-  To overcome this, the use of digests or checksums (@checksum) can anchor
-  images to a specific snapshot, offering a stronger guarantee of immutability.
-  For instance, specifying
-  `FROM alpine@sha256:c5b1261d6d3e43071626931fc004f70149baeba2c8ec672bd4f27761f8e1ad6b`
-  as shown in @ch3-dockerfile ensures that exactly the same image is used
-  consistently, regardless of any updates.
+  To mitigate this issue, using digests can ensure images are anchored to a
+  specific snapshot, offering a stronger guarantee of immutability. For
+  instance, specifying `FROM alpine@sha256:c5b1261d6d3e43071626931fc004f70149baeba2c8ec672bd4f27761f8e1ad6b`,
+  as shown in @ch3-dockerfile, ensures that the exact same image is used
+  consistently, regardless of any upstream updates. While using a digest to pin
+  the base image ensures immutability, the `apk` package manager does not
+  support a similar mechanism, only tags are supported. It's important to be
+  aware of the limitations of the tools (e.g., the `apk` package manager) used
+  in the base image, as even with precautions, variability in the build process
+  may still be introduced.
 ]
 
 Docker's containerization technology offers a way to create consistent software
