@@ -921,11 +921,18 @@
 }
 
 @inproceedings{Traugott2002,
-  author = {Traugott, Steve},
-  year = {2002},
-  month = {01},
-  pages = {99-120},
-  title = {Why Order Matters: Turing Equivalence in Automated Systems Administration.}
+  author    = {Traugott, Steve and Brown, Lance},
+  title     = {Why Order Matters: Turing Equivalence in Automated Systems Administration},
+  year      = {2002},
+  publisher = {USENIX Association},
+  address   = {USA},
+  abstract  = {Hosts in a well-architected enterprise infrastructure are self-administered; they perform their own maintenance and upgrades. By definition, self-administered hosts execute self-modifying code. They do not behave according to simple state machine rules, but can incorporate complex feedback loops and evolutionary recursion.The implications of this behavior are of immediate concern to the reliability, security, and ownership costs of enterprise and mission-critical computing. In retrospect, it appears that the same concerns also apply to manually-administered machines, in which administrators use tools that execute in the context of the target disk to change the contents of the same disk. The self-modifying behavior of both manual and automatic administration techniques helps explain the difficulty and expense of maintaining high availability and security in conventionally-administered infrastructures.The practice of infrastructure architecture tool design exists to bring order to this self-referential chaos. Conventional systems administration can be greatly improved upon through discipline, culture, and adoption of practices better fitted to enterprise needs. Creating a low-cost maintenance strategy largely remains an art. What can we do to put this art into the hands of relatively junior administrators? We think that part of the answer includes adopting a well-proven strategy for maintenance tools, based in part upon the theoretical properties of computing.In this paper, we equate self-administered hosts to Turing machines in order to help build a theoretical foundation for understanding this behavior. We discuss some tools that provide mechanisms for reliably managing self-administered hosts, using deterministic ordering techniques.Based on our findings, it appears that no tool, written in any language, can predictably administer an enterprise infrastructure without maintaining a deterministic, repeatable order of changes on each host. The runtime environment for any tool always executes in the context of the target operating system; changes can affect the behavior of the tool itself, creating circular dependencies. The behavior of these changes may be difficult to predict in advance, so testing is necessary to validate changed hosts. Once changes have been validated in testing they must be replicated in production in the same order in which they were tested, due to these same circular dependencies.The least-cost method of managing multiple hosts also appears to be deterministic ordering. All other known management methods seem to include either more testing or higher risk for each host managed.This paper is a living document; revisions and discussion can be found at Infrastructures.Org, a project of TerraLuna, LLC.},
+  booktitle = {Proceedings of the 16th USENIX Conference on System Administration},
+  pages     = {99–120},
+  numpages  = {22},
+  location  = {Philadelphia, PA},
+  series    = {LISA '02},
+  url       = {http://www.infrastructures.org/papers/turing/turing.html}
 }
 
 @article{SurveyFlakyTests,
