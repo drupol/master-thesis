@@ -10,13 +10,13 @@
         set text(font: "Virgil 3 YOFF")
         cetz.canvas({
           import cetz.plot
-          import cetz.draw: content
+          cetz.draw.set-style(axes: (shared-zero: false))
 
           plot.plot(
-            size: (3.5, 3),
-            y-label: [state],
-            x-label: [Time],
+            size: (3, 3),
             axis-style: "school-book",
+            y-label: [State],
+            x-label: [Time],
             x-tick-step: none,
             y-tick-step: none,
             x-min: 0,
@@ -24,16 +24,17 @@
             x-grid: true,
             y-min: 0,
             y-max: 500,
-            legend: "legend.north",
             {
               plot.add(
-                ((75, 75), (450, 300)),
+                ((75, 75), (450, 500)),
                 mark: "o",
+                mark-style: (stroke: blue, fill: white), mark-size: .1,
               )
               plot.add(
                 ((75, 50), (450, 125)),
                 mark: "o",
                 style: (stroke: (paint: red, dash: "dashed")),
+                mark-style: (stroke: red, fill: white), mark-size: .1,
               )
             },
           )
@@ -49,13 +50,17 @@
         set text(font: "Virgil 3 YOFF")
         cetz.canvas({
           import cetz.plot
-          import cetz.draw: *
+          cetz.draw.set-style(axes: (shared-zero: false))
 
           plot.plot(
-            size: (3.5, 3),
+            size: (3, 3),
             y-label: [State],
             x-label: [Time],
             axis-style: "school-book",
+            legend-style: (
+              default-position: "legend.north",
+              stroke: none,
+            ),
             x-tick-step: none,
             y-tick-step: none,
             x-min: 0,
@@ -63,19 +68,20 @@
             x-grid: true,
             y-min: 0,
             y-max: 500,
-            legend: "legend.north",
             {
               plot.add(
-                ((75, 75), (450, 300)),
-                style: (stroke: (paint: blue)),
+                ((75, 125), (450, 300)),
+                style: (stroke: (paint: red, dash: "dashed")),
+                mark-style: (stroke: red, fill: white), mark-size: .1,
                 mark: "o",
-                label: "actual",
+                label: "Target",
               )
               plot.add(
                 ((75, 500), (450, 325)),
+                style: (stroke: (paint: blue), mark: (fill: blue, stroke: blue)),
+                mark-style: (stroke: blue, fill: white), mark-size: .1,
                 mark: "o",
-                label: "target",
-                style: (stroke: (paint: red, dash: "dashed")),
+                label: "Actual",
               )
             },
           )
@@ -91,10 +97,10 @@
         set text(font: "Virgil 3 YOFF")
         cetz.canvas({
           import cetz.plot
-          import cetz.draw: *
+          cetz.draw.set-style(axes: (shared-zero: false))
 
           plot.plot(
-            size: (3.5, 3),
+            size: (3, 3),
             y-label: [State],
             x-label: [Time],
             axis-style: "school-book",
@@ -110,11 +116,13 @@
               plot.add(
                 ((75, 75), (450, 300)),
                 mark: "o",
+                mark-style: (stroke: blue, fill: white), mark-size: .1,
               )
               plot.add(
                 ((75, 50), (450, 275)),
                 mark: "o",
                 style: (stroke: (paint: red, dash: "dashed")),
+                mark-style: (stroke: red, fill: white), mark-size: .1,
               )
             },
           )
