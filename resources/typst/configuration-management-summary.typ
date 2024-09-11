@@ -1,5 +1,6 @@
 #import "../../src/thesis/imports/preamble.typ": *
 
+#set align(left)
 
 #table(
   columns: (1fr, 1fr, 1fr),
@@ -7,40 +8,35 @@
   table.header(
     [],
     table.vline(stroke: 1pt),
-    [#align(center)[Imperative]],
+    [#align(center)[*Imperative*]],
     table.vline(stroke: .5pt),
-    [#align(center)[Declarative]],
+    [#align(center)[*Declarative*]],
     table.hline(stroke: 1pt),
   ),
-  table.cell(align: horizon + center)[Divergent],
+  table.cell(align: horizon + center)[*Divergent*],
+  table.hline(stroke: .5pt),
   [
     - Shell commands
   ],
   [
     - Shell scripts
-    - Ansible
   ],
+  table.cell(align: horizon + center)[*Convergent*],
   table.hline(stroke: .5pt),
-  table.cell(align: horizon + center, rowspan: 2)[Convergent],
-  table.cell(colspan: 2)[
-    - Docker
-  ],
-  table.hline(stroke: .5pt + luma(200), start: 1),
   [
-    - Ansible
-    - Chef
-    - Shell scripts
+    - Ansible #cite(<ansible>,form:"normal")
+    - Chef #cite(<chef>,form:"normal")
+    - Docker #cite(<docker>,form:"normal")
   ],
   [
-    - Puppet
-    - Kubernetes
-    - Terraform
+    - Puppet #cite(<puppet>,form:"normal")
+    - Terraform #cite(<terraform>,form:"normal")
   ],
   table.hline(stroke: .5pt),
-  table.cell(align: horizon + center)[Congruent],
+  table.cell(align: horizon + center)[*Congruent*],
   [],
   [
-    - Nix
-    - Guix
+    - Guix #cite(<guixwebsite>,form:"normal")
+    - Nix #cite(<nix>,form:"normal")
   ],
 )
