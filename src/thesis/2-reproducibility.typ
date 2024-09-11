@@ -299,28 +299,32 @@ reproducibility.
 
 #definition(
   name: "def-reproducibility-build-time",
-  term: "Reproducibility at build time",
+  term: "Reproducibility at build-time",
 )[
-  Reproducibility at build time refers to the ability to consistently generate
-  the same executable or software artefact from a given source code across
-  different builds on different environments, across different space and time.
-  This aspect is crucial in ensuring that the software compilation process is
-  deterministic and immune to variances in development environments, compiler
-  versions, or build tools. It involves a meticulous standardisation and
-  documentation of the build environment and dependencies to guarantee that the
-  same executable is produced regardless of when or where the build occurs.
+  Reproducibility at build-time refers to the ability to produce an identical
+  build artefact #eg[a binary executable, library or container image]
+  consistently across multiple build attempts, environments (space), or points
+  in time. This means that given the same source code and build instructions,
+  the build process yields the same output every time, regardless of where or
+  when the build occurs. Achieving build-time reproducibility requires
+  controlling all aspects of the build environment, including dependency
+  versions, build tools, and any external resources, to eliminate variability
+  and non-determinism in the build process.
 ]
 
 #definition(
   name: "def-reproducibility-run-time",
-  term: "Reproducibility at run time",
+  term: "Reproducibility at run-time",
 )[
-  Reproducibility at run time addresses the consistency of software behaviour
-  and output when the software is executed in different environments or under
-  varying conditions. This type of reproducibility focuses on ensuring that the
-  software performs identically and produces the same results regardless of the
-  #gls("OS"), underlying hardware, or external dependencies it interacts
-  with during execution.
+  Reproducibility at run-time refers to the ability of a software system or
+  application to behave consistently and produce the same results each time it
+  is executed, given the same inputs and environment. This means that when the
+  software is run in different environments or at different times, it performs
+  identically, providing the same functionality and output. Achieving run-time
+  reproducibility involves ensuring that the execution environment is controlled
+  and consistent, including the #gls("OS"), hardware configuration, environment
+  variables, and any external dependencies or services the software interacts
+  with.
 ]
 
 To illustrate these phases, the C source code in @montecarlo-pi.c implements the
@@ -1458,9 +1462,203 @@ and at any point in the past or future​​​​.
   feasible to replicate the same output in a different environment, within the
   same architecture, achieving exact temporal replication of the build process
   is practically impossible. This temporal variability serves as a critical
-  indicator of potential difficulties in ensuring reproducibility across diverse
-  environments or machines.
+  indicator of potential difficulties in ensuring reproducibility across a
+  variety of environments or machines.
 ]
+
+==== Configuration Management
+
+Reproducibility relies on stable, consistent and well-maintained codebases but
+also heavily depends on stable, consistent and well-maintained environments as
+seen in (add ref to ch2-environments). In addition, a critical component is
+environment configuration management. Configuration management plays a critical
+role inensuring reproducibility by mitigating the non-deterministic behaviours
+introduced by configuration drifts.
+
+#info-box[
+  Configuration drifts occurs when changes to an environment
+  accumulate over time, leading to variations that deviate from the desired or
+  initial configuration state, thus introducing non-determinism.
+]
+
+This section examines key configuration management models and paradigms,
+their impact on reproducibility, and the tools that enforce these principles in
+modern software environments.
+
+Another source of non-determinism potentially arises from inconsistent
+environment configurations. The way environments are managed directly affects
+the environment behaviours and inherently, reproducibility. Therefore,
+configuration management plays an important role in mitigating non-determinism
+by ensuring that environments #eg[software installations or software builds]
+remain consistent in space and time.
+
+@Traugott2002 classify environment configuration management into three
+categories, each of which has a distinct impact on the level of determinism
+achieved:
+
+#figure(include "../../resources/typst/configuration-management.typ")
+
+===== Divergent Configuration Management
+
+In this model (@divergent-config-management), environments are typically managed
+by one or more individuals, which inevitably leads to configuration drifts and
+where the configurations deviate over time. This is an unavoidable process when
+system modifications are performed without centralised control, leading to
+unpredictable and non-deterministic behaviour, making reproducibility almost
+impossible. Reducing reliance on manual adjustments is essential to achieving
+higher levels of system predictability and reproducibility. This challenge can
+become particularly problematic in self-modifying environments, potentially
+leading to potential circular dependencies​ issues. A common example of such an
+environment is a newly installed operating system that initially shares a
+uniform configuration. Over time, as users customise their environments by
+running shell commands or scripts to suit individual preferences, the system’s
+state diverges from its original, well-defined configuration.
+
+===== Convergent Configuration Management
+
+Once a configuration drift is identified as an issue, the focus shifts towards
+convergence, bringing environments back to a known and consistent state, as
+illustrated in @convergent-config-management. While efforts are made to
+standardise configurations, achieving exact uniformity is extremely challenging,
+if not impossible. Environments may progressively "converge" towards a common
+state, but subtle differences can persist, introducing variability. To
+illustrate this model, we could think of an arbitrary environment that needs to
+be configured in a specific way, reach a particular well known state. For
+example, some specific dependencies has to be installed to run a particular
+service. Tools like Puppet #cite(<puppet>, form: "normal"), Chef
+#cite(<chef>, form: "normal"), Terraform #cite(<terraform>,form: "normal")
+and Ansible #cite(<ansible>, form: "normal") might help to achieve this goal.
+
+While convergent management offers flexibility in responding to unforeseen
+changes in the environment, it is prone to feedback loops that may cause
+unexpected behaviour​. Such feedback loops make it difficult to
+achieve complete reproducibility, as the system's progression towards the
+desired state is not guaranteed to follow a deterministic path.
+
+#info-box[
+  Feedback loops #cite(<ThoughtsOnSystemsManagementMethods>, form: "normal")
+  refer to a situation where the system continuously reacts to its own changes
+  or state modifications, often in an unintended or uncontrollable way.
+  Specifically, feedback loops occur when the system detects deviations from its
+  desired state and repeatedly attempts to correct them. However, each
+  corrective action may introduce new changes that the system tries to react to
+  again, leading to a continuous loop of corrections and adjustments. This
+  behaviour can be problematic because it may cause the system to never fully
+  stabilise or reach its intended state. Instead, the system keeps cycling
+  through adjustments based on previous changes, which can result in
+  unpredictable outcomes.
+]
+
+===== Congruent Configuration Management
+
+This approach in @congruent-config-management enforces strict consistency across
+all environments, ensuring that each environment maintains an identical
+configuration. By preventing configuration drift from the outset, congruent
+configuration management aims to eliminate one of the key sources of
+non-determinism. Maintaining identical setups across environments is a central
+goal of this model, providing the highest level of determinism and reliability
+in system behaviours.
+
+Congruent management, particularly through the adoption of immutable
+environment ((add ref to ch2-environments)), ensures that environment remain in a
+well-defined state, thus maximising reproducibility. However, this approach can
+lack the flexibility required for dynamic environments, where each minor
+adjustments may necessitate rebuilding the entire system. This limitation
+highlights the importance of carefully choosing between convergent and congruent
+approaches based on the environment's needs.
+
+#info-box[
+  Immutable environments ((add ref to ch2-environments)) are environments that are designed
+  to be unchangeable once they are created. They are often used in containers
+  #eg[Docker #cite(<docker>,form:"normal")], where the ability to quickly create
+  and destroy environments is essential. Immutable environments enhance
+  reproducibility and reliability, making them an ideal choice for environments
+  that require high levels of predictability and stability.
+]
+
+Tools such as Guix or Nix have demonstrated that it is possible to achieve a
+high degree of congruence while allowing controlled divergence in specific areas
+such as databases, logs or secret management​. This balance highlights the
+flexibility required to maintain reproducibility in environments that manage
+both static system components and dynamic data.
+
+On top of specifying configuration management models, we can also distinguish
+two different configuration management paradigms.
+
+#figure(
+  include "../../resources/typst/configuration-management-summary.typ",
+  caption: [Configuration Management Models and Paradigms],
+  kind: "table",
+  supplement: [Table],
+) <ch2-table-configuration-mgmt>
+
+===== Imperative Configuration Management
+
+This paradigm specifies the exact steps required to transition an environment
+from its current state to the desired state. Tools such as
+Ansible #cite(<ansible>, form: "normal"), Chef #cite(<chef>, form: "normal"),
+Docker #cite(<docker>, form: "normal"), and shell commands exemplify this
+paradigm. While imperative configurations enable the use of complex logic and
+conditional operations, they can be challenging to maintain due to their
+non-idempotent nature, meaning the same script may yield different results
+depending on the environment's initial state.
+
+The expressiveness of imperative tools allows for stronger assumptions about the
+environment's current state, which increases the likelihood of configuration
+drift as environments diverge over time. Ensuring consistency in an imperative
+approach often demands extensive error handling, validation checks, and retries
+to guarantee that, despite the sequential nature of the process, the system
+ultimately reaches a stable state.
+
+While this approach requires careful management to ensure consistency, providing
+detailed control at the expense of simplicity and predictability, some
+imperative tools can achieve a level of congruence, but this often comes at the
+expense of predictability and ease of maintenance, making them less suitable in
+environments where stability and simplicity are prioritised.
+
+===== Declarative Configuration Management
+
+Declarative configuration management ensure idempotence, meaning the same
+configuration can be applied multiple times without altering the environment
+beyond its intended state. This abstraction simplifies understanding and
+maintenance by allowing the system to determine the necessary actions to achieve
+the desired state. Tools such as Puppet #cite(<puppet>, form: "normal"),
+Kubernetes #cite(<kubernetes>,form: "normal"),
+Terraform #cite(<terraform>,form: "normal") and, under some conditions,
+Docker #cite(<docker>, form: "normal") are used to specify the desired end
+state. These tools typically feature their own specific #gls("DSL") to create
+high-level descriptions of the expected environment's state, as opposed to
+issuing imperative and procedural commands. The declarative approach mitigates
+the risk of configuration drift by prioritising idempotence, maintaining
+explicit dependency graphs, and ensuring a strong awareness of the current state
+of the environment​​ #cite(<HunterGCP>,form:"normal", supplement: [p. 348]).
+
+#info-box(kind: "note")[
+  In @ch2-table-configuration-mgmt, Docker #cite(<docker>, form: "normal") and
+  Ansible #cite(<ansible>, form: "normal") are classified as both declarative
+  and imperative. This dual classification arises from the fact that while
+  they often start with declarative configurations
+  #eg[a `Dockerfile`, a `playbook`], they can shift towards an imperative
+  approach when shell commands are introduced within those files to achieve
+  the desired state. As a result for Docker, the same `Dockerfile` may produce
+  different outcomes depending on the base image in use. Similarly, Ansible
+  might behave differently depending on the current state of the machine it
+  runs on. This dual nature can lead to non-idempotent behaviour, hindering
+  reproducibility.
+
+  Classifying these tools into distinct categories is far from being trivial.
+  Some tools feature comprehensive #gls("DSL") that are agnostic of the
+  underlying #gls("OS") and architecture, functioning independently without the
+  need of additional dependencies. In contrast, other tools rely on external
+  technologies, further complicating the distinction between imperative and
+  declarative configuration management. The boundaries between these paradigms
+  are often blurred, as it's rarely a matter of black and white. For instance,
+  while Nix and Guix are primarily categorised as declarative, they occasionally
+  rely on imperative languages #eg[shell scripts, Python] to perform specific
+  tasks. This illustrates that even tools labelled as declarative can integrate
+  aspects of imperative configuration management, adding nuance to their
+  classification.
+] <info-box-docker-classification>
 
 === Computational Environments <ch2-environments>
 
@@ -1816,163 +2014,6 @@ In @listing-date-format-flags, we methodically incorporate various flags, such
 as `-u`, and the `LC_ALL` environment variable to the `date` command. This
 approach ensures that the output we receive is predictable and consistent,
 regardless of the underlying system configuration.
-
-==== Environments and Configuration Management
-
-In the context of #gls("SE"), reproducibility not only relies on stable
-codebases but also heavily depends on consistent and well-maintained
-environments. Configuration management plays a critical role in ensuring
-reproducibility by mitigating the non-deterministic behaviours introduced by
-configuration drift.
-
-#info-box[
-Configuration drift occurs when changes to an environment
-accumulate over time, leading to variations that deviate from the desired or
-initial configuration state, thus introducing non-determinism.
-]
-
-This section examines key configuration management models,
-their impact on reproducibility, and the tools that enforce these principles in
-modern software environments.
-
-Another source of non-determinism arises from inconsistent environment
-configurations. The way environments are managed directly affects the
-environment behaviours and inherently, reproducibility. Therefore, configuration
-management plays an important role in mitigating non-determinism by ensuring
-that systems, software installations and software builds remain consistent
-across different environments.
-
-@Traugott2002 classify environment configuration management into three
-categories, each of which has a distinct impact on the level of determinism
-achieved:
-
-#figure(include "../../resources/typst/configuration-management.typ")
-
-===== Divergent Configuration Management
-
-In this model (@divergent-config-management), environments are typically managed
-by one or more individuals, which inevitably leads to
-#emph[configuration drift], where the configurations of different systems
-deviate over time. This is an unavoidable process when system modifications are
-performed without centralised control, leading to unpredictable and
-non-deterministic behaviour, making reproducibility almost impossible in complex
-infrastructures. Reducing reliance on manual adjustments is essential to
-achieving higher levels of system predictability and reproducibility.
-A common example of this model is a newly installed operating system that
-initially shares a uniform configuration. Over time, as users customise their
-environments to suit individual preferences, the system’s state diverges from
-its original, well-defined configuration.
-
-===== Convergent Configuration Management
-
-Once configuration drift is identified as an issue, the focus shifts towards
-convergence, bringing systems back to a known and consistent state, as
-illustrated in @convergent-config-management. While efforts are made to
-standardise configurations, achieving exact uniformity is extremely challenging,
-if not impossible. Systems may progressively "converge" towards a common
-configuration, but subtle differences can persist, introducing variability. The
-goal in this model is to minimise these variations as much as possible, though
-complete uniformity is rarely attained. To illustrate this model, we could think
-of an arbitrary environment that needs to be configured in a specific way, reach
-a particular well known state. For example, some specific dependencies has to be
-installed. Tools like Puppet #cite(<puppet>, form: "normal"),
-Kubernetes #cite(<kubernetes>,form: "normal"),
-Terraform #cite(<terraform>,form: "normal"),
-Ansible #cite(<ansible>, form: "normal").
-While convergent management offers flexibility in responding to unforeseen
-changes in the environment, it is prone to feedback loops that may cause
-unexpected behaviour​. Such feedback loops make it difficult to achieve complete
-reproducibility, as the system's progression towards the desired state is not
-guaranteed to follow a deterministic path.
-
-===== Congruent Configuration Management
-
-This approach in @congruent-config-management enforces strict consistency across
-all environments, ensuring that each environment maintains an identical
-configuration. By preventing configuration drift from the outset, congruent
-configuration management aims to eliminate one of the key sources of
-non-determinism. Maintaining identical setups across environments is a central
-goal of this model, providing the highest level of determinism and reliability
-in system behaviours. To illustrate this model, we could think of an arbitrary
-environment that needs to be configured in a specific way.
-
-Congruent management, particularly through the adoption of immutable
-environment, ensures that systems remain in a well-defined state, thus
-maximising reproducibility. However, this approach can lack the flexibility
-required for dynamic environments, where each minor adjustments may necessitate
-rebuilding the entire system. This limitation highlights the importance of
-carefully choosing between convergent and congruent approaches based on the
-system's needs.
-
-Tools such as Nix or Guix have demonstrated that it is possible to achieve a
-high degree of congruence while allowing controlled divergence in specific areas
-such as databases or secret management​. This balance between convergence and
-congruence highlights the flexibility required to maintain reproducibility in
-environments that manage both static system components and dynamic data.
-
-On top of specifying configuration management models, we can also distinguish
-two different configuration management paradigms.
-
-===== Imperative Configuration Management
-
-This paradigm specifies the exact steps required to transition an environment
-from its current state to the desired state. Tools such as
-Ansible #cite(<ansible>, form: "normal"), Chef #cite(<chef>, form: "normal"),
-Docker #cite(<docker>, form: "normal"), and shell scripts exemplify this
-methodology. While imperative configurations enable the use of complex logic and
-conditional operations, they can be challenging to maintain due to their
-non-idempotent nature, meaning the same script may yield different results
-depending on the environment's initial state. This approach requires careful
-management to ensure consistency and repeatability, providing detailed control
-at the expense of simplicity and predictability.
-
-The expressiveness of imperative tools allows for stronger assumptions about the
-environment's current state, which increases the likelihood of configuration
-drift as environments diverge over time. To achieve consistency in an imperative
-paradigm, it often necessitates extensive error handling, validation checks, and
-retries, ensuring that despite the stepwise nature of the process, the system
-reaches a stable end state.
-
-===== Declarative Configuration Management
-
-Declarative configuration management ensure idempotence, meaning the same
-configuration can be applied multiple times without altering the environment
-beyond its intended state. This abstraction simplifies understanding and
-maintenance by allowing the system to determine the necessary actions to achieve
-the desired state. Tools such as Puppet #cite(<puppet>, form: "normal"),
-Kubernetes #cite(<kubernetes>,form: "normal"),
-Terraform #cite(<terraform>,form: "normal") and, under some conditions,
-Docker #cite(<docker>, form: "normal") are used to specify the desired end
-state. These tools typically feature their own specific #gls("DSL") to create
-high-level descriptions of the desired environment's state, as opposed to
-issuing imperative and procedural commands. The declarative approach mitigates
-the risk of configuration drift by prioritising idempotence, maintaining
-explicit dependency graphs, and ensuring a strong awareness of the current state
-of the environment​​ #cite(<HunterGCP>,form:"normal", supplement: [p. 348]).
-
-While most configuration systems aim to be declarative to ensure reproducibility
-and idempotency, some imperative tools can achieve a level of congruence.
-However, this often comes at the cost of predictability and ease of maintenance,
-making them less favourable in environments where stability and simplicity are
-prioritised.
-
-#figure(
-  include "../../resources/typst/configuration-management-summary.typ",
-  caption: [Configuration Management Models and Paradigms],
-  kind: "table",
-  supplement: [Table],
-) <ch2-table-configuration-mgmt>
-
-#info-box(kind: "note")[
-  In @ch2-table-configuration-mgmt, Docker is classified as both declarative and
-  imperative. This dual classification arises from the fact that while Docker
-  often start with declarative configurations (e.g., a `Dockerfile`), it can
-  shift towards an imperative approach when imperative commands are introduced
-  within the `Dockerfile` to achieve the desired state. As a result, the same
-  `Dockerfile` may produce different outcomes depending on the base image in
-  use, leading to non-idempotent behaviour and ultimately hindering
-  reproducibility.
-]
 
 === Comparing Builds
 
