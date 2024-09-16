@@ -905,7 +905,7 @@ However in #gls("CS"), it makes sense to define what are pure and impure
 functions because a function might behave differently depending on the
 environment in which it is executed. Therefore, the purity of a function in the
 context of #gls("CS") is vital for understanding and managing side effects
-and state in software, it is a distinction that doesn't apply in the static,
+and state in software, it is a distinction that does not apply in the static,
 deterministic realm of pure mathematics.
 
 This distinction highlights how the same term can have different implications in
@@ -1320,9 +1320,9 @@ context of supply chain attacks, where the integrity of the software supply
 chain is compromised, potentially leading to widespread security breaches.
 
 It is paramount to have a clear understanding that having something reproducible
-doesn't mean that it is secure. It is a necessary condition but not a sufficient
-one. If a compiler is flawed, it might produce reproducible builds that could
-also be potentially insecure.
+does not mean that it is secure. It is a necessary condition but not a
+sufficient one. If a compiler is flawed, it might produce reproducible builds
+that could also be potentially insecure.
 
 #figure(
   {
@@ -1616,7 +1616,7 @@ It is important to ensure that processing multiple files in a stable order
 remains stable.
 
 Listing files relies on the low-level #gls("POSIX", long: false) call `readdir`, which itself is
-dependent on the filesystem in use and therefore doesn't guarantee any
+dependent on the filesystem in use and therefore does not guarantee any
 consistent ordering.
 
 #info-box(kind: "info")[
