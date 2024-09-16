@@ -1455,8 +1455,8 @@ and at any point in the past or future​​​​.
 In this section we will explore the sources of non-determinism in software
 builds and usage. The list is not exhaustive, it just includes the most common
 sources of non-determinism. The list is created from @abs-2104-06020's paper
-and information of the @ReproducibleBuildsOrg project, a website aiming at
-improving reproducible builds in software development.
+and information of the @ReproducibleBuildsOrg project, a global initiative
+aiming at improving reproducible builds in software development.
 
 ==== Randomness
 
