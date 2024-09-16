@@ -190,8 +190,8 @@ the intermediary VM layer. On Linux based architectures, the performance are not
 as good as running the software natively without containerisation, but it
 remains acceptable for most use cases. Although initiatives like DevContainer
 #cite(<devcontainer>, form: "normal") aim to offer a more integrated experience
-with #glspl("IDE", long: false) (e.g., Visual Studio Code
-#cite(<vscode>, form: "normal")), working within a container introduces an
+with #glspl("IDE", long: false) #eg[Visual Studio Code
+#cite(<vscode>, form: "normal")], working within a container introduces an
 additional layer of complexity. This can be particularly challenging to manage
 when dealing with aspects such as networking, storage, and security.
 
@@ -306,7 +306,7 @@ consistency and reliability in package management.
   choice. With two decades of maturity and robustness, the Nix ecosystem is, in
   my view, currently the best concept for implementing reproducibility in
   #gls("SE"). I am convinced that Nix, or a similar technology that embraces the
-  same principles (e.g., @guixwebsite, @lix, @aux), has the potential to
+  same principles #eg[@guixwebsite, @lix, @aux], has the potential to
   revolutionise the way software is built, used, audited, deployed and shared.
 ]
 
@@ -347,7 +347,7 @@ evaluation.
 Achieving software build reproducibility across different operating systems and
 architectures is not feasible for certain types of build outputs, typically
 binaries (@ch2-r13y-utopia). Binary build outputs depend on the #gls("CPU")
-architecture (e.g., `x86`, `ARM`) because converting source code into machine
+architecture #eg[`x86`, `ARM`] because converting source code into machine
 code uses a set of #gls("CPU") instructions directly inherited from the
 #gls("CPU") architecture. Therefore, obtaining binaries that are identical
 across every architecture is unlikely to occur. This inherent dependency means

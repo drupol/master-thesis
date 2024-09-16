@@ -540,8 +540,8 @@ of software without legal or technical barriers. This flexibility is vital for
 verifying and replicating studies, as researchers can adapt the software for
 their specific needs without restrictions, though some licences may impose
 certain conditions. Additionally, open-source development tools provide
-excellent record-keeping capabilities, like version control systems (e.g.,
-`git`, Mercurial, Pijul), enabling researchers to track changes and understand
+excellent record-keeping capabilities, like version control systems #eg[
+`git`, Mercurial, Pijul], enabling researchers to track changes and understand
 the context of each update. This aspect is essential for reproducing and
 validating research findings.
 
@@ -620,7 +620,7 @@ execution, a data analysis, a data transformation.
 - When evaluating a function, method, or procedure in any programming language,
   the input consists of the function itself along with its parameters. The
   output is the result of the function applied to these parameters, including
-  any potential side effects (e.g., changes in the program's state).
+  any potential side effects #eg[changes in the program's state].
 
 #definition(term: "Computation", name: "def-computation")[
   A computation $c$ is a set of one or more functions $f:I times E → R$.
@@ -689,9 +689,9 @@ operations.
 In #gls("CS") (@functions-in-cs), a function necessitates an environment in
 which it will be evaluated, effectively making, to some extent, this environment
 an extra input parameter per se. This computational environment, which
-encompasses the hardware (e.g., filesystem, memory, #gls("CPU", long: false)),
-software (e.g., #gls("OS", long: false)) and date (e.g., the current date and
-time), may influence the function's behaviour and output. Consequently,
+encompasses the hardware #eg[(filesystem, memory, #gls("CPU", long: false)],
+software #eg[#gls("OS", long: false)] and date #eg[the current date and
+time], may influence the function's behaviour and output. Consequently,
 functions in #gls("CS") are inherently designed to interact with and adapt to
 their environment, thereby making them dynamic and versatile but also
 potentially non-deterministic.
@@ -743,9 +743,9 @@ reproducibility of the computations discussed.
 In the context of software compilation, an output is correct when it faithfully
 reflects the state of its transitive inputs. Basically, the output represents
 all direct and indirect dependencies used in the build process.
-"Transitive inputs" refer to not only the direct inputs (e.g., source code) but
-also to the inputs of those inputs (e.g., libraries, frameworks, compilers, data
-resources).
+"Transitive inputs" refer to not only the direct inputs #eg[source code] but
+also to the inputs of those inputs #eg[libraries, frameworks, compilers, data
+resources].
 
 From the point of view of the software build process as shown in
 @inputs-outputs-part1, the inputs are all the source code files, configuration
@@ -1016,8 +1016,8 @@ unique" is used because, in theory, it is possible for two different inputs to
 produce the same hash, an occurrence known as a #emph[collision]. The ability to
 find collisions undermines the security of the algorithm. There are different
 types of algorithms to calculate a checksum
-(e.g., #gls("MD5", long: false), #gls("SHA1", long: false),
-#gls("SHA2", long: false)). Older algorithms like #gls("MD5", long: false) have
+#eg[#gls("MD5", long: false), #gls("SHA1", long: false),
+#gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
 known vulnerabilities that allow collision attacks while more modern algorithms
 like SHA-256 (#gls("SHA2", long: false)) are currently considered to be pretty
 much impossible to crack.
@@ -1371,7 +1371,7 @@ source code. This variance highlights a significant reproducibility challenge,
 as achieving bitwise identical results across architectures is *not feasible* as
 of today.
 
-Compilers (e.g., GCC, Rustc, #LaTeX, Typst) also play a role in software
+Compilers #eg[GCC, Rustc, #LaTeX, Typst] also play a role in software
 development, transforming high-level code into machine-level instructions.
 However, not all compilers operate deterministically. In this context,
 non-determinism refers to the phenomenon where compilers produce different

@@ -54,4 +54,10 @@
 ));h(-8.0pt)
 }
 
+#let eg = content => {
+  [
+    (e.g., #content)
+  ]
+}
+
 #show "LaTeX": LaTeX

@@ -477,7 +477,7 @@ been pinned to a specific commit at lines 1 and 7.
   consistently, regardless of any upstream updates. While using a digest to pin
   the base image ensures immutability, the `apk` package manager does not
   support a similar mechanism, only tags are supported. It's important to be
-  aware of the limitations of the tools (e.g., the `apk` package manager) used
+  aware of the limitations of the tools #eg[the `apk` package manager] used
   in the base image, as even with precautions, variability in the build process
   may still be introduced.
 ]
