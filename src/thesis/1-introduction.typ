@@ -175,12 +175,12 @@ of a totally new perspective on software development for me. It was through
 NixOS that I encountered the concept of "reproducibility" which opened my eyes
 to the possibilities of making and shipping more reliable software.
 
-We've seen in the previous section and will detail further in the next chapters
-that this concept originates from researchers and the scientific method. This
-concept can be transposed to #gls("CS") and more specifically to software
-development. In this context, reproducibility is the ability to recreate the
-exact same software, including the operating system, the compiler, the
-libraries, and the source code, in order to obtain the same results.
+We have seen in the previous section and will detail further in the next
+chapters that this concept originates from researchers and the scientific
+method. This concept can be transposed to #gls("CS") and more specifically to
+software development. In this context, reproducibility is the ability to
+recreate the exact same software, including the operating system, the compiler,
+the libraries, and the source code, in order to obtain the same results.
 
 For the past three years, the principle of reproducibility has totally
 revolutionised my approach to software development. This concept has captivated

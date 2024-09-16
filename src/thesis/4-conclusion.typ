@@ -556,8 +556,8 @@ scientific discourse and can lead to scepticism towards scientific claims. This
 is particularly critical when scientific research informs policy decisions in
 crucial areas such as public health and environmental conservation, where
 non-reproducible research could lead to misguided policies with far-reaching
-consequences. As we've seen through this document, the open sharing of data and
-methods is a cornerstone of reproducible research. It democratises access to
+consequences. As we have seen through this document, the open sharing of data
+and methods is a cornerstone of reproducible research. It democratises access to
 scientific knowledge, enabling a diverse range of researchers to participate in
 and contribute to scientific discovery, regardless of their geographical,
 political or institutional affiliations. Reproducibility acts as a bulwark

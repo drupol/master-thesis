@@ -11,8 +11,8 @@
   I must also express my heartfelt appreciation for my girlfriend, Sandra. Her
   endless patience and emotional support have been a constant source of
   strength, motivation and inspiration for me. However, it is with a touch of
-  melancholy that I acknowledge the sacrifices we've made in our personal lives
-  in order to pursue this overdue academic endeavour that I should have
+  melancholy that I acknowledge the sacrifices we have made in our personal
+  lives in order to pursue this overdue academic endeavour that I should have
   completed twenty years ago.
 
   I would like to thank my family and #emph[in-real-life] friends for their
