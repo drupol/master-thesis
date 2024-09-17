@@ -55,9 +55,7 @@
 }
 
 #let eg = content => {
-  [
-    (e.g., #content)
-  ]
+  [(e.g., #content)]
 }
 
 #show "LaTeX": LaTeX
