@@ -1462,6 +1462,116 @@ and at any point in the past or future​​​​.
   environments or machines.
 ]
 
+=== Computational Environments <ch2-environments>
+
+Environments where a build or computational process occurs can be broadly
+categorised into two types: hardware and software environments
+#cite(<strangfeld_2024>,form:"normal", supplement: "p. 8, section 2.1"). While
+software environments can be managed to a high degree of consistency, achieving
+reproducibility across different hardware, particularly different #gls("CPU")
+architectures #eg[`x86`, `ARM`], is essentially impossible. Tasks like
+instruction execution, memory management, and floating-point calculations are
+handled in distinct ways. Even small variations in these processes can lead to
+differences in output. Consequently, even with identical software, builds on
+different types of #gls("CPU") architectures will produce different results.
+When something is said to be reproducible, it typically means reproducible
+within the same #gls("CPU") architecture. Therefore, this section will focus
+exclusively on the reproducibility challenges within software environments.
+
+A software environment is composed of the #gls("OS"), along with the set of
+tools, libraries, and dependencies required to build or run a specific
+application. Any change in these components can influence the outcome of a
+software build or execution. For example, a minor update to a library could
+potentially alter the behaviour of the software, producing different outcomes
+across different executions​​ or more importantly, have an impact on the security
+level.
+
+To enhance reproducibility, it is critical to ensure that the software
+environment remains stable and unaltered during both the build and execution
+phases. Unfortunately, conventional #glspl("OS") such as Linux distributions,
+Microsoft Windows, and macOS, are #emph[mutable] by default. This mutability is
+primarily facilitated through package managers, which enable users to easily
+modify their environments by installing or upgrading software packages​. As a
+result, uncontrolled changes to dependencies may also lead to inconsistencies in
+software behaviour, or have a impact on the security level, undermining
+reproducibility​.
+
+To mitigate these issues, #emph[immutable] environments have gained popularity.
+Tools such as Docker #cite(<docker>,form:"normal") provide mechanisms to
+encapsulate software and their dependencies in containers, thus creating
+environments that remain unchanged after creation. Once a container is built, it
+can be shared and executed across different systems with the guarantee that it
+will function identically, given the same environment. This characteristic makes
+containers highly suitable for distributing software.
+
+Despite the advantages of immutability, it does not guarantee reproducibility.
+For instance, container images hosted on platforms like Docker Hub
+#cite(<dockerhub>,form:"normal"), including popular language interpreters
+#eg[Python, NodeJS, PHP], may not be reproducible due to non-deterministic
+steps during the image creation (at build-time). A specific example can be found
+in #ref(<python-dockerfile>), which runs `apt-get update` at line 4 as part of
+the image build process. Since `apt-get` pulls the very latest version of
+package index during its creation, it is impossible to build again the same
+image later, compromising Docker's build-time reproducibility.
+
+#figure(
+  sourcefile(
+    lang: "dockerfile",
+    read("../../resources/sourcecode/python.dockerfile"),
+  ),
+  caption: [
+    An excerpt of the Python's Dockerfile
+    #cite(<python-dockerfile-repository>,form:"normal") used to build the
+    #emph[official] Python images.
+  ],
+) <python-dockerfile>
+
+Docker images, once built, are immutable. While Docker does not guarantee
+build-time reproducibility, it has the potential to ensure run-time
+reproducibility, reflecting Docker's philosophy of
+#emph["build once, use everywhere"]. This distinction between build-time
+reproducibility (@def-reproducibility-build-time) and run-time reproducibility
+(@def-reproducibility-run-time) is key. Docker does not ensure that an image
+will always be built consistently, often due to the base image used (as
+declared in the `FROM` directive of a `Dockerfile`), as seen in
+@python-dockerfile. Although building a reproducible image with Docker is
+technically possible, it would require additional effort, external tools, and a
+more complex setup. Therefore, we assume that build-time reproducibility is not
+guaranteed, but the immutability of the environment significantly enhances the
+potential for reproducibility at run-time.
+
+#info-box(kind: "important")[
+  Docker is a platform for building, shipping, and running applications in
+  containers, with Docker Hub #cite(<dockerhub>,form:"normal") providing a large
+  repository of container images, which has significantly contributed to
+  Docker's popularity. Among these are the #emph[Docker "official" images]
+  #cite(<dockerofficialimages>,form:"normal"), which are curated and reviewed by
+  the Docker community. These images offer standard environments for popular
+  software and adhere to some quality standards.
+
+  However, the term "official" can be misleading. One might suggest that these
+  images are maintained by the original software's developers, but it's not
+  always the case. For example, the PHP Docker image
+  #cite(<dockerhubphpimage>,form:"normal") is not maintained by the core PHP
+  development team. This means updates or fixes may not be as prompt or
+  specific as if the software’s developers maintained the image.
+
+  While Docker vets these images for quality, responsibility for the contents
+  rests with the maintainers. Users should be aware that official images are not
+  immune to security risks or outdated software, and reviewing the documentation
+  for issues is advisable.
+
+  In summary, Docker "official" images are trusted but may not be maintained by
+  the original software’s maintainers. Developers must use them with caution and
+  full awareness, particularly in production environments, and ensure that the
+  images meet their security and functionality requirements.
+]
+
+Package managers are a critical aspect of the reproducibility puzzle since they
+can manage the state of a computational environment. Without proper control over
+how software and their dependencies are resolved and installed, achieving
+consistent and reproducible builds becomes difficult​.
+
 === Sources Of Non-Determinism
 
 In this section we will explore the sources of non-determinism in software
