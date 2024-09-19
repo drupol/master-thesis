@@ -264,7 +264,7 @@ reproducibility in #gls("CS").
   #emph[Space] and #emph[Time] are terms borrowed from physics. In the context
   of reproducibility in #gls("SE"), space refers to different systems, while
   time refers to different moments in time
-  #cite(<malka-hal-04430009>,form:"normal"). (more about that in
+  #cite(<malka-hal-04430009>, form: "normal"). (more about that in
   @def-deterministic-build).
 ]
 
@@ -454,7 +454,7 @@ We will explore this concept with Docker images as a primary example. Docker, a
 popular containerization platform, uses Dockerfiles (@dockerfile-example).
 Basically, a `Dockerfile` is a script with a set of instructions to build
 images. These images are then used to run software in a consistent environment.
-However, images on Docker Hub #cite(<dockerhub>, form:"normal") often present
+However, images on Docker Hub #cite(<dockerhub>, form: "normal") often present
 challenges to reproducibility. The reasons vary: some Dockerfiles are not
 publicly available but especially because most of them include significant
 variability in their build processes, making exact replication of the images
@@ -712,7 +712,7 @@ which it will be evaluated, effectively making, to some extent, this environment
 an extra input parameter per se. This computational environment, which
 encompasses the hardware #eg[filesystem, memory, #gls("CPU", long: false)],
 software #eg[#gls("OS", long: false)] and date #eg[the current date and
-time], may influence the function's behaviour and output. Consequently,
+  time], may influence the function's behaviour and output. Consequently,
 functions in #gls("CS") are inherently designed to interact with and adapt to
 their environment, thereby making them dynamic and versatile but also
 potentially non-deterministic.
@@ -766,7 +766,7 @@ reflects the state of its transitive inputs. Basically, the output represents
 all direct and indirect dependencies used in the build process.
 "Transitive inputs" refer to not only the direct inputs #eg[source code] but
 also to the inputs of those inputs #eg[libraries, frameworks, compilers, data
-resources].
+  resources].
 
 From the point of view of the software build process as shown in
 @inputs-outputs-part1, the inputs are all the source code files, configuration
@@ -1036,7 +1036,7 @@ produce the same hash, an occurrence known as a #emph[collision]. The ability to
 find collisions undermines the security of the algorithm. There are different
 types of algorithms to calculate a checksum
 #eg[#gls("MD5", long: false), #gls("SHA1", long: false),
-#gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
+  #gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
 known vulnerabilities that allow collision attacks while more modern algorithms
 like SHA-256 (#gls("SHA2", long: false)) are currently considered to be pretty
 much impossible to crack.
@@ -1051,7 +1051,7 @@ despite the theoretical potential for identical hashes of different inputs.
 #info-box(kind: "info")[
   Choosing an appropriate checksum algorithm is paramount due to the rapid
   evolution of computational power as described by Moore's Law
-  #cite(<4785860>,form:"normal"), which leads to previously secure algorithms
+  #cite(<4785860>, form: "normal"), which leads to previously secure algorithms
   becoming vulnerable as computing capabilities expand.
 
   For instance, #gls("MD5") checksums, once deemed secure for storing passwords,
@@ -1151,7 +1151,7 @@ The process of controlling the computational environment $E$ underscores a
 fundamental challenge in #gls("SE"): achieving reproducibility through
 environment standardisation. The environment includes specific factors such as
 hardware and software configurations #eg[#gls("CPU"), #gls("OS"), library
-versions, and runtime conditions] that directly affect a function's behaviour
+  versions, and runtime conditions] that directly affect a function's behaviour
 and output. The Monte Carlo simulation algorithm (@montecarlo-pi.c), exemplifies
 this challenge: it may be reproducible at build time but can exhibit variance at
 run time due to environmental factors.
@@ -1233,7 +1233,7 @@ primarily in their focus, structure, and community support. The choice between
 specific needs, whether the focus is on extensive licensing compliance or
 streamlined security and risk management within the software supply chain.
 
-The #gls("CRA") #cite(<CRA>, form:"normal") mandates the incorporation of a
+The #gls("CRA") #cite(<CRA>, form: "normal") mandates the incorporation of a
 #gls("SBOM") in software products, highlighting its important role in bolstering
 software security and transparency. This requirement marks a significant
 advancement in enhancing the integrity and security of software, ensuring that
@@ -1242,10 +1242,10 @@ lifecycle. While the #gls("CRA") includes multiple measures, most will take
 effect three years after its passage, likely in early 2027. Specifically,
 regarding #gls("SBOM"), the following applies to products with digital elements
 available: #quote[identify and document vulnerabilities and components contained
-in products with digital elements, including by drawing up a software bill of
-materials in a commonly used and machine-readable format covering at the very
-least the top-level dependencies of the products]
-#cite(<CRA>, supplement: "Annex I, Part II (1)", form:"normal").
+  in products with digital elements, including by drawing up a software bill of
+  materials in a commonly used and machine-readable format covering at the very
+  least the top-level dependencies of the products]
+#cite(<CRA>, supplement: "Annex I, Part II (1)", form: "normal").
 
 ==== Supply Chain <ch2-supply-chain>
 
@@ -1265,7 +1265,7 @@ direct and indirect dependencies, adding complexity to the software supply
 chain. The build environments, which encompass all necessary components and
 their precise versions for software compilation, become intricate and difficult
 to replicate across different systems and over time. This growing complexity,
-"politely called #emph[dependency management]" #cite(<8509170>, form:"normal")
+"politely called #emph[dependency management]" #cite(<8509170>, form: "normal")
 but more colloquially known as #emph[dependency hell], is a phenomenon that
 developers have become all too familiar with. While Semantic Versioning
 (@package-managers) offers a strategy to mitigate these issues, it alone is
@@ -1377,7 +1377,7 @@ frequently unattainable in practice.
 
 One of the primary impediments in achieving reproducibility lies in the
 dependency on hardware architecture. Software compiled for different
-architectures, such as `x86` and `ARM,` inherently produces disparate binaries #cite(<patterson2013>,form:"normal").
+architectures, such as `x86` and `ARM,` inherently produces disparate binaries #cite(<patterson2013>, form: "normal").
 These differences stem from the instruction sets and optimizations that are
 specific to each platform, leading to divergent outputs despite using identical
 source code. This variance highlights a significant reproducibility challenge,
@@ -1461,6 +1461,116 @@ and at any point in the past or future​​​​.
   indicator of potential difficulties in ensuring reproducibility across diverse
   environments or machines.
 ]
+
+=== Computational Environments <ch2-environments>
+
+Environments where a build or computational process occurs can be broadly
+categorised into two types: hardware and software environments
+#cite(<strangfeld_2024>, form: "normal", supplement: "p. 8, section 2.1"). While
+software environments can be managed to a high degree of consistency, achieving
+reproducibility across different hardware, particularly different #gls("CPU")
+architectures #eg[`x86`, `ARM`], is essentially impossible. Tasks like
+instruction execution, memory management, and floating-point calculations are
+handled in distinct ways. Even small variations in these processes can lead to
+differences in output. Consequently, even with identical software, builds on
+different types of #gls("CPU") architectures will produce different results.
+When something is said to be reproducible, it typically means reproducible
+within the same #gls("CPU") architecture. Therefore, this section will focus
+exclusively on the reproducibility challenges within software environments.
+
+A software environment is composed of the #gls("OS"), along with the set of
+tools, libraries, and dependencies required to build or run a specific
+application. Any change in these components can influence the outcome of a
+software build or execution. For example, a minor update to a library could
+potentially alter the behaviour of the software, producing different outcomes
+across different executions​​ or more importantly, have an impact on the security
+level.
+
+To enhance reproducibility, it is critical to ensure that the software
+environment remains stable and unaltered during both the build and execution
+phases. Unfortunately, conventional #glspl("OS") such as Linux distributions,
+Microsoft Windows, and macOS, are #emph[mutable] by default. This mutability is
+primarily facilitated through package managers, which enable users to easily
+modify their environments by installing or upgrading software packages​. As a
+result, uncontrolled changes to dependencies may also lead to inconsistencies in
+software behaviour, or have a impact on the security level, undermining
+reproducibility​.
+
+To mitigate these issues, #emph[immutable] environments have gained popularity.
+Tools such as Docker #cite(<docker>, form: "normal") provide mechanisms to
+encapsulate software and their dependencies in containers, thus creating
+environments that remain unchanged after creation. Once a container is built, it
+can be shared and executed across different systems with the guarantee that it
+will function identically, given the same environment. This characteristic makes
+containers highly suitable for distributing software.
+
+Despite the advantages of immutability, it does not guarantee reproducibility.
+For instance, container images hosted on platforms like Docker Hub
+#cite(<dockerhub>, form: "normal"), including popular language interpreters
+#eg[Python, NodeJS, PHP], may not be reproducible due to non-deterministic
+steps during the image creation (at build-time). A specific example can be found
+in #ref(<python-dockerfile>), which runs `apt-get update` at line 4 as part of
+the image build process. Since `apt-get` pulls the very latest version of
+package index during its creation, it is impossible to build again the same
+image later, compromising Docker's build-time reproducibility.
+
+#figure(
+  sourcefile(
+    lang: "dockerfile",
+    file: "../../../resources/sourcecode/python.dockerfile",
+  ),
+  caption: [
+    An excerpt of the Python's Dockerfile
+    #cite(<python-dockerfile-repository>, form: "normal") used to build the
+    #emph[official] Python images.
+  ],
+) <python-dockerfile>
+
+Docker images, once built, are immutable. While Docker does not guarantee
+build-time reproducibility, it has the potential to ensure run-time
+reproducibility, reflecting Docker's philosophy of
+#emph["build once, use everywhere"]. This distinction between build-time
+reproducibility (@def-reproducibility-build-time) and run-time reproducibility
+(@def-reproducibility-run-time) is key. Docker does not ensure that an image
+will always be built consistently, often due to the base image used (as
+declared in the `FROM` directive of a `Dockerfile`), as seen in
+@python-dockerfile. Although building a reproducible image with Docker is
+technically possible, it would require additional effort, external tools, and a
+more complex setup. Therefore, we assume that build-time reproducibility is not
+guaranteed, but the immutability of the environment significantly enhances the
+potential for reproducibility at run-time.
+
+#info-box(kind: "important")[
+  Docker is a platform for building, shipping, and running applications in
+  containers, with Docker Hub #cite(<dockerhub>, form: "normal") providing a large
+  repository of container images, which has significantly contributed to
+  Docker's popularity. Among these are the #emph[Docker "official" images]
+  #cite(<dockerofficialimages>, form: "normal"), which are curated and reviewed by
+  the Docker community. These images offer standard environments for popular
+  software and adhere to some quality standards.
+
+  However, the term "official" can be misleading. One might suggest that these
+  images are maintained by the original software's developers, but it's not
+  always the case. For example, the PHP Docker image
+  #cite(<dockerhubphpimage>, form: "normal") is not maintained by the core PHP
+  development team. This means updates or fixes may not be as prompt or
+  specific as if the software’s developers maintained the image.
+
+  While Docker vets these images for quality, responsibility for the contents
+  rests with the maintainers. Users should be aware that official images are not
+  immune to security risks or outdated software, and reviewing the documentation
+  for issues is advisable.
+
+  In summary, Docker "official" images are trusted but may not be maintained by
+  the original software’s maintainers. Developers must use them with caution and
+  full awareness, particularly in production environments, and ensure that the
+  images meet their security and functionality requirements.
+]
+
+Package managers are a critical aspect of the reproducibility puzzle since they
+can manage the state of a computational environment. Without proper control over
+how software and their dependencies are resolved and installed, achieving
+consistent and reproducible builds becomes difficult​.
 
 === Sources Of Non-Determinism
 
@@ -1673,7 +1783,7 @@ Often, timestamps are used to approximate which version of the source were
 built. Since file timestamps are volatile, the source code needs to be tracked
 more accurately than just a timestamp. Just like for version information, the
 solution would be to extract the date from a dedicated file like a changelog, or
-a specific commit #cite(<nixpkgs-pull-256270> ,form: "normal").
+a specific commit #cite(<nixpkgs-pull-256270>, form: "normal").
 
 To circumvent this issue, `SOURCE_DATE_EPOCH` is a specific environment variable
 convention for pinning timestamps to a specific value that has been introduced
@@ -1715,7 +1825,7 @@ especially when those builds are not identical. This section introduces a tool
 designed specifically for this purpose.
 
 Developed under the umbrella of the @ReproducibleBuildsOrg effort, `diffoscope`
-#cite(<diffoscope>, form:"normal") is a comprehensive, open-source tool that
+#cite(<diffoscope>, form: "normal") is a comprehensive, open-source tool that
 excels in comparing files and directories. Its unique capability to recursively
 unpack archives of various types and transform binary formats into a
 human-readable form makes it an indispensable tool for software comparison. It
