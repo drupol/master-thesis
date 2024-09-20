@@ -9,6 +9,7 @@
       flake = false;
       url = "github:typst/packages";
     };
+    pkgs-by-name-for-flake-parts.url = "github:drupol/pkgs-by-name-for-flake-parts";
   };
 
   outputs =
@@ -18,12 +19,11 @@
 
       imports = [
         ./nix/imports/pkgs.nix
-        ./nix/imports/overlay.nix
-        ./nix/imports/formatter.nix
+        inputs.pkgs-by-name-for-flake-parts.flakeModule
       ];
 
       perSystem =
-        { pkgs, lib, ... }:
+        { pkgs, lib, config, ... }:
         let
           # Change here to typst-dev if needed
           typst = pkgs.nixpkgs-unstable.typst;
@@ -39,8 +39,22 @@
             ];
           };
 
-          typst-wrapper = pkgs.typst-wrapper typst pkgs.typst-packages fontsConf;
-          typstyle = pkgs.typstyle;
+          typst-wrapper-factory =
+            typstDrv: typst-packages: typstFontPaths:
+            pkgs.writeShellApplication {
+              name = "typst-wrapper";
+
+              runtimeInputs = [
+                typstDrv
+                typst-packages
+              ];
+
+              text = ''
+                TYPST_FONT_PATHS=${typstFontPaths} XDG_CACHE_HOME=${typst-packages} ${lib.getExe typstDrv} "$@"
+              '';
+            };
+
+          typst-wrapper = typst-wrapper-factory typst config.packages.typst-packages fontsConf;
 
           mkBuildDocumentDrv =
             documentName:
@@ -120,37 +134,21 @@
             lib.filterAttrs (k: v: (v == "directory")) (builtins.readDir ./src)
           )) (d: mkBuildDocumentDrv d);
 
-          signPDF = pkgs.writeShellApplication {
-            name = "sign-pdf";
-
-            runtimeInputs = [ pkgs.open-pdf-sign ];
-
-            text = ''
-              open-pdf-sign \
-                --certificate cert.pem \
-                --key private-key.pem \
-                --no-hint \
-                --timestamp \
-                --tsa http://timestamp.digicert.com \
-                --baseline-lt \
-                --add-page \
-                --page \
-                -1 \
-                --width 19 \
-                "$@"
-            '';
-          };
-
-          scriptDrvs = { "sign-pdf" = signPDF; } // lib.foldl' (
-            a: i:
-            a
-            // {
-              "build-${i}" = mkBuildDocumentScript i;
-              "watch-${i}" = mkWatchDocumentScript i;
+          scriptDrvs =
+            {
+              "sign-pdf" = config.packages.sign-pdf;
             }
-          ) { } (lib.attrNames documentDrvs);
+            // lib.foldl' (
+              a: i:
+              a
+              // {
+                "build-${i}" = mkBuildDocumentScript i;
+                "watch-${i}" = mkWatchDocumentScript i;
+              }
+            ) { } (lib.attrNames documentDrvs);
         in
         {
+          pkgsDirectory = ./nix/pkgs;
           packages = documentDrvs;
 
           devShells.default = pkgs.mkShellNoCC {
@@ -165,7 +163,7 @@
               echo "Typst version: ${typst.version}"
               echo "Typst bin: ${lib.getExe typst}"
               echo "Typst wrapper bin: ${lib.getExe typst-wrapper}"
-              echo "Typst packages directory: ${pkgs.typst-packages}"
+              echo "Typst packages directory: ${config.packages.typst-packages}"
               echo "Typst fonts directory: ${fontsConf}"
             '';
 

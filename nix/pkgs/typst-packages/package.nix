@@ -1,9 +1,9 @@
-{ stdenvNoCC, src }:
+{ stdenvNoCC, inputs }:
 
 stdenvNoCC.mkDerivation {
   name = "typst-packages";
 
-  inherit src;
+  src = inputs.typst-packages;
 
   dontBuild = true;
 

@@ -7,11 +7,8 @@
         inherit system;
         overlays = [
           inputs.typst-dev.overlays.default
-          inputs.self.overlays.default
           (final: prev: { nixpkgs-unstable = import inputs.nixpkgs-unstable { inherit system; }; })
         ];
-        config = {
-        };
       };
     };
 }
