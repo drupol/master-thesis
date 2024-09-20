@@ -461,14 +461,14 @@ been pinned to a specific commit at lines 1 and 7.
   issues or conflicts caused by differing versions of dependencies.
 
   For example, specifying `FROM alpine:3.19.1` in a `Dockerfile` instead of
-  `FROM alpine` ensures that the Alpine 3.19.1 version is always used, providing
-  stability. Additionally, to minimize the risk of variation, the `build-base`
-  package used in the `Dockerfile` (@ch3-dockerfile) is pinned to version
-  `0.5-r3`. This mechanism applies similarly across different programming
-  language ecosystems. However, it is important to note that version tags, like
-  `3.19.1` or `0.5-r3`, can be replaced or updated by the maintainers, without
-  users' awareness, potentially altering the contents of a "pinned" version and
-  impacting reproducibility.
+  `FROM alpine` ensures that Alpine image at version 3.19.1 is always used,
+  providing stability. Additionally, to minimize the risk of variation, the
+  `build-base` package used in the `Dockerfile` (@ch3-dockerfile) is pinned to
+  version `0.5-r3`. This mechanism applies similarly across different
+  programming language ecosystems. However, it is important to note that version
+  tags, like `3.19.1` or `0.5-r3`, can be replaced or updated by the
+  maintainers, without users' awareness, potentially altering the contents of a
+  "pinned" version and impacting reproducibility.
 
   To mitigate this issue, using digests can ensure images are anchored to a
   specific snapshot, offering a stronger guarantee of immutability. For
