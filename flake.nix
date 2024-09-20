@@ -23,7 +23,12 @@
       ];
 
       perSystem =
-        { pkgs, lib, config, ... }:
+        {
+          pkgs,
+          lib,
+          config,
+          ...
+        }:
         let
           # Change here to typst-dev if needed
           typst = pkgs.nixpkgs-unstable.typst;
