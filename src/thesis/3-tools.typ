@@ -689,8 +689,8 @@ demonstrated in @ch3-default-nix at line 2, we manually enforce a very specific
 version of the `pkgs` variable, a specific snapshot of the Nix package
 repository that fixes the versions of all packages and libraries. Similarly to
 the process outlined in @ch3-docker-build-env for Docker, this approach, known
-as "dependency pinning," ensures consistency and reproducibility in the build
-environment.
+as #emph[dependency pinning], ensures consistency and reproducibility in the
+build environment.
 
 #figure(
   {
