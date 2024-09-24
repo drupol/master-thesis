@@ -1035,9 +1035,9 @@ of different inputs.
 
 #info-box(kind: "info")[
   Choosing an appropriate checksum algorithm is paramount due to the rapid
-  evolution of computational power as described by Moore's Law, which leads to
-  previously secure algorithms becoming vulnerable as computing capabilities
-  expand.
+  evolution of computational power as described by Moore's Law
+  #cite(<4785860>,form:"normal"), which leads to previously secure algorithms
+  becoming vulnerable as computing capabilities expand.
 
   For instance, #gls("MD5") checksums, once deemed secure for storing passwords,
   are now easily compromised through brute force attacks. This underlines the
