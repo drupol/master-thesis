@@ -689,7 +689,7 @@ operations.
 In #gls("CS") (@functions-in-cs), a function necessitates an environment in
 which it will be evaluated, effectively making, to some extent, this environment
 an extra input parameter per se. This computational environment, which
-encompasses the hardware #eg[(filesystem, memory, #gls("CPU", long: false)],
+encompasses the hardware #eg[filesystem, memory, #gls("CPU", long: false)],
 software #eg[#gls("OS", long: false)] and date #eg[the current date and
 time], may influence the function's behaviour and output. Consequently,
 functions in #gls("CS") are inherently designed to interact with and adapt to
