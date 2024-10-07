@@ -656,10 +656,10 @@ operations.
         cetz.canvas({
           import cetz.draw: *
 
-          rect((-3, 3), (3, -3), stroke: white)
+          rect((-3, 3), (3, -3))
           circle((0, 0), radius: 2)
           content((0, -2.25), "Functions")
-          content((0, -3.25), text(fill: white, "Environment"))
+          content((0, -3.25), "Mathematical environment")
         })
       },
       caption: [Functions in the context of Mathematics],
