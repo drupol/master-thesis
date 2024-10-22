@@ -31,7 +31,7 @@
     Complexity:
 
     The process of making software reproducible can be complex, especially if it
-    hasn't been setup from the beginning of the project.
+    has not been setup from the beginning of the project.
   ],
   table.hline(stroke: .5pt),
   [

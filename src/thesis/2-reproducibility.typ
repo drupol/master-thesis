@@ -1466,7 +1466,7 @@ Using a predetermined value as a seed ensures that the same random data is
 generated each time the computation is executed, thereby guaranteeing
 reproducibility.
 
-Hardcoding the seed in the source code would be nonsensical because it wouldn't
+Hardcoding the seed in the source code would be nonsensical because it would not
 be random any more, the seed should be passed as a parameter to the computation.
 This parameter can be passed as a command-line argument, an environment
 variable, or a configuration file, leaving the responsibility to the user to
