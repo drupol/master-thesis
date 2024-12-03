@@ -373,9 +373,38 @@ probabilistic approach to problem-solving.
   kind: "terminal",
 )
 
-In practice, for certain applications, runtime reproducibility can be attained
-by controlling the random number generator, specifically by setting a fixed seed
-as an input parameter.
+To address the challenge of reproducibility in practice, identifying and
+isolating the sources of randomness is crucial. These sources can vary widely
+depending on the implementation and may include system time, hardware random
+number generators, or other external factors. By isolating these components and
+enabling control by the end user (e.g., by passing these sources of randomness
+as parameters), it becomes possible to deterministically control the random
+sequence. This ensures that, given the same seed, the algorithm produces
+identical outputs across executions, preserving its stochastic nature while
+enabling reproducibility.
+
+In the specific case of the Monte Carlo algorithm from @montecarlo-pi.c, this
+challenge can often be resolved by passing a seed as an input parameter to the
+random number generator, as seen in @montecarlo-pi-fixed.c. The seed is used to
+initialise the random number generator, ensuring that the same sequence of
+random numbers is generated across different runs. This subtle and simple
+adjustment provides a deterministic framework while maintaining the
+probabilistic essence of the algorithm.
+
+Adopting such practices aligns with the established principles of good software
+development. These practices promote determinism and predictability, which are
+key attributes for creating reliable and maintainable systems in the long run.
+
+#figure(
+  {
+    sourcefile(
+      file: "montecarlo-pi.c",
+      lang: "c",
+      read("../../resources/sourcecode/montecarlo-pi-fix.c"),
+    )
+  },
+  caption: [`montecarlo-pi-fix.c` with deterministic random number generator],
+) <montecarlo-pi-fixed.c>
 
 In the next example, the source code is not reproducible at build time and we
 might erroneously think that the program is reproducible at run time.
