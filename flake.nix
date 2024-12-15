@@ -18,6 +18,7 @@
       systems = import inputs.systems;
 
       imports = [
+        inputs.pkgs-by-name-for-flake-parts.flakeModule
         ./nix/imports/pkgs.nix
         inputs.pkgs-by-name-for-flake-parts.flakeModule
       ];
@@ -162,6 +163,9 @@
               typst-wrapper
               pkgs.gnuplot
               pkgs.pympress
+              config.packages.weasel
+              config.packages.passive
+              config.packages.dups
             ];
 
             shellHook = ''
