@@ -40,7 +40,7 @@
               inriafonts
               fg-virgil
               liberation_ttf
-              inconsolata-nerdfont
+              nerd-fonts.inconsolata
               newcomputermodern
             ];
           };
@@ -56,7 +56,7 @@
               ];
 
               text = ''
-                TYPST_FONT_PATHS=${typstFontPaths} XDG_CACHE_HOME=${typst-packages} ${lib.getExe typstDrv} "$@"
+                TYPST_FONT_PATHS=${typstFontPaths} TYPST_PACKAGE_PATH=${typst-packages} ${lib.getExe typstDrv} "$@"
               '';
             };
 
@@ -162,7 +162,6 @@
               typst
               typst-wrapper
               pkgs.gnuplot
-              pkgs.pympress
               config.packages.weasel
               config.packages.passive
               config.packages.dups
