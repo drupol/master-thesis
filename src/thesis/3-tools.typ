@@ -629,13 +629,13 @@ create a different build environment.
 
 == Evaluation 4 - Nix <ch3-tool4>
 
-@nix is a revolutionary package management system that dramatically reshapes the
-landscape of software construction, consumption, deployment and management. Its
-distinctive methodology, grounded in the principles introduced in @Dolstra2006,
-marked its inception, setting a new standard for handling software packages.
-Central to Nix's core is its use of the Nix language, a domain specific
-Turing-complete language that facilitates the description of software packages,
-their dependencies, and the environments in which they operate.
+@nix is a groundbreaking transactional package management system that reshapes
+the processes of software construction, deployment, and management. Introduced
+in 2003 as part of the PhD thesis of @Dolstra2006, Nix set a new standard for
+handling software packages. At its core lies the Nix language, a
+Turing-complete, domain-specific language designed to define software packages,
+their dependencies, and the environments in which they operate with precision
+and reproducibility.
 
 #info-box(ref: "def-turing-complete")[
   The term "Turing-complete" is named after the British mathematician and
@@ -659,9 +659,9 @@ builds.
 
 Nix emphasises a deterministic build environment, allowing developers to specify
 and isolate dependencies explicitly. This method significantly mitigates
-#emph["it works on my machine"] issues by providing a high degree of control over
-the build environment. Nix's strength in ensuring reproducibility comes with the
-need to embrace its unique approach to system configuration and package
+#emph["it works on my machine"] issues by providing a high degree of control
+over the build environment. Nix's strength in ensuring reproducibility comes
+with the need to embrace its unique approach to system configuration and package
 management, representing a paradigm shift for new users.
 
 #info-box(kind: "conclusion")[
@@ -836,10 +836,10 @@ used are:
   language that compiles to #gls("PDF") or #gls("SVG"). It was initiated in 2019
   at the Technical University of Berlin by Laurenz Mädje and Martin Haug.
   Developed in Rust, this programmable markup language for typesetting became
-  the subject of their master's theses, which they wrote in 2022. After several
-  years of closed-source development, Typst was open-sourced and released to the
-  public in 2023. Despite being relatively recent and lacking a stable version,
-  Typst's maturity has allowed it to be used for writing this master's thesis.
+  the subject of their master's theses, which they wrote in 2022. After years of
+  closed-source development, Typst was open-sourced and released to the public
+  in 2023. Despite being relatively recent and lacking a stable version, Typst's
+  maturity has allowed it to be used for writing this master's thesis.
 ]
 
 Building #gls("OCI") images using Docker is a common use case in the software

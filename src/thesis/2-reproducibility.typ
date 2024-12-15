@@ -233,12 +233,12 @@ distinct category.
 ]
 
 The term #emph[reproducibility] in the context of #gls("CS") has been refined
-and explored in many subsequent works and identifying a single #emph[first]
-definition can be challenging due to the evolution of the concept over times.
-According to @Barba2018, who conducted a detailed article on the terminology
-history, the most appropriate terminology (@acm_repeatability,
-@acm_reproducibility, @acm_replicability) to describe reproducibility in the
-context of #gls("CS") is the definitions derived from
+and explored in numerous works and identifying a single #emph[first] definition
+can be challenging due to the evolution of the concept over times. According to
+@Barba2018, who conducted a detailed article on the terminology history, the
+most appropriate terminology (@acm_repeatability, @acm_reproducibility,
+@acm_replicability) to describe reproducibility in the context of #gls("CS") is
+the definitions derived from
 @acm_artifact_review_badging[Artifact Review and Badging].
 
 #definition(
@@ -248,7 +248,7 @@ context of #gls("CS") is the definitions derived from
   The measurement can be obtained with stated precision by a different team, a
   different measuring system, in a different location on multiple trials. For
   computational experiments, this means that an independent group can obtain the
-  same result using artefacts which they develop completely independently.
+  same result using artefacts which they develop independently.
 ]
 
 In the context of this document, @reproducibility is the definition of
@@ -459,7 +459,7 @@ We will explore this concept with Docker images as a primary example. Docker, a
 popular containerization platform, uses Dockerfiles (@dockerfile-example).
 Basically, a `Dockerfile` is a script with a set of instructions to build
 images. These images are then used to run software in a consistent environment.
-However, many images on the Docker Hub #cite(<dockerhub>, form:"normal") present
+However, images on Docker Hub #cite(<dockerhub>, form:"normal") often present
 challenges to reproducibility. The reasons vary: some Dockerfiles are not
 publicly available but especially because most of them include significant
 variability in their build processes, making exact replication of the images
@@ -506,13 +506,12 @@ class. This is because, while Docker images ensure reproducibility at run time
 by providing a consistent execution environment, they often fall short of
 reproducibility at build time due to the variability inherent in their
 Dockerfiles. This dichotomy highlights the spectrum of reproducibility, where
-Docker images occupy an intermediate position. They are neither fully
-reproducible (due to build-time variability) nor completely irreproducible
-(thanks to their runtime stability). This categorization not only helps in
-understanding the reproducibility status of Docker images but also underscores
-the need for a nuanced approach to classifying software reproducibility,
-acknowledging the various shades that exist between the #emph[Not reproducible]
-and #emph[Reproducible] boundaries.
+Docker images occupy an intermediate position. They are not reproducible due to
+build-time variability, but they maintain some reproducibility thanks to runtime
+stability. This categorisation helps clarify the reproducibility status of
+Docker images and highlights the need for a nuanced approach to classifying
+software reproducibility, recognising the spectrum between
+#emph[Not reproducible] and #emph[Reproducible].
 
 === Open Source
 
@@ -528,8 +527,8 @@ for anyone to view, modify, and distribute. This model encourages collaborative
 development and sharing, allowing users and developers to improve the software
 and adapt it to their needs.
 
-Open-source software development, known for managing complex projects with high
-quality, significantly enhances reproducibility by fostering professionalism and
+Open-source software development, renowned for managing complex projects with
+high quality, enhances reproducibility by promoting professionalism and
 transparency. Making open-source software reproducible offers numerous
 advantages: it streamlines the onboarding of new contributors, improves testing
 and feature implementation, ensures transparent build processes, facilitates
@@ -567,9 +566,9 @@ which, depending on the specific licence, facilitates the reuse and modification
 of software without legal or technical barriers. This flexibility is vital for
 verifying and replicating studies, as researchers can adapt the software for
 their specific needs without restrictions, though some licences may impose
-certain conditions. Additionally, open-source development tools provide
-excellent record-keeping capabilities, like version control systems #eg[
-`git`, Mercurial, Pijul], enabling researchers to track changes and understand
+certain conditions. Additionally, open-source development tools offer robust
+record-keeping capabilities, such as version control systems
+#eg[git, Mercurial, Pijul], enabling researchers to track changes and understand
 the context of each update. This aspect is essential for reproducing and
 validating research findings.
 
@@ -601,7 +600,7 @@ Open-source development, by its nature of allowing anyone to build, verify and
 use software, stands out as an effective, if not the best, approach to
 bolstering both confidence and safety in software systems. This widespread
 participation and verification process inherent in open-source development
-contributes significantly to the reliability and security of the software.
+greatly enhances the reliability and security of the software.
 
 === Terminology
 
@@ -632,9 +631,9 @@ In the context of #gls("CS"), defining a computation involves considering the
 broader scope of activities and processes that a computer performs, extending
 beyond the traditional mathematical abstraction of a function. A computation can
 be understood as a sequence of steps or operations performed by a computer to
-transform input data into output data. This process can involve various types of
-functions, algorithms and data manipulations. Essentially, a computation can be
-depicted as an abstraction involving one or multiple functions.
+transform input data into output data. This process can involve different types
+of functions, algorithms, and data manipulations. Essentially, a computation can
+be depicted as an abstraction involving one or multiple functions.
 
 Examples of computations could be: a program build, a compilation, a program
 execution, a data analysis, a data transformation.
@@ -745,7 +744,7 @@ being evaluated in.
 
 Inputs and outputs can vary widely, ranging from user interactions and network
 connections to files and directories. The nature of these inputs and outputs
-significantly impacts the reproducibility of computational processes.
+greatly impacts the reproducibility of computational processes.
 
 Consider user interactions, such as mouse or eyes movements. These are
 inherently challenging to replicate precisely due to their dynamic and
@@ -789,7 +788,7 @@ the user running the software, where the input is now composed of the program
 and its parameters. This distinction is crucial as it highlights the dynamic
 nature of computational processes. The user's interaction with the software,
 such as providing parameters or executing commands, is integral to the inputs
-and can significantly influence the output.
+and can greatly influence the output.
 
 #figure(
   include "../../resources/typst/inputs-and-outputs-part2.typ",
@@ -845,7 +844,7 @@ they are the same, bit-per-bit.
   time to achieve these results varies. For instance, consider a situation where
   a piece of code is refactored: if the output data remains unchanged, the
   process is considered reproducible from a data consistency perspective.
-  Nonetheless, even if the refactored code requires significantly more time and
+  Nonetheless, even if the refactored code requires considerably more time and
   resources to execute, it is still classified as reproducible as long as the
   output remains consistent with the original.
 
@@ -895,9 +894,9 @@ successfully completed without errors.
 
 In the realm of mathematics, a function is typically isolated, operating solely
 on its provided arguments, with no external environmental factors influencing
-its output. Contrarily in #gls("CS"), it is quite common for a computation to
-interact with, and be influenced by, its surrounding environment during
-evaluation, which necessitates @def-evaluation.
+its output. Contrarily in #gls("CS"), it is common for a computation to interact
+with and be influenced by its surrounding environment during evaluation, which
+necessitates @def-evaluation.
 
 ==== Pure Function <section-pure-function>
 
@@ -1031,7 +1030,7 @@ commit's ID.
 ) <inputs-checksum-string>
 
 A one-way function is easy to compute but is practically impossible to reverse.
-This is mostly due to the fixed size output, the number of possible inputs
+This is primarily due to the fixed-size output the number of possible inputs
 (#emph[domain]) exceeds the number of possible outputs (#emph[codomain]). The
 time complexity of such a function is usually linear, which means that the time
 it takes to compute the checksum is proportional to the size of the input,
@@ -1050,16 +1049,12 @@ known vulnerabilities that allow collision attacks while more modern algorithms
 like SHA-256 (#gls("SHA2", long: false)) are currently considered to be pretty
 much impossible to crack.
 
-// TODO: Add bibtex ref in glossary for checksum algorithm
-
 While the mathematical theory allows for the possibility of collisions in
-checksum hashes, the reality of their application in modern checksum algorithms
-is substantially different. The sophisticated design of these algorithms
-significantly reduce the likelihood of such occurrences. This ensures a high
-level of trust in their effectiveness for generating distinct and reliable
-representations of data, despite the theoretical potential for identical hashes
-of different inputs.
-
+checksum hashes, their application in modern checksum algorithms tells a
+different story. The sophisticated design of these algorithms significantly
+reduces the likelihood of such occurrences, ensuring strong trust in their
+effectiveness for generating distinct and reliable representations of data,
+despite the theoretical potential for identical hashes of different inputs.
 
 #info-box(kind: "info")[
   Choosing an appropriate checksum algorithm is paramount due to the rapid
@@ -1083,9 +1078,9 @@ of different inputs.
 
 ==== Reproducibility
 
-The concept of reproducibility can be applied in many situations, this thesis
-will concentrate on a particular application area, thus narrowing its scope. In
-this thesis, a computation will typically refer to the process of compiling
+The concept of reproducibility can be applied in various situations, this thesis
+will concentrate on a particular application area, thereby narrowing its scope.
+In this thesis, a computation will typically refer to the process of compiling
 source code into a binary file, except in cases where it is explicitly defined
 differently.
 
@@ -1115,9 +1110,9 @@ consistently obtain identical results across multiple runs of a computation.
 
 The set $I$ and $E$, respectically representing the set of all possible inputs
 and the hardware and software environment including the date and time, are also
-considered as abstractions. In reality, these sets are complex and intricate
-entities, that could potentially be composed of many interdependent components.
-However, for the purpose of this definition, they are treated as atomic.
+considered as abstractions. In reality, these sets are complex entities composed
+of interdependent components. For the purpose of this definition, however, they
+are treated as atomic.
 
 We could consider expanding the list of arguments to achieve greater
 specificity, delving deeper into the intricate details that influence
@@ -1164,12 +1159,12 @@ cornerstone for verifying and validating scientific work.
 
 The process of controlling the computational environment $E$ underscores a
 fundamental challenge in #gls("SE"): achieving reproducibility through
-environment standardisation. The environment often encompasses factors such as
-hardware and software configurations, (#gls("CPU"), #gls("OS"), library
-versions, and runtime conditions), which can significantly impact a function's
-behaviour and output. The Monte Carlo simulation algorithm (@montecarlo-pi.c),
-exemplifies this challenge: it may be reproducible at build time but can exhibit
-variance at run time due to environmental factors.
+environment standardisation. The environment includes specific factors such as
+hardware and software configurations #eg[#gls("CPU"), #gls("OS"), library
+versions, and runtime conditions] that directly affect a function's behaviour
+and output. The Monte Carlo simulation algorithm (@montecarlo-pi.c), exemplifies
+this challenge: it may be reproducible at build time but can exhibit variance at
+run time due to environmental factors.
 
 This singularity highlights the essence of reproducibility: the need to
 meticulously control or normalise the environment in which computations occur.
@@ -1191,14 +1186,14 @@ environment which is virtually impossible to deliver.
 
 === Software Security
 
-The concept of reproducibility is pivotal in software security for several
-reasons. Reproducibility ensures that software can be consistently recreated or
-regenerated from its source code, guaranteeing that the software's behaviour
-remains unchanged across different builds. This consistency is crucial for
-verifying the security of software systems. If a software build is reproducible,
-security experts can confidently assess that the build has not been tampered
-with or altered to include malicious code. This becomes increasingly important
-in an era where cybersecurity threats are both sophisticated and prevalent.
+The concept of reproducibility is pivotal in software security. It ensures that
+software can be consistently recreated or regenerated from its source code,
+guaranteeing that the software's behaviour remains unchanged across different
+builds. This consistency is crucial for verifying the security of software
+systems. If a software build is reproducible, security experts can confidently
+assess that the build has not been tampered with or altered to include malicious
+code. This becomes increasingly important in an era where cybersecurity threats
+are both sophisticated and prevalent.
 
 In the context of software security, reproducibility also aids in the
 traceability and verification of software components. It allows for the thorough
@@ -1253,38 +1248,38 @@ The #gls("CRA") #cite(<CRA>, form:"normal") mandates the incorporation of a
 software security and transparency. This requirement marks a significant
 advancement in enhancing the integrity and security of software, ensuring that
 all components are meticulously documented and traceable throughout the software
-lifecycle. While the #gls("CRA") encompasses various provisions, much of it will
-become enforceable three years after its passage, likely in early 2027.
-Specifically, regarding #gls("SBOM"), the following applies to products with
-digital elements available: #quote[identify and document vulnerabilities and
-components contained in products with digital elements, including by drawing up
-a software bill of materials in a commonly used and machine-readable format
-covering at the very least the top-level dependencies of the products]
+lifecycle. While the #gls("CRA") includes multiple measures, most will take
+effect three years after its passage, likely in early 2027. Specifically,
+regarding #gls("SBOM"), the following applies to products with digital elements
+available: #quote[identify and document vulnerabilities and components contained
+in products with digital elements, including by drawing up a software bill of
+materials in a commonly used and machine-readable format covering at the very
+least the top-level dependencies of the products]
 #cite(<CRA>, supplement: "Annex I, Part II (1)", form:"normal").
 
 ==== Supply Chain <ch2-supply-chain>
 
-A software application is composed of many components, each of which is
-developed by different teams or organisations. These components are then
-composed together into a final product, which is the software application
-itself. This process is known as the
-#emph[software supply chain] #cite(<malka-hal-04482192>, form: "normal").
+A software application consists of multiple components, each developed by
+different teams or organizations. These components are then composed together
+into a final product, which is the software application itself. This process is
+known as the #emph[software supply chain]
+#cite(<malka-hal-04482192>, form: "normal").
 
 Contemporary software development leverages the concepts of composability and
 reusability, preferring the integration and reuse of existing libraries over
 developing new functionalities from scratch. This methodology enhances
 productivity and contributes to the creation of more reliable software by
 allowing each component to concentrate on executing a specific function
-effectively. Nevertheless, this reliance on external components leads to the
-accumulation of both direct and indirect dependencies, complicating the software
-supply chain significantly. The build environments, which encompass all
-necessary components and their precise versions for software compilation, become
-intricate and difficult to replicate across different systems and over time.
-This growing complexity, "politely called #emph[dependency management]"
-#cite(<8509170>, form:"normal") but more colloquially known as
-#emph[dependency hell], is a phenomenon that developers have become all too
-familiar with. While Semantic Versioning (@package-managers) offers a strategy
-to mitigate these issues, it alone is insufficient to ensure reproducibility
+effectively. This reliance on external components results in the accumulation of
+direct and indirect dependencies, adding complexity to the software supply
+chain. The build environments, which encompass all necessary components and
+their precise versions for software compilation, become intricate and difficult
+to replicate across different systems and over time. This growing complexity,
+"politely called #emph[dependency management]" #cite(<8509170>, form:"normal")
+but more colloquially known as #emph[dependency hell], is a phenomenon that
+developers have become all too familiar with. While Semantic Versioning
+(@package-managers) offers a strategy to mitigate these issues, it alone is
+insufficient to ensure reproducibility
 #cite(<TSE2019>, form: "normal", supplement: [p.11]).
 
 To illustrate this concept, the graph in
@@ -1432,15 +1427,14 @@ The concept of deterministic builds is essential for ensuring reproducibility. A
 build is termed #emph[deterministic] when it consistently generates identical
 outputs from a given set of inputs, irrespective of the environment or time of
 execution. This predictability is central to software reproducibility, yet
-several sources of non-determinism frequently challenge its realisation. One
-single non-deterministic component in a build process can render the entire
-build non-deterministic. Therefore, it is crucial to identify and understand
-these sources of non-determinism to ensure reproducibility. Many of these
-sources of non-determinism are related to the environment in which the build
-occurs. This environment encompasses the hardware, software, and runtime
-conditions in which the build process is executed. These factors can
-significantly influence the build process, thereby impacting the stability of
-the output.
+multiple sources of non-determinism often hinder its achievement. One single
+non-deterministic component in a build process can render the entire build
+non-deterministic. Therefore, it is crucial to identify and understand these
+sources of non-determinism to ensure reproducibility. Numerous sources of
+non-determinism are tied to the environment where the build takes place. This
+environment encompasses the hardware, software, and runtime conditions in which
+the build process is executed. These factors directly affect the build process,
+impacting the consistency of the output.
 
 #definition(term: "Deterministic build", name: "def-deterministic-build")[
   Let $B$ be a build process defined as a function:
@@ -1605,7 +1599,7 @@ operating systems, with Nix additionally supporting macOS and FreeBSD. These
 package managers offer a method to build and install packages within a sandboxed
 environment, thereby isolating them from the rest of the system during build
 time #cite(<9403875>, form: "normal", supplement: [Appendix A.B.3)]). This
-approach significantly enhances reproducibility. We will explore these package
+approach greatly improves reproducibility. We will explore these package
 managers further in @chapter4.
 
 ==== Version Information
@@ -1622,15 +1616,15 @@ As illustrated in @listing-typst-version, incorporating specific version
 information, such as a commit ID, helps reproduce a build by facilitating the
 retrieval of an identical source code version. Nevertheless, the efficacy of
 commit IDs as reproducibility anchors remains debatable. These identifiers may
-frequently be unavailable at the time of build. It is essential to recognize
-that `git`, a distributed version control system designed to handle everything
-from small to very large projects with speed and efficiency, metadata, including
-commit IDs, is not an intrinsic element of the source code. Instead, it is part
-of the version control system in use. `git` allows multiple developers to work
-together on the same project simultaneously, providing a robust system for
-tracking changes, version history, and collaboration. However, the potential for
-easy substitution of one version control system for another renders reliance on
-such ephemeral metadata a precarious foundation for software reproducibility.
+frequently be unavailable at the time of build. It is important to recognise
+that `git`, a distributed version control system designed for projects of all
+sizes with speed and efficiency, treats metadata, including commit IDs, as
+separate from the source code itself. Instead, it is part of the version control
+system in use. `git` allows multiple developers to work together on the same
+project simultaneously, providing a robust system for tracking changes, version
+history, and collaboration. However, the potential for easy substitution of one
+version control system for another renders reliance on such ephemeral metadata a
+precarious foundation for software reproducibility.
 
 In scenarios where a version number is necessary, it can be derived from a
 dedicated file, such as a changelog or eventually provided through an
@@ -1649,8 +1643,8 @@ consistent ordering.
 
 #info-box(kind: "info")[
   According to @LibCManual[p.415]: The order in which files appear in a
-  directory tends to be fairly random. A more useful program would sort the
-  entries before printing them.
+  directory is often random. A more useful program would sort the entries before
+  printing them.
 
   In @tlpi[p.354]: The filenames returned by `readdir()` are not in sorted
   order, but rather in the order in which they happen to occur in the directory.
@@ -1659,12 +1653,11 @@ consistent ordering.
 ]
 
 There are numerous situations where relying on an existing list of files can
-result in non-determinism. For instance, when generating an archive from the
-contents of a directory, many file systems do not provide consistent ordering
-when listing files within that directory. Consequently, the arrangement of files
-in the archive may differ between builds, causing unpredictable archives.
-Although these archives might contain identical content, they could have been
-compressed with varying file orders.
+result in non-determinism. For instance, zhen creating an archive from a
+directory's contents, file systems often lack consistent ordering when listing
+files. Consequently, the arrangement of files in the archive may differ between
+builds, causing unpredictable archives. Although these archives might contain
+identical content, they could have been compressed with varying file orders.
 
 To address this, one could enforce a stable order by explicitly sorting the
 inputs before processing them. This can be done by sorting the list of files in
@@ -1702,10 +1695,10 @@ Another option is to use `libfaketime`, a library that intercepts system
 function calls retrieving the current time of day and replies with a predefined
 date and time instead.
 
-When none of these options are viable, using a tool like `strip-nondeterminism`
-#cite(<strip-nondeterminism>, form: "normal") is a temporary workaround for
-stripping non-deterministic information such as timestamps and filesystem
-ordering from various file and archive formats.
+When none of these options are feasible, a tool like strip-nondeterminism
+#cite(<strip-nondeterminism>, form: "normal") can serve as a temporary
+workaround for removing non-deterministic information, such as timestamps and
+file system ordering, from specific file and archive formats.
 
 ==== Locale Environment Variables
 
@@ -1780,9 +1773,9 @@ within the binary.
 
 === Fixing Builds
 
-In this subsection, we delve into strategies for addressing non-reproducible
-builds, acknowledging the vast array of potential causes and the impossibility
-of covering every solution comprehensively.
+In this subsection, we explore strategies for addressing non-reproducible
+builds, recognising the numerous potential causes and the challenge of covering
+every solution in detail.
 
 Previously in @bash-gcc-not-reproducible-builds, we encountered an issue, where
 compiling the sourcecode (@datetime.c) twice resulted in different binaries.
@@ -1818,16 +1811,16 @@ to tame these complexities.
 
 As we pivot toward the next chapter, our narrative will transition from the
 theoretical underpinnings to the practical arsenal at our disposal for enhancing
-reproducibility in #gls("SE"). While the groundwork laid in this chapter paves
-the way for an in-depth exploration, it is important to acknowledge the vast
-landscape of tools and methodologies available in this domain. Given the scope
-of this thesis, we will focus on four evaluation methods using three key tools,
-with the understanding that this selection is not exhaustive but rather
-representative of the broader ecosystem. Through the lens of real-world
-applications and case studies, we will explore how these chosen tools are used
-to mitigate the challenges identified herein and to foster an ecosystem where
-reproducible research and development are not merely aspirational goals but
-operational norms.
+reproducibility in #gls("SE"). While the groundwork laid in this chapter
+prepares for a detailed exploration, it is important to recognise the wide range
+of tools and methodologies available in this domain. Given the scope of this
+thesis, we will focus on four evaluation methods using three key tools, with the
+understanding that this selection is not exhaustive but rather representative of
+the broader ecosystem. Through the lens of real-world applications and case
+studies, we will explore how these chosen tools are used to mitigate the
+challenges identified herein and to foster an ecosystem where reproducible
+research and development are not merely aspirational goals but operational
+norms.
 
 In fine, this chapter serve as both a foundation and a bridge. It offers a
 comprehensive understanding of reproducibility that is critical for appreciating

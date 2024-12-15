@@ -25,33 +25,32 @@ in Latin #quote("Sine experientia nihil sufficienter sciri potest") which means
 #quote("Without experience nothing can be sufficiently known")
 #cite(form: "normal", supplement: [p.583], <Bacon1928>). He was among the first
 to underscore the significance of repeated experimentation as a means to test
-and ultimately confirm scientific findings. Although the specific term
-"reproducibility" was not used in his time, his emphasis on empirical evidence
-is seen as a precursor to our modern understanding of reproducible research in
-the scientific method.
+and ultimately confirm scientific findings. Although the term
+#emph[reproducibility] was not coined during his time, his emphasis on empirical
+evidence is widely regarded as a foundation for the modern concept of
+reproducible research within the scientific method.
 
-Centuries later, @kpopper1934, an Austrian-British philosopher wrote a book on
-the importance of falsifiability in the scientific method. He argued that a
-scientific theory must be falsifiable in order to be considered valid. He also
-introduced the concept of #emph[falsificationism], which states that a theory
-can only be considered scientific if it is possible to conceive of an
-observation or an argument which proves the theory false. This principle is now
-widely accepted as a fundamental tenet of the scientific method.
+Centuries later, @kpopper1934, an Austrian-British philosopher, wrote about the
+importance of falsifiability in the scientific method. He argued that a theory
+must be falsifiable to be considered as valid. He also introduced the concept
+of #emph[falsificationism], asserting that a theory qualifies as scientific only
+if it is possible to conceive of an observation or argument that could prove it
+false. This principle is now widely accepted as a fundamental tenet of the
+scientific method.
 
 @Thompson84 delivered a lecture "Reflections on Trusting Trust" at the
 Association for Computing Machinery (ACM) Turing Award Banquet. Since his talk,
 the landscape of software has undergone a radical metamorphosis. The simplicity
-of his advice to #emph[trust people] has become significantly more complex
-in the current era. The modern software supply chain is extensive, often
-encompassing dependencies that lies beneath the surface. Despite the prevalence
-of open-source software within this supply chain, it is uncommon for end-users
-to compile their own software. As a result, the build systems became a prime
-vector for malicious exploitation
-#cite(<MarcelFourne2023>, form: "normal", supplement: [p.1]). This underscores
-the vital importance of software reproducibility which ensures that software can
-be reliably built and verified from its source across different environments and
-over time, mitigating the risks associated with trust and the potential for
-exploitation within the software supply chain.
+of his advice to #emph[trust people] has become more complex in the current era.
+The modern software supply chain is extensive, often encompassing dependencies
+that lies beneath the surface. Despite the prevalence of open-source software
+within this supply chain, it is uncommon for end-users to compile their own
+software. As a result, the build systems became a prime vector for malicious
+exploitation #cite(<MarcelFourne2023>, form: "normal", supplement: [p.1]). This
+underscores the vital importance of software reproducibility which ensures that
+software can be reliably built and verified from its source across different
+environments and over time, mitigating the risks associated with trust and the
+potential for exploitation within the software supply chain.
 
 @Claerbout1992 wrote about the challenges and implications of reproducibility in
 the paper titled "Electronic documents give reproducible research a new
@@ -77,8 +76,8 @@ also reproduced and validated in different contexts.
 
 In 2020, the United States sustained a sophisticated cyberattack known as
 SolarWinds. This meticulously orchestrated campaign apparently attributed to
-Russia persisted undetected for several months and was enabled through a
-backdoor embedded within one of the dependencies of the SolarWinds Orion
+Russia persisted undetected for months and was enabled through a backdoor
+embedded within one of the dependencies of the SolarWinds Orion
 (@solarwinds-9579611) software, a network monitoring tool employed by numerous
 corporations and government agencies. By exploiting this vulnerability, the
 attackers gained unauthorised access to the networks of SolarWinds clients,
@@ -101,8 +100,8 @@ the European Parliament began recommending Signal
 #cite(<signalApp>, form: "normal"), a secure open-source instant messaging
 platform, for communications. This highlighted a broader, critical issue: the
 verification of software authenticity. Users generally trust software obtained
-from various stores, but this trust brings to the forefront the question of how
-they can verify with certainty that the version of the Signal application
+from application stores, but this trust brings to the forefront the question of
+how they can verify with certainty that the version of the Signal application
 installed on their devices indeed derives directly from the source code provided
 in its repository. Ensuring an application's authenticity, confirming it has not
 been tampered with prior to its public release, has become a central concern in
@@ -123,7 +122,7 @@ reproducibility for enhancing security. Popular messaging platforms like Signal
 #cite(<TelegramReproducible>, form: "normal") have taken significant steps to
 ensure the reproducibility of their builds. They support reproducible builds,
 allowing users to verify that the open-source code matches the applications
-available on various app stores, including the Apple Store and Google Play. This
+available on application stores, including the Apple Store and Google Play. This
 initiative ensures that the distributed binaries are authentic and unaltered,
 thereby protecting users from potential vulnerabilities and enhancing trust in
 the software's integrity. By implementing these procedures, software companies
@@ -192,7 +191,7 @@ Here's a non-exhaustive list of projects I have contributed to:
 - In the Linux NixOS operating system:
   - I created around 500 pull requests #cite(<drupolPrOnNix>, form: "normal").
   - I made around 2050 reviews #cite(<drupolReviewOnNix>, form: "normal").
-  - After several months of dedicated effort, I developed a wrapper for building
+  - After months of dedicated effort, I developed a wrapper for building
     reproducible Composer-based PHP applications
     #cite(<drupolPhpBuilderOnNix>, form: "normal"), resolving a significant
     obstacle and positioning Nix as the preferred distribution for self-hosting
@@ -280,10 +279,9 @@ functionality and performance, across different environments and over time? This
 question is not just academic but is deeply rooted in practical necessities and
 ethical considerations in the field of #gls("CS"), but not only.
 
-The principle of reproducibility is essential across various disciplines,
-ranging from the empirical rigor of scientific experiments to painting or even
-culinary art. This concept, at its core, is about the ability to consistently
-replicate results under similar conditions.
+The principle of reproducibility is essential across disciplines, from
+scientific experiments to painting and culinary art. At its core, it ensures the
+ability to replicate results under similar conditions consistently.
 
 In cooking, recipes passed down through generations serve as blueprints for
 recreating cherished family dishes. Despite meticulously following these
@@ -314,16 +312,15 @@ predictability. In a digital era where trust and security are paramount,
 reproducibility is not merely a technical objective; it is a fundamental
 criterion for building and maintaining digital trust.
 
-One of the driving factors behind this research is the inherent complexity
-present in modern software environments. Today's software systems are built on
-intricate layers of dependencies, including various libraries, frameworks, and
-operating systems. This complexity poses significant challenges in ensuring
-consistent behaviour of software products across different environments.
-Moreover, the escalating frequency of security breaches and malicious attacks on
-software supply chains underscores the critical role of reproducibility. It
-serves as a vital mechanism for verifying the integrity of software, assuring
-that it has not been compromised, and maintaining the transparency of the build
-process.
+One of the driving factors behind this research is the complexity of modern
+software environments. Today's software systems rely on layers of dependencies,
+including libraries, frameworks, and operating systems. This complexity poses
+significant challenges in ensuring consistent behaviour of software products
+across different environments. Moreover, the escalating frequency of security
+breaches and malicious attacks on software supply chains underscores the
+critical role of reproducibility. It serves as a vital mechanism for verifying
+the integrity of software, assuring that it has not been compromised, and
+maintaining the transparency of the build process.
 
 Furthermore, the academic and scientific rigors of #gls("CS") demand a steadfast
 commitment to reproducibility. In a field where building upon previous work is
@@ -353,14 +350,14 @@ overview of reproducible builds, within the sphere of software development,
 acknowledging that a complete examination of every aspect of reproducibility is
 beyond our scope.
 
-I will explore a selection of tools and methodologies that promote
-reproducibility or, at least, create favourable conditions for facilitating it.
-Moreover, this document is intended to enlighten and hopefully convince the
-reader that the construction of reproducible software should be a fundamental
-principle, not merely a secondary consideration, within the software development
-lifecycle. Finally, I will delve into the rationale for adopting this
-reproducibility paradigm as a standard practice in modern #gls("SE"), with
-particular emphasis on security implications.
+A selection of tools and methodologies that promote reproducibility, or at least
+create favourable conditions for facilitating it, will be explored. Moreover, it
+is intended that the reader will be enlightened and hopefully convinced that the
+construction of reproducible software should be regarded as a fundamental
+principle, rather than merely a secondary consideration, within the software
+development lifecycle. Finally, the rationale for adopting this reproducibility
+paradigm as a standard practice in modern #gls("SE") will be delved into, with
+particular emphasis placed on its security implications.
 
 By the conclusion of this thesis, the reader will have a comprehensive
 understanding of the concept of reproducibility and how best practices can be
@@ -368,8 +365,8 @@ implemented effectively in software development projects.
 
 == Structure
 
-Organised into several chapters, this thesis systematically explore the
-multifaceted nature of software reproducibility.
+Organised into chapters, this thesis systematically explore the multifaceted
+nature of software reproducibility.
 
 - @chapter1 being this introduction, outlining the thesis's scope and
   objectives.
