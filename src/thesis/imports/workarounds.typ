@@ -1,4 +1,4 @@
-#import "@preview/codelst:2.0.1": sourcecode, sourcefile
+#import "@preview/codelst:2.0.2": sourcecode, sourcefile
 
 #let shell(body) = {
   let body = raw(body)
