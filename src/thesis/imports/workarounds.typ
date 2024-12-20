@@ -1,6 +1,5 @@
-#import "@preview/codelst:2.0.2": sourcecode, sourcefile
-#import "@preview/codly:1.1.1": *
-#import "@preview/codly-languages:0.1.1": *
+#import "@preview/codly:1.2.0": *
+#import "@preview/codly-languages:0.1.4": *
 #import "../theme/common/metadata.typ": *
 
 #let sourcefile(file: none, lang: none) = {
