@@ -20,7 +20,6 @@
       imports = [
         inputs.pkgs-by-name-for-flake-parts.flakeModule
         ./nix/imports/pkgs.nix
-        inputs.pkgs-by-name-for-flake-parts.flakeModule
       ];
 
       perSystem =
@@ -34,90 +33,23 @@
           # Change here to typst-dev if needed
           typst = pkgs.nixpkgs-unstable.typst;
 
-          fontsConf = pkgs.symlinkJoin {
-            name = "typst-fonts";
-            paths = with pkgs; [
-              inriafonts
-              fg-virgil
-              liberation_ttf
-              nerd-fonts.inconsolata
-              newcomputermodern
-            ];
-          };
-
-          mkBuildDocumentDrv =
-            documentName:
-            pkgs.stdenvNoCC.mkDerivation {
-              name = "build-" + documentName;
-
-              src = pkgs.lib.cleanSource ./.;
-
-              buildInputs = [ typst ];
-
-              buildPhase = ''
-                runHook preBuild
-                ${lib.getExe typst} \
-                  compile \
-                  --root ./. \
-                  --input rev="${inputs.self.rev or ""}" \
-                  --input shortRev="${inputs.self.shortRev or ""}" \
-                  --input builddate="$(date -u -d @${toString (inputs.self.lastModified or "")})" \
-                  --package-path ${inputs.typst-packages}/packages \
-                  --font-path ${fontsConf} \
-                  --ignore-system-fonts \
-                  ./src/${documentName}/main.typ \
-                  ${documentName}.pdf
-
-                runHook postBuild
-              '';
-
-              installPhase = ''
-                runHook preInstall
-
-                install -m640 -D ${documentName}.* -t $out
-
-                runHook postInstall
-              '';
-            };
-
-          mkBuildDocumentScript =
+          mkTypstScript =
+            action:
             documentName:
             pkgs.writeShellApplication {
-              name = "build-${documentName}";
+              name = "typst-${action}-${documentName}";
 
               runtimeInputs = [ typst ];
 
               text = ''
                 ${lib.getExe typst} \
-                  compile \
+                  ${action} \
                   --root ./. \
                   --input rev="${inputs.self.rev or ""}" \
                   --input shortRev="${inputs.self.shortRev or ""}" \
                   --input builddate="$(date -u -d @${toString (inputs.self.lastModified or "")})" \
                   --package-path ${inputs.typst-packages}/packages \
-                  --font-path ${fontsConf} \
-                  --ignore-system-fonts \
-                  ./src/${documentName}/main.typ \
-                  ${documentName}.pdf
-              '';
-            };
-
-          mkWatchDocumentScript =
-            documentName:
-            pkgs.writeShellApplication {
-              name = "watch-${documentName}";
-
-              runtimeInputs = [ typst ];
-
-              text = ''
-                ${lib.getExe typst} \
-                  watch \
-                  --root ./. \
-                  --input rev="${inputs.self.rev or ""}" \
-                  --input shortRev="${inputs.self.shortRev or ""}" \
-                  --input builddate="$(date -u -d @${toString (inputs.self.lastModified or "")})" \
-                  --package-path ${inputs.typst-packages}/packages \
-                  --font-path ${fontsConf} \
+                  --font-path ${config.packages.typst-fonts} \
                   --ignore-system-fonts \
                   ./src/${documentName}/main.typ \
                   ${documentName}.pdf
@@ -126,7 +58,7 @@
 
           documentDrvs = lib.genAttrs (lib.attrNames (
             lib.filterAttrs (k: v: (v == "directory")) (builtins.readDir ./src)
-          )) (d: mkBuildDocumentDrv d);
+          )) (d: (mkTypstScript "compile" d));
 
           scriptDrvs =
             {
@@ -136,8 +68,8 @@
               a: i:
               a
               // {
-                "build-${i}" = mkBuildDocumentScript i;
-                "watch-${i}" = mkWatchDocumentScript i;
+                "compile-${i}" = (mkTypstScript "compile" i);
+                "watch-${i}" = (mkTypstScript "watch" i);
               }
             ) { } (lib.attrNames documentDrvs);
         in
@@ -158,11 +90,11 @@
               echo "Typst version: ${typst.version}"
               echo "Typst bin: ${lib.getExe typst}"
               echo "Typst packages directory: ${config.packages.typst-packages}"
-              echo "Typst fonts directory: ${fontsConf}"
+              echo "Typst fonts directory: ${config.packages.typst-fonts}"
             '';
 
             env = {
-              TYPST_FONT_PATHS = fontsConf;
+              TYPST_FONT_PATHS = config.packages.typst-fonts;
             };
           };
         };
