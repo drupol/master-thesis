@@ -34,8 +34,7 @@
           typst = pkgs.nixpkgs-unstable.typst;
 
           mkTypstScript =
-            action:
-            documentName:
+            action: documentName:
             pkgs.writeShellApplication {
               name = "typst-${action}-${documentName}";
 
@@ -56,9 +55,36 @@
               '';
             };
 
+          mkBuildDocumentDrv =
+            action: documentName:
+            pkgs.stdenvNoCC.mkDerivation {
+              pname = "typst-${action}-${documentName}";
+              version = typst.version;
+
+              src = pkgs.lib.cleanSource ./.;
+
+              buildInputs = [ typst ];
+
+              buildPhase = ''
+                runHook preBuild
+
+                ${lib.getExe (mkTypstScript "compile" documentName)}
+
+                runHook postBuild
+              '';
+
+              installPhase = ''
+                runHook preInstall
+
+                install -m640 -D ${documentName}.* -t $out
+
+                runHook postInstall
+              '';
+            };
+
           documentDrvs = lib.genAttrs (lib.attrNames (
             lib.filterAttrs (k: v: (v == "directory")) (builtins.readDir ./src)
-          )) (d: (mkTypstScript "compile" d));
+          )) (d: (mkBuildDocumentDrv "compile" d));
 
           scriptDrvs =
             {
