@@ -221,6 +221,11 @@
 
     v(10mm)
 
+    // FIX left alignment of glossary:
+    // With glossary 0.5.1 it is necessary
+    // to overwrite figure captions to be aligned left
+    show figure.caption: c => block(width:100%,align(left, c.body))
+
     print-glossary(show-all: true, terms)
   }
 
