@@ -19,6 +19,8 @@
   ),
 )
 
+#show: make-glossary
+
 #show: project.with(
   title: title,
   university: university,
@@ -114,7 +116,7 @@
       long: "Integrated Development Environment",
       plural: "IDEs",
       longplural: "Integrated Development Environments",
-      desc: [An integrated development environment is a software application that provides comprehensive facilities to computer programmers for software development.],
+      description: [An integrated development environment is a software application that provides comprehensive facilities to computer programmers for software development.],
     ),
     (
       key: "IEEE",

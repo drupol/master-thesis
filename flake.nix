@@ -107,6 +107,8 @@
             packages = (lib.attrValues scriptDrvs) ++ [
               typst
               pkgs.gnuplot
+              pkgs.tinymist
+              pkgs.typstyle
               config.packages.weasel
               config.packages.passive
               config.packages.dups

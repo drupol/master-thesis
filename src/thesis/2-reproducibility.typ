@@ -155,9 +155,7 @@ necessitates an incremental investment of resources, time, and effort.
 
   #box[
     $
-      & forall e in E, forall e' in R(e), forall p in "par"(e), quad r(
-        e, p
-      ) eq r(e', p)
+      & forall e in E, forall e' in R(e), forall p in "par"(e), quad r( e, p ) eq r(e', p)
     $
   ]
 
@@ -964,9 +962,7 @@ An impure function is the opposite of the above definition of a pure function.
 
   Let $f: I times E → R$ be a function. Then $f$ is *impure* if and only if:
 
-  $forall i in I, exists e_1, e_2 in E, quad "eval"(f,i,e_1) eq.not "eval"(
-      f,i,e_2
-    )$
+  $forall i in I, exists e_1, e_2 in E, quad "eval"(f,i,e_1) eq.not "eval"( f,i,e_2 )$
 
   where
   - $I$ is the set of all possible inputs arguments
@@ -1089,9 +1085,7 @@ consistently obtain identical results across multiple runs of a computation.
 
   #box[
     $
-      & forall c in C, forall i in I, forall e_1, e_2 in E, quad "eval"(
-        c, i, e_1
-      ) eq "eval"(c, i, e_2)
+      & forall c in C, forall i in I, forall e_1, e_2 in E, quad "eval"( c, i, e_1 ) eq "eval"(c, i, e_2)
     $
   ]
 
@@ -1751,7 +1745,9 @@ First, we compile the sourcecode twice, creating `build1` and `build2`:
 Then, we use `diffoscope` to compare these builds:
 
 #figure(
-  shell(file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log"),
+  shell(
+    file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log",
+  ),
 ) <bash-diffoscope-comparison>
 
 The tool will generate a detailed report (@diffoscope-report) highlighting the
