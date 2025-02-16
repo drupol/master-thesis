@@ -1,4 +1,4 @@
- #import "imports/preamble.typ": *
+#import "imports/preamble.typ": *
 #import "theme/template.typ": *
 #import "theme/common/titlepage.typ": *
 #import "theme/common/metadata.typ": *

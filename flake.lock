@@ -75,11 +75,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1739446958,
-        "narHash": "sha256-+/bYK3DbPxMIvSL4zArkMX0LQvS7rzBKXnDXLfKyRVc=",
+        "lastModified": 1740367490,
+        "narHash": "sha256-WGaHVAjcrv+Cun7zPlI41SerRtfknGQap281+AakSAw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2ff53fe64443980e139eaa286017f53f88336dd0",
+        "rev": "0196c0175e9191c474c26ab5548db27ef5d34b05",
         "type": "github"
       },
       "original": {
@@ -115,11 +115,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1739482815,
-        "narHash": "sha256-/5Lwtmp/8j+ro32gXzitucSdyjJ6QehfJCL58WNA7N0=",
+        "lastModified": 1740396192,
+        "narHash": "sha256-ATMHHrg3sG1KgpQA5x8I+zcYpp5Sf17FaFj/fN+8OoQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ba0939c506a03c60a765cd7f7c43794816540eec",
+        "rev": "d9b69c3ec2a2e2e971c534065bdd53374bd68b97",
         "type": "github"
       },
       "original": {
@@ -191,13 +191,13 @@
     "rust-manifest": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-Yqu2/i9170R7pQhvOCR1f5SyFr7PcFbO6xcMr9KWruQ=",
+        "narHash": "sha256-irgHsBXecwlFSdmP9MfGP06Cbpca2QALJdbN4cymcko=",
         "type": "file",
-        "url": "https://static.rust-lang.org/dist/channel-rust-1.83.0.toml"
+        "url": "https://static.rust-lang.org/dist/channel-rust-1.85.0.toml"
       },
       "original": {
         "type": "file",
-        "url": "https://static.rust-lang.org/dist/channel-rust-1.83.0.toml"
+        "url": "https://static.rust-lang.org/dist/channel-rust-1.85.0.toml"
       }
     },
     "systems": {
@@ -240,11 +240,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1739375448,
-        "narHash": "sha256-7Q0+6LZH6nYGtz38sSaaXXyAXNQbhIMj9dEQYTHJ+Zs=",
+        "lastModified": 1740493157,
+        "narHash": "sha256-d1fR/OgBa09NaCuwtcTsXlQ5KSxNPAhvs5BpfgfJcjE=",
         "owner": "typst",
         "repo": "typst",
-        "rev": "19a12f379f11e75e0c35691e25dbc2be1f57db8c",
+        "rev": "d6b0d68ffa4963459f52f7d774080f1f128841d4",
         "type": "github"
       },
       "original": {
@@ -256,11 +256,11 @@
     "typst-packages": {
       "flake": false,
       "locked": {
-        "lastModified": 1739534525,
-        "narHash": "sha256-PbmIow0ZGECZ7BoP/WD6gWOaYHIu8wWYUnyoc30gZdU=",
+        "lastModified": 1740481179,
+        "narHash": "sha256-eygLL+weoG8bS2NbCB5RsEje3PtBHI4oiopb4lvboR0=",
         "owner": "typst",
         "repo": "packages",
-        "rev": "3921c775ac7bdfb97a1bc3dac083e224a84249c1",
+        "rev": "fe1ecde8d49e3555592131910fe4f99fa344812a",
         "type": "github"
       },
       "original": {
