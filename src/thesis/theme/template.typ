@@ -283,9 +283,6 @@
       it
     }
 
-    // --- Equations ---
-    show math.equation: set text(weight: 400)
-
     // --- Figures ---
     show figure.caption: it => (
       context [*#it.supplement #it.counter.display()*: #it.body]
