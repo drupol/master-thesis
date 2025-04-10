@@ -1633,10 +1633,6 @@ the risk of configuration drift by prioritising idempotence, maintaining
 explicit dependency graphs, and ensuring a strong awareness of the current state
 of the environment​​ #cite(<HunterGCP>, form: "normal", supplement: [p. 348]).
 
-// This doesn't really convince me, you classify a shell command as
-// "declarative" when they are in shell scripts, which is not much different
-// to me as a Dockerfile
-
 #info-box(kind: "note")[
   In @ch2-table-configuration-mgmt, Docker #cite(<docker>, form: "normal") and
   Ansible #cite(<ansible>, form: "normal") are classified as both declarative
