@@ -74,7 +74,7 @@
     skip-last-empty: true,
   )
 
-  raw(read(file), lang: "bash", block: true)
+  raw(read(file), lang: "shell", block: true)
 }
 
 #let LaTeX = {

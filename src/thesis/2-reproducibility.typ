@@ -330,7 +330,7 @@ reproducibility at build time, but not at run time.
 #figure(
   {
     sourcefile(
-      lang: "C",
+      lang: "c",
       file: "../../../resources/sourcecode/montecarlo-pi.c",
     )
   },
@@ -396,7 +396,7 @@ key attributes for creating reliable and maintainable systems in the long run.
   {
     sourcefile(
       file: "../../../resources/sourcecode/montecarlo-pi-fix.c",
-      lang: "C",
+      lang: "c",
     )
   },
   caption: [`montecarlo-pi-fix.c` with deterministic random number generator],
@@ -414,7 +414,7 @@ build time.
 #figure(
   {
     sourcefile(
-      lang: "C",
+      lang: "c",
       file: "../../../resources/sourcecode/datetime.c",
     )
   },
