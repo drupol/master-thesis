@@ -18,25 +18,23 @@
   [
     - Shell commands
   ],
-  [
-    - Shell scripts
-  ],
+  [],
   table.cell(align: horizon + center)[*Convergent*],
   table.hline(stroke: .5pt),
   [
-    - Ansible #cite(<ansible>,form:"normal")
-    - Chef #cite(<chef>,form:"normal")
-    - Docker #cite(<docker>,form:"normal")
+    - Ansible #cite(<ansible>, form: "normal")
+    - Chef #cite(<chef>, form: "normal")
+    - Docker #cite(<docker>, form: "normal")
   ],
   [
-    - Puppet #cite(<puppet>,form:"normal")
-    - Terraform #cite(<terraform>,form:"normal")
+    - Puppet #cite(<puppet>, form: "normal")
+    - Terraform #cite(<terraform>, form: "normal")
   ],
   table.hline(stroke: .5pt),
   table.cell(align: horizon + center)[*Congruent*],
   [],
   [
-    - Guix #cite(<guixwebsite>,form:"normal")
-    - Nix #cite(<nix>,form:"normal")
+    - Guix #cite(<guixwebsite>, form: "normal")
+    - Nix #cite(<nix>, form: "normal")
   ],
 )
