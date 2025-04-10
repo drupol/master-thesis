@@ -264,7 +264,7 @@ reproducibility in #gls("CS").
   #emph[Space] and #emph[Time] are terms borrowed from physics. In the context
   of reproducibility in #gls("SE"), space refers to different systems, while
   time refers to different moments in time
-  #cite(<malka-hal-04430009>,form:"normal"). (more about that in
+  #cite(<malka-hal-04430009>, form: "normal"). (more about that in
   @def-deterministic-build).
 ]
 
@@ -299,28 +299,32 @@ reproducibility.
 
 #definition(
   name: "def-reproducibility-build-time",
-  term: "Reproducibility at build time",
+  term: "Reproducibility at build-time",
 )[
-  Reproducibility at build time refers to the ability to consistently generate
-  the same executable or software artefact from a given source code across
-  different builds on different environments, across different space and time.
-  This aspect is crucial in ensuring that the software compilation process is
-  deterministic and immune to variances in development environments, compiler
-  versions, or build tools. It involves a meticulous standardisation and
-  documentation of the build environment and dependencies to guarantee that the
-  same executable is produced regardless of when or where the build occurs.
+  Reproducibility at build-time refers to the ability to produce an identical
+  build artefact #eg[a binary executable, library or container image]
+  consistently across multiple build attempts, environments (space), or points
+  in time. This means that given the same source code and build instructions,
+  the build process yields the same output every time, regardless of where or
+  when the build occurs. Achieving build-time reproducibility requires
+  controlling all aspects of the build environment, including dependency
+  versions, build tools, and any external resources, to eliminate variability
+  and non-determinism in the build process.
 ]
 
 #definition(
   name: "def-reproducibility-run-time",
-  term: "Reproducibility at run time",
+  term: "Reproducibility at run-time",
 )[
-  Reproducibility at run time addresses the consistency of software behaviour
-  and output when the software is executed in different environments or under
-  varying conditions. This type of reproducibility focuses on ensuring that the
-  software performs identically and produces the same results regardless of the
-  #gls("OS"), underlying hardware, or external dependencies it interacts
-  with during execution.
+  Reproducibility at run-time refers to the ability of a software system or
+  application to behave consistently and produce the same results each time it
+  is executed, given the same inputs and environment. This means that when the
+  software is run in different environments or at different times, it performs
+  identically, providing the same functionality and output. Achieving run-time
+  reproducibility involves ensuring that the execution environment is controlled
+  and consistent, including the #gls("OS"), hardware configuration, environment
+  variables, and any external dependencies or services the software interacts
+  with.
 ]
 
 To illustrate these phases, the C source code in @montecarlo-pi.c implements the
@@ -454,7 +458,7 @@ We will explore this concept with Docker images as a primary example. Docker, a
 popular containerization platform, uses Dockerfiles (@dockerfile-example).
 Basically, a `Dockerfile` is a script with a set of instructions to build
 images. These images are then used to run software in a consistent environment.
-However, images on Docker Hub #cite(<dockerhub>, form:"normal") often present
+However, images on Docker Hub #cite(<dockerhub>, form: "normal") often present
 challenges to reproducibility. The reasons vary: some Dockerfiles are not
 publicly available but especially because most of them include significant
 variability in their build processes, making exact replication of the images
@@ -712,7 +716,7 @@ which it will be evaluated, effectively making, to some extent, this environment
 an extra input parameter per se. This computational environment, which
 encompasses the hardware #eg[filesystem, memory, #gls("CPU", long: false)],
 software #eg[#gls("OS", long: false)] and date #eg[the current date and
-time], may influence the function's behaviour and output. Consequently,
+  time], may influence the function's behaviour and output. Consequently,
 functions in #gls("CS") are inherently designed to interact with and adapt to
 their environment, thereby making them dynamic and versatile but also
 potentially non-deterministic.
@@ -766,7 +770,7 @@ reflects the state of its transitive inputs. Basically, the output represents
 all direct and indirect dependencies used in the build process.
 "Transitive inputs" refer to not only the direct inputs #eg[source code] but
 also to the inputs of those inputs #eg[libraries, frameworks, compilers, data
-resources].
+  resources].
 
 From the point of view of the software build process as shown in
 @inputs-outputs-part1, the inputs are all the source code files, configuration
@@ -1036,7 +1040,7 @@ produce the same hash, an occurrence known as a #emph[collision]. The ability to
 find collisions undermines the security of the algorithm. There are different
 types of algorithms to calculate a checksum
 #eg[#gls("MD5", long: false), #gls("SHA1", long: false),
-#gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
+  #gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
 known vulnerabilities that allow collision attacks while more modern algorithms
 like SHA-256 (#gls("SHA2", long: false)) are currently considered to be pretty
 much impossible to crack.
@@ -1051,7 +1055,7 @@ despite the theoretical potential for identical hashes of different inputs.
 #info-box(kind: "info")[
   Choosing an appropriate checksum algorithm is paramount due to the rapid
   evolution of computational power as described by Moore's Law
-  #cite(<4785860>,form:"normal"), which leads to previously secure algorithms
+  #cite(<4785860>, form: "normal"), which leads to previously secure algorithms
   becoming vulnerable as computing capabilities expand.
 
   For instance, #gls("MD5") checksums, once deemed secure for storing passwords,
@@ -1151,7 +1155,7 @@ The process of controlling the computational environment $E$ underscores a
 fundamental challenge in #gls("SE"): achieving reproducibility through
 environment standardisation. The environment includes specific factors such as
 hardware and software configurations #eg[#gls("CPU"), #gls("OS"), library
-versions, and runtime conditions] that directly affect a function's behaviour
+  versions, and runtime conditions] that directly affect a function's behaviour
 and output. The Monte Carlo simulation algorithm (@montecarlo-pi.c), exemplifies
 this challenge: it may be reproducible at build time but can exhibit variance at
 run time due to environmental factors.
@@ -1233,7 +1237,7 @@ primarily in their focus, structure, and community support. The choice between
 specific needs, whether the focus is on extensive licensing compliance or
 streamlined security and risk management within the software supply chain.
 
-The #gls("CRA") #cite(<CRA>, form:"normal") mandates the incorporation of a
+The #gls("CRA") #cite(<CRA>, form: "normal") mandates the incorporation of a
 #gls("SBOM") in software products, highlighting its important role in bolstering
 software security and transparency. This requirement marks a significant
 advancement in enhancing the integrity and security of software, ensuring that
@@ -1242,10 +1246,10 @@ lifecycle. While the #gls("CRA") includes multiple measures, most will take
 effect three years after its passage, likely in early 2027. Specifically,
 regarding #gls("SBOM"), the following applies to products with digital elements
 available: #quote[identify and document vulnerabilities and components contained
-in products with digital elements, including by drawing up a software bill of
-materials in a commonly used and machine-readable format covering at the very
-least the top-level dependencies of the products]
-#cite(<CRA>, supplement: "Annex I, Part II (1)", form:"normal").
+  in products with digital elements, including by drawing up a software bill of
+  materials in a commonly used and machine-readable format covering at the very
+  least the top-level dependencies of the products]
+#cite(<CRA>, supplement: "Annex I, Part II (1)", form: "normal").
 
 ==== Supply Chain <ch2-supply-chain>
 
@@ -1265,7 +1269,7 @@ direct and indirect dependencies, adding complexity to the software supply
 chain. The build environments, which encompass all necessary components and
 their precise versions for software compilation, become intricate and difficult
 to replicate across different systems and over time. This growing complexity,
-"politely called #emph[dependency management]" #cite(<8509170>, form:"normal")
+"politely called #emph[dependency management]" #cite(<8509170>, form: "normal")
 but more colloquially known as #emph[dependency hell], is a phenomenon that
 developers have become all too familiar with. While Semantic Versioning
 (@package-managers) offers a strategy to mitigate these issues, it alone is
@@ -1377,7 +1381,7 @@ frequently unattainable in practice.
 
 One of the primary impediments in achieving reproducibility lies in the
 dependency on hardware architecture. Software compiled for different
-architectures, such as `x86` and `ARM,` inherently produces disparate binaries #cite(<patterson2013>,form:"normal").
+architectures, such as `x86` and `ARM,` inherently produces disparate binaries #cite(<patterson2013>, form: "normal").
 These differences stem from the instruction sets and optimizations that are
 specific to each platform, leading to divergent outputs despite using identical
 source code. This variance highlights a significant reproducibility challenge,
@@ -1408,7 +1412,7 @@ entirely achievable, we will delve deeper into these challenges by exploring the
 impact of non-deterministic compilers and the strategies to mitigate these
 challenges using different methods.
 
-== Deterministic Builds And Environments
+== Deterministic Builds And Environments <ch2-deterministic-builds-and-environments>
 
 In this section, we will explore the concept of deterministic builds, and the
 potential sources of non-determinism in software builds.
@@ -1458,9 +1462,313 @@ and at any point in the past or future​​​​.
   feasible to replicate the same output in a different environment, within the
   same architecture, achieving exact temporal replication of the build process
   is practically impossible. This temporal variability serves as a critical
-  indicator of potential difficulties in ensuring reproducibility across diverse
-  environments or machines.
+  indicator of potential difficulties in ensuring reproducibility across a
+  variety of environments or machines.
 ]
+
+==== Configuration Management
+
+Reproducibility relies on stable, consistent and well-maintained codebases but
+also heavily depends on stable, consistent and well-maintained environments as
+seen in #ref(<ch2-deterministic-builds-and-environments>). In addition, a critical component is
+environment configuration management. Configuration management plays a critical
+role in ensuring reproducibility by mitigating the non-deterministic behaviours
+introduced by configuration drifts.
+
+#info-box[
+  Configuration drifts occurs when changes to an environment
+  accumulate over time, leading to variations that deviate from the desired or
+  initial configuration state, thus introducing non-determinism.
+]
+
+This section examines key configuration management models and paradigms,
+their impact on reproducibility, and the tools that enforce these principles in
+modern software environments.
+
+Another source of non-determinism potentially arises from inconsistent
+environment configurations. The way environments are managed directly affects
+the environment behaviours and inherently, reproducibility. Therefore,
+configuration management plays an important role in mitigating non-determinism
+by ensuring that environments #eg[software installations or software builds]
+remain consistent in space and time.
+
+@Traugott2002 classify environment configuration management into three
+categories, each of which has a distinct impact on the level of determinism
+achieved:
+
+#figure(include "../../resources/typst/configuration-management.typ")
+
+===== Divergent Configuration Management
+
+In this model (@divergent-config-management), environments are typically managed
+by one or more individuals, which inevitably leads to configuration drifts and
+where the configurations deviate over time. This is an unavoidable process when
+system modifications are performed without centralised control, leading to
+unpredictable and non-deterministic behaviour, making reproducibility almost
+impossible. Reducing reliance on manual adjustments is essential to achieving
+higher levels of system predictability and reproducibility. This challenge can
+become particularly problematic in self-modifying environments, potentially
+leading to potential circular dependencies​ issues. A common example of such an
+environment is a newly installed operating system that initially shares a
+uniform configuration. Over time, as users customise their environments by
+running shell commands or scripts to suit individual preferences, the system’s
+state diverges from its original, well-defined configuration.
+
+===== Convergent Configuration Management
+
+Once a configuration drift is identified as an issue, the focus shifts towards
+convergence, bringing environments back to a known and consistent state, as
+illustrated in @convergent-config-management. While efforts are made to
+standardise configurations, achieving exact uniformity is extremely challenging,
+if not impossible. Environments may progressively "converge" towards a common
+state, but subtle differences can persist, introducing variability. To
+illustrate this model, we could think of an arbitrary environment that needs to
+be configured in a specific way, reach a particular well known state. For
+example, some specific dependencies have to be installed to run a particular
+service. Tools like Puppet #cite(<puppet>, form: "normal"), Chef
+#cite(<chef>, form: "normal"), Terraform #cite(<terraform>, form: "normal")
+and Ansible #cite(<ansible>, form: "normal") might help to achieve this goal.
+
+While convergent management offers flexibility in responding to unforeseen
+changes in the environment, it is prone to feedback loops that may cause
+unexpected behaviour​. Such feedback loops make it difficult to
+achieve complete reproducibility, as the system's progression towards the
+desired state is not guaranteed to follow a deterministic path.
+
+#info-box[
+  Feedback loops #cite(<ThoughtsOnSystemsManagementMethods>, form: "normal")
+  refer to a situation where the system continuously reacts to its own changes
+  or state modifications, often in an unintended or uncontrollable way.
+  Specifically, feedback loops occur when the system detects deviations from its
+  desired state and repeatedly attempts to correct them. However, each
+  corrective action may introduce new changes that the system tries to react to
+  again, leading to a continuous loop of corrections and adjustments. This
+  behaviour can be problematic because it may cause the system to never fully
+  stabilise or reach its intended state. Instead, the system keeps cycling
+  through adjustments based on previous changes, which can result in
+  unpredictable outcomes.
+]
+
+===== Congruent Configuration Management
+
+This approach in @congruent-config-management enforces strict consistency across
+all environments, ensuring that each environment maintains an identical
+configuration. By preventing configuration drift from the outset, congruent
+configuration management aims to eliminate one of the key sources of
+non-determinism. Maintaining identical setups across environments is a central
+goal of this model, providing the highest level of determinism and reliability
+in system behaviours.
+
+Congruent management, particularly through the adoption of immutable
+environment ((add ref to ch2-environments)), ensures that environment remain in a
+well-defined state, thus maximising reproducibility. However, this approach can
+lack the flexibility required for dynamic environments, where each minor
+adjustments may necessitate rebuilding the entire system. This limitation
+highlights the importance of carefully choosing between convergent and congruent
+approaches based on the environment's needs.
+
+#info-box[
+  Immutable environments ((add ref to ch2-environments)) are environments that are designed
+  to be unchangeable once they are created. They are often used in containers
+  #eg[Docker #cite(<docker>, form: "normal")], where the ability to quickly create
+  and destroy environments is essential. Immutable environments enhance
+  reproducibility and reliability, making them an ideal choice for environments
+  that require high levels of predictability and stability.
+]
+
+Tools such as Guix or Nix have demonstrated that it is possible to achieve a
+high degree of congruence while allowing controlled divergence in specific areas
+such as databases, logs or secret management​. This balance highlights the
+flexibility required to maintain reproducibility in environments that manage
+both static system components and dynamic data.
+
+On top of specifying configuration management models, we can also distinguish
+two different configuration management paradigms.
+
+#figure(
+  include "../../resources/typst/configuration-management-summary.typ",
+  caption: [Configuration Management Models and Paradigms],
+  kind: "table",
+  supplement: [Table],
+) <ch2-table-configuration-mgmt>
+
+===== Imperative Configuration Management
+
+This paradigm specifies the exact steps required to transition an environment
+from its current state to the desired state. Tools such as
+Ansible #cite(<ansible>, form: "normal"), Chef #cite(<chef>, form: "normal"),
+Docker #cite(<docker>, form: "normal"), and shell commands exemplify this
+paradigm. While imperative configurations enable the use of complex logic and
+conditional operations, they can be challenging to maintain due to their
+non-idempotent nature, meaning the same script may yield different results
+depending on the environment's initial state.
+
+The expressiveness of imperative tools allows for stronger assumptions about the
+environment's current state, which increases the likelihood of configuration
+drift as environments diverge over time. Ensuring consistency in an imperative
+approach often demands extensive error handling, validation checks, and retries
+to guarantee that, despite the sequential nature of the process, the system
+ultimately reaches a stable state.
+
+While this approach requires careful management to ensure consistency, providing
+detailed control at the expense of simplicity and predictability, some
+imperative tools can achieve a level of congruence, but this often comes at the
+expense of predictability and ease of maintenance, making them less suitable in
+environments where stability and simplicity are prioritised.
+
+===== Declarative Configuration Management
+
+Declarative configuration management ensure idempotence, meaning the same
+configuration can be applied multiple times without altering the environment
+beyond its intended state. This abstraction simplifies understanding and
+maintenance by allowing the system to determine the necessary actions to achieve
+the desired state. Tools such as Puppet #cite(<puppet>, form: "normal"),
+Kubernetes #cite(<kubernetes>, form: "normal"),
+Terraform #cite(<terraform>, form: "normal") and, under some conditions,
+Docker #cite(<docker>, form: "normal") are used to specify the desired end
+state. These tools typically feature their own specific #gls("DSL") to create
+high-level descriptions of the expected environment's state, as opposed to
+issuing imperative and procedural commands. The declarative approach mitigates
+the risk of configuration drift by prioritising idempotence, maintaining
+explicit dependency graphs, and ensuring a strong awareness of the current state
+of the environment​​ #cite(<HunterGCP>, form: "normal", supplement: [p. 348]).
+
+#info-box(kind: "note")[
+  In @ch2-table-configuration-mgmt, Docker #cite(<docker>, form: "normal") and
+  Ansible #cite(<ansible>, form: "normal") are classified as both declarative
+  and imperative. This dual classification arises from the fact that while
+  they often start with declarative configurations
+  #eg[a `Dockerfile`, a `playbook`], they can shift towards an imperative
+  approach when shell commands are introduced within those files to achieve
+  the desired state. As a result for Docker, the same `Dockerfile` may produce
+  different outcomes depending on the base image in use. Similarly, Ansible
+  might behave differently depending on the current state of the machine it
+  runs on. This dual nature can lead to non-idempotent behaviour, hindering
+  reproducibility.
+
+  Classifying these tools into distinct categories is far from being trivial.
+  Some tools feature comprehensive #gls("DSL") that are agnostic of the
+  underlying #gls("OS") and architecture, functioning independently without the
+  need of additional dependencies. In contrast, other tools rely on external
+  technologies, further complicating the distinction between imperative and
+  declarative configuration management. The boundaries between these paradigms
+  are often blurred, as it's rarely a matter of black and white. For instance,
+  while Nix and Guix are primarily categorised as declarative, they occasionally
+  rely on imperative languages #eg[shell scripts, Python] to perform specific
+  tasks. This illustrates that even tools labelled as declarative can integrate
+  aspects of imperative configuration management, adding nuance to their
+  classification.
+] <info-box-docker-classification>
+
+=== Computational Environments <ch2-environments>
+
+Environments where a build or computational process occurs can be broadly
+categorised into two types: hardware and software environments
+#cite(<strangfeld_2024>, form: "normal", supplement: "p. 8, section 2.1"). While
+software environments can be managed to a high degree of consistency, achieving
+reproducibility across different hardware, particularly different #gls("CPU")
+architectures #eg[`x86`, `ARM`], is essentially impossible. Tasks like
+instruction execution, memory management, and floating-point calculations are
+handled in distinct ways. Even small variations in these processes can lead to
+differences in output. Consequently, even with identical software, builds on
+different types of #gls("CPU") architectures will produce different results.
+When something is said to be reproducible, it typically means reproducible
+within the same #gls("CPU") architecture. Therefore, this section will focus
+exclusively on the reproducibility challenges within software environments.
+
+A software environment is composed of the #gls("OS"), along with the set of
+tools, libraries, and dependencies required to build or run a specific
+application. Any change in these components can influence the outcome of a
+software build or execution. For example, a minor update to a library could
+potentially alter the behaviour of the software, producing different outcomes
+across different executions​​ or more importantly, have an impact on the security
+level.
+
+To enhance reproducibility, it is critical to ensure that the software
+environment remains stable and unaltered during both the build and execution
+phases. Unfortunately, conventional #glspl("OS") such as Linux distributions,
+Microsoft Windows, and macOS, are #emph[mutable] by default. This mutability is
+primarily facilitated through package managers, which enable users to easily
+modify their environments by installing or upgrading software packages​. As a
+result, uncontrolled changes to dependencies may also lead to inconsistencies in
+software behaviour, or have a impact on the security level, undermining
+reproducibility​.
+
+To mitigate these issues, #emph[immutable] environments have gained popularity.
+Tools such as Docker #cite(<docker>, form: "normal") provide mechanisms to
+encapsulate software and their dependencies in containers, thus creating
+environments that remain unchanged after creation. Once a container is built, it
+can be shared and executed across different systems with the guarantee that it
+will function identically, given the same environment. This characteristic makes
+containers highly suitable for distributing software.
+
+Despite the advantages of immutability, it does not guarantee reproducibility.
+For instance, container images hosted on platforms like Docker Hub
+#cite(<dockerhub>, form: "normal"), including popular language interpreters
+#eg[Python, NodeJS, PHP], may not be reproducible due to non-deterministic
+steps during the image creation (at build-time). A specific example can be found
+in #ref(<python-dockerfile>), which runs `apt-get update` at line 4 as part of
+the image build process. Since `apt-get` pulls the very latest version of
+package index during its creation, it is impossible to build again the same
+image later, compromising Docker's build-time reproducibility.
+
+#figure(
+  sourcefile(
+    lang: "dockerfile",
+    file: "../../../resources/sourcecode/python.dockerfile",
+  ),
+  caption: [
+    An excerpt of the Python's Dockerfile
+    #cite(<python-dockerfile-repository>, form: "normal") used to build the
+    #emph[official] Python images.
+  ],
+) <python-dockerfile>
+
+Docker images, once built, are immutable. While Docker does not guarantee
+build-time reproducibility, it has the potential to ensure run-time
+reproducibility, reflecting Docker's philosophy of
+#emph["build once, use everywhere"]. This distinction between build-time
+reproducibility (@def-reproducibility-build-time) and run-time reproducibility
+(@def-reproducibility-run-time) is key. Docker does not ensure that an image
+will always be built consistently, often due to the base image used (as
+declared in the `FROM` directive of a `Dockerfile`), as seen in
+@python-dockerfile. Although building a reproducible image with Docker is
+technically possible, it would require additional effort, external tools, and a
+more complex setup. Therefore, we assume that build-time reproducibility is not
+guaranteed, but the immutability of the environment significantly enhances the
+potential for reproducibility at run-time.
+
+#info-box(kind: "important")[
+  Docker is a platform for building, shipping, and running applications in
+  containers, with Docker Hub #cite(<dockerhub>, form: "normal") providing a large
+  repository of container images, which has significantly contributed to
+  Docker's popularity. Among these are the #emph[Docker "official" images]
+  #cite(<dockerofficialimages>, form: "normal"), which are curated and reviewed by
+  the Docker community. These images offer standard environments for popular
+  software and adhere to some quality standards.
+
+  However, the term "official" can be misleading. One might suggest that these
+  images are maintained by the original software's developers, but it's not
+  always the case. For example, the PHP Docker image
+  #cite(<dockerhubphpimage>, form: "normal") is not maintained by the core PHP
+  development team. This means updates or fixes may not be as prompt or
+  specific as if the software’s developers maintained the image.
+
+  While Docker vets these images for quality, responsibility for the contents
+  rests with the maintainers. Users should be aware that official images are not
+  immune to security risks or outdated software, and reviewing the documentation
+  for issues is advisable.
+
+  In summary, Docker "official" images are trusted but may not be maintained by
+  the original software’s maintainers. Developers must use them with caution and
+  full awareness, particularly in production environments, and ensure that the
+  images meet their security and functionality requirements.
+]
+
+Package managers are a critical aspect of the reproducibility puzzle since they
+can manage the state of a computational environment. Without proper control over
+how software and their dependencies are resolved and installed, achieving
+consistent and reproducible builds becomes difficult​.
 
 === Sources Of Non-Determinism
 
@@ -1673,7 +1981,7 @@ Often, timestamps are used to approximate which version of the source were
 built. Since file timestamps are volatile, the source code needs to be tracked
 more accurately than just a timestamp. Just like for version information, the
 solution would be to extract the date from a dedicated file like a changelog, or
-a specific commit #cite(<nixpkgs-pull-256270> ,form: "normal").
+a specific commit #cite(<nixpkgs-pull-256270>, form: "normal").
 
 To circumvent this issue, `SOURCE_DATE_EPOCH` is a specific environment variable
 convention for pinning timestamps to a specific value that has been introduced
@@ -1715,7 +2023,7 @@ especially when those builds are not identical. This section introduces a tool
 designed specifically for this purpose.
 
 Developed under the umbrella of the @ReproducibleBuildsOrg effort, `diffoscope`
-#cite(<diffoscope>, form:"normal") is a comprehensive, open-source tool that
+#cite(<diffoscope>, form: "normal") is a comprehensive, open-source tool that
 excels in comparing files and directories. Its unique capability to recursively
 unpack archives of various types and transform binary formats into a
 human-readable form makes it an indispensable tool for software comparison. It

@@ -5,5 +5,6 @@
 #import "@preview/xarrow:0.3.1": xarrow, xarrowSquiggly, xarrowTwoHead
 #import "@preview/hydra:0.6.1": *
 #import "@preview/cetz:0.3.4"
+#import "@preview/cetz-plot:0.1.1": *
 #import "colors.typ": *
 #import "workarounds.typ": *
