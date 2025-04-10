@@ -7,7 +7,7 @@
     #set align(bottom)
     #figure(
       {
-        set text(font: "Virgil 3 YOFF")
+        set text(font: "Virgil")
         cetz.canvas({
           cetz.draw.set-style(axes: (shared-zero: false))
 
@@ -48,7 +48,7 @@
     #set align(bottom)
     #figure(
       {
-        set text(font: "Virgil 3 YOFF")
+        set text(font: "Virgil")
         cetz.canvas({
           cetz.draw.set-style(axes: (shared-zero: false))
 
@@ -99,7 +99,7 @@
     #set align(bottom)
     #figure(
       {
-        set text(font: "Virgil 3 YOFF")
+        set text(font: "Virgil")
         cetz.canvas({
           cetz.draw.set-style(axes: (shared-zero: false))
 
