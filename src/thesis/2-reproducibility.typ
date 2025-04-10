@@ -673,7 +673,7 @@ operations.
   [
     #figure(
       {
-        set text(font: "Virgil 3 YOFF")
+        set text(font: "Virgil")
         cetz.canvas({
           import cetz.draw: *
 
@@ -689,7 +689,7 @@ operations.
   [
     #figure(
       {
-        set text(font: "Virgil 3 YOFF")
+        set text(font: "Virgil")
         cetz.canvas({
           import cetz.draw: *
 
@@ -1339,7 +1339,7 @@ that could also be potentially insecure.
 
 #figure(
   {
-    set text(font: "Virgil 3 YOFF")
+    set text(font: "Virgil")
     image("../../resources/images/security-independent-builds.svg")
   },
   caption: [

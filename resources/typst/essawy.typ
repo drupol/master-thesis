@@ -1,6 +1,6 @@
 #{
   set text(
-    font: "Virgil 3 YOFF",
+    font: "Virgil",
     size: .9em,
   )
   box[

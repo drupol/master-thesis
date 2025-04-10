@@ -1,5 +1,5 @@
 #{
-  set text(font: "Virgil 3 YOFF")
+  set text(font: "Virgil")
   image("../../resources/images/rules.svg", fit: "stretch")
   v(-1.5em)
   grid(

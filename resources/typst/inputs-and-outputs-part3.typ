@@ -1,7 +1,7 @@
 #import "../../src/thesis/imports/preamble.typ": *
 
 #set align(center + horizon)
-#set text(font: "Virgil 3 YOFF")
+#set text(font: "Virgil")
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr, 1fr),
   rows: (40pt, 25pt),
