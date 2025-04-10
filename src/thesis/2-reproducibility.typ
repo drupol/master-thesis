@@ -1412,7 +1412,7 @@ entirely achievable, we will delve deeper into these challenges by exploring the
 impact of non-deterministic compilers and the strategies to mitigate these
 challenges using different methods.
 
-== Deterministic Builds And Environments
+== Deterministic Builds And Environments <ch2-deterministic-builds-and-environments>
 
 In this section, we will explore the concept of deterministic builds, and the
 potential sources of non-determinism in software builds.
@@ -1470,9 +1470,9 @@ and at any point in the past or future​​​​.
 
 Reproducibility relies on stable, consistent and well-maintained codebases but
 also heavily depends on stable, consistent and well-maintained environments as
-seen in (add ref to ch2-environments). In addition, a critical component is
+seen in #ref(<ch2-deterministic-builds-and-environments>). In addition, a critical component is
 environment configuration management. Configuration management plays a critical
-role inensuring reproducibility by mitigating the non-deterministic behaviours
+role in ensuring reproducibility by mitigating the non-deterministic behaviours
 introduced by configuration drifts.
 
 #info-box[
@@ -1524,9 +1524,9 @@ if not impossible. Environments may progressively "converge" towards a common
 state, but subtle differences can persist, introducing variability. To
 illustrate this model, we could think of an arbitrary environment that needs to
 be configured in a specific way, reach a particular well known state. For
-example, some specific dependencies has to be installed to run a particular
+example, some specific dependencies have to be installed to run a particular
 service. Tools like Puppet #cite(<puppet>, form: "normal"), Chef
-#cite(<chef>, form: "normal"), Terraform #cite(<terraform>,form: "normal")
+#cite(<chef>, form: "normal"), Terraform #cite(<terraform>, form: "normal")
 and Ansible #cite(<ansible>, form: "normal") might help to achieve this goal.
 
 While convergent management offers flexibility in responding to unforeseen
@@ -1570,7 +1570,7 @@ approaches based on the environment's needs.
 #info-box[
   Immutable environments ((add ref to ch2-environments)) are environments that are designed
   to be unchangeable once they are created. They are often used in containers
-  #eg[Docker #cite(<docker>,form:"normal")], where the ability to quickly create
+  #eg[Docker #cite(<docker>, form: "normal")], where the ability to quickly create
   and destroy environments is essential. Immutable environments enhance
   reproducibility and reliability, making them an ideal choice for environments
   that require high levels of predictability and stability.
@@ -1623,15 +1623,19 @@ configuration can be applied multiple times without altering the environment
 beyond its intended state. This abstraction simplifies understanding and
 maintenance by allowing the system to determine the necessary actions to achieve
 the desired state. Tools such as Puppet #cite(<puppet>, form: "normal"),
-Kubernetes #cite(<kubernetes>,form: "normal"),
-Terraform #cite(<terraform>,form: "normal") and, under some conditions,
+Kubernetes #cite(<kubernetes>, form: "normal"),
+Terraform #cite(<terraform>, form: "normal") and, under some conditions,
 Docker #cite(<docker>, form: "normal") are used to specify the desired end
 state. These tools typically feature their own specific #gls("DSL") to create
 high-level descriptions of the expected environment's state, as opposed to
 issuing imperative and procedural commands. The declarative approach mitigates
 the risk of configuration drift by prioritising idempotence, maintaining
 explicit dependency graphs, and ensuring a strong awareness of the current state
-of the environment​​ #cite(<HunterGCP>,form:"normal", supplement: [p. 348]).
+of the environment​​ #cite(<HunterGCP>, form: "normal", supplement: [p. 348]).
+
+// This doesn't really convince me, you classify a shell command as
+// "declarative" when they are in shell scripts, which is not much different
+// to me as a Dockerfile
 
 #info-box(kind: "note")[
   In @ch2-table-configuration-mgmt, Docker #cite(<docker>, form: "normal") and
