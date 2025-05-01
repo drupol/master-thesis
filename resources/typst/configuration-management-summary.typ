@@ -3,7 +3,7 @@
 #set align(left)
 
 #table(
-  columns: (1fr, 1fr, 1fr),
+  columns: (auto, 1fr, 1fr),
   stroke: none,
   table.header(
     [],
