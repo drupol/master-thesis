@@ -1560,7 +1560,7 @@ goal of this model, providing the highest level of determinism and reliability
 in system behaviours.
 
 Congruent management, particularly through the adoption of immutable
-environment ((add ref to ch2-environments)), ensures that environment remain in a
+environment (#ref(<ch2-environments>)), ensures that environment remain in a
 well-defined state, thus maximising reproducibility. However, this approach can
 lack the flexibility required for dynamic environments, where each minor
 adjustments may necessitate rebuilding the entire system. This limitation
@@ -1568,7 +1568,7 @@ highlights the importance of carefully choosing between convergent and congruent
 approaches based on the environment's needs.
 
 #info-box[
-  Immutable environments ((add ref to ch2-environments)) are environments that are designed
+  Immutable environments (#ref(<ch2-environments>)) are environments that are designed
   to be unchangeable once they are created. They are often used in containers
   #eg[Docker #cite(<docker>, form: "normal")], where the ability to quickly create
   and destroy environments is essential. Immutable environments enhance
