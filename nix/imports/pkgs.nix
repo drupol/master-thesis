@@ -1,14 +1,10 @@
-{ inputs, self, ... }:
+{ inputs, ... }:
 {
-  perSystem =
-    { system, ... }:
-    {
-      _module.args.pkgs = import self.inputs.nixpkgs {
-        inherit system;
-        overlays = [
-          inputs.typst-dev.overlays.default
-          (final: prev: { nixpkgs-unstable = import inputs.nixpkgs-unstable { inherit system; }; })
-        ];
-      };
-    };
+  imports = [
+    inputs.pkgs-by-name-for-flake-parts.flakeModule
+  ];
+
+  perSystem = {
+    pkgsDirectory = ../pkgs;
+  };
 }

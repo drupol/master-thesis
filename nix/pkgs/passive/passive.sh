@@ -52,12 +52,12 @@ withheld|withstood|wrung|\
 written"
 
 if [ "$1" = "" ]; then
- echo "usage: $(basename "$0") <file> ..."
- exit
+  echo "usage: $(basename "$0") <file> ..."
+  exit
 fi
 
 grep -E -n -i --color \
- "\\b(am|are|were|being|is|been|was|be)\
+  "\\b(am|are|were|being|is|been|was|be)\
 \\b[ ]*(\w+ed|($irregulars))\\b" "$@"
 
 exit $?

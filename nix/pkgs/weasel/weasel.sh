@@ -5,8 +5,8 @@ weasels="many|various|very|fairly|several|extremely\
 |substantially|clearly|vast|relatively|completely"
 
 if [ "$1" = "" ]; then
- echo "usage: $(basename "$0") <file> ..."
- exit
+  echo "usage: $(basename "$0") <file> ..."
+  exit
 fi
 
 grep -E -i -n --color "\\b($weasels)\\b" "$@"

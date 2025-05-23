@@ -1,5 +1,5 @@
 {
-  writeShellApplication
+  writeShellApplication,
 }:
 
 writeShellApplication {

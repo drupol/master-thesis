@@ -1,6 +1,6 @@
 {
   writeShellApplication,
-  perl
+  perl,
 }:
 
 writeShellApplication {
