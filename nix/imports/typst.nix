@@ -103,5 +103,7 @@
           TYPST_PACKAGE_PATH = "${typst}/lib/typst/packages";
         };
       };
+
+      checks = documentDrvs;
     };
 }

@@ -1,0 +1,12 @@
+name: "Nix flake check"
+on:
+  workflow_call:
+  pull_request:
+  push:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - run: nix flake check --accept-flake-config
