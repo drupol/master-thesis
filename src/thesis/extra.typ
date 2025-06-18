@@ -4,12 +4,12 @@
 
 This master thesis has been developed exclusively using open-source tools.
 Similar to an open-source project, it was maintained in a private `git`
-repository #cite(<PolMasterThesis>, form:"normal"). That repository will be made
+repository #cite(<PolMasterThesis>, form: "normal"). That repository will be made
 public after the oral defense and necessary internal cleanup. Automated and
 reproducible builds were managed via GitHub Actions
-#cite(<ghActions>,form:"normal"), ensuring that a new compiled version was
+#cite(<ghActions>, form: "normal"), ensuring that a new compiled version was
 published at each commit to the project. Additionally, I'm planning to publish
-it on Zenodo #cite(<Zenodo>,form: "normal") after the necessary formalities are
+it on Zenodo #cite(<Zenodo>, form: "normal") after the necessary formalities are
 completed.
 
 This work is licenced under a dual license: the #gls("CC BY 4.0") and the
@@ -21,5 +21,5 @@ or other unethical practices. In case of any conflict between the licences,
 `HL3` will take precedence.
 
 For the purpose of the @chapter3, an open-source project
-#cite(<r13yBuildScenarios>,form:"normal") was created to provide a full
+#cite(<r13yBuildScenarios>, form: "normal") was created to provide a full
 transparency on the results shown in that chapter.

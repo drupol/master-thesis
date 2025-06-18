@@ -16,7 +16,9 @@
     table.vline(stroke: .5pt),
     table.cell(rowspan: 2, align: horizon + center)[Cons],
     table.vline(stroke: .5pt),
-    table.cell(colspan: 3)[Reproducible\ within the same\ hardware architecture],
+    table.cell(
+      colspan: 3,
+    )[Reproducible\ within the same\ hardware architecture],
     [In space],
     table.vline(stroke: .5pt + black.lighten(75%)),
     [In time],

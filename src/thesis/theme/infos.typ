@@ -119,24 +119,20 @@
         }
       )
     }
-    #figure(
-      kind: "info-box",
-      supplement: [Info box],
-      {
-        set align(left)
-        table(
-          columns: if icon {
-            (38pt, 1fr)
-          } else {
-            1
-          },
-          inset: 10pt,
-          stroke: none,
-          column-gutter: 10pt,
-          ..contents,
-        )
-      },
-    ) #{
+    #figure(kind: "info-box", supplement: [Info box], {
+      set align(left)
+      table(
+        columns: if icon {
+          (38pt, 1fr)
+        } else {
+          1
+        },
+        inset: 10pt,
+        stroke: none,
+        column-gutter: 10pt,
+        ..contents,
+      )
+    }) #{
       if ref != none {
         label(ref)
       } else {

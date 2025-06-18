@@ -1,7 +1,7 @@
 #import "common/metadata.typ": *
 
 #let leftblank(
-  weak: true
+  weak: true,
 ) = {
   pagebreak(weak: weak)
 

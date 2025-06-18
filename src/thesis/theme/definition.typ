@@ -16,12 +16,9 @@
   )[
     #it.body
   ]
-  show figure.caption.where(kind: "definition"): it => block(
-    width: 100%,
-    {
-      it
-    },
-  )
+  show figure.caption.where(kind: "definition"): it => block(width: 100%, {
+    it
+  })
 
   [
     #figure(

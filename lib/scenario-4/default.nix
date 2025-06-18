@@ -1,5 +1,8 @@
 {
-  pkgs ? import (fetchTarball { url = "https://github.com/NixOS/nixpkgs/archive/7872526e9c5332274ea5932a0c3270d6e4724f3b.tar.gz"; sha256 = "0ya1nvcjcsadi9vrvjbi2lh6m9fjb759miy1236rkv4xz7j8bgiy"; }) { }
+  pkgs ? import (fetchTarball {
+    url = "https://github.com/NixOS/nixpkgs/archive/e314d5c6d3b3a0f40ec5bcbc007b0cbe412f48ae.tar.gz";
+    sha256 = "049zgk55rk6x3m0v7xdcabnayc0l1rbbfvfg9fr9ky92f9g2wl12";
+  }) { }
 }:
 
 pkgs.stdenv.mkDerivation {

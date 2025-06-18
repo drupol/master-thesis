@@ -23,7 +23,9 @@ jobs:
 
             - name: Extract branch name
               shell: bash
-              run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+              run:
+                  echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >>
+                  $GITHUB_OUTPUT
               id: extract_branch
 
     build:
@@ -70,7 +72,9 @@ jobs:
               run: |
                   for f in *.pdf; do cp ${f} ../$(printf '%s\n' "${{ github.run_number }}--${f%.pdf}--${{ github.sha }}.pdf"); done
 
-            - name: Create pre-release (v${{ github.run_number }}-${{ github.sha }})
+            - name:
+                  Create pre-release (v${{ github.run_number }}-${{ github.sha
+                  }})
               id: create_release
               uses: softprops/action-gh-release@v2
               env:
@@ -81,4 +85,4 @@ jobs:
                   draft: false
                   prerelease: true
                   files: |
-                    ./*.pdf
+                      ./*.pdf

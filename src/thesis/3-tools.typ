@@ -188,7 +188,7 @@ test scenarios described in this chapter are executed through GitHub Actions
 #cite(<ghActions>, form: "normal"). GitHub Actions is an automation platform
 that enables #gls("CICD"), allowing builds to be performed, tested, and deployed
 across various machines and architectures directly from GitHub repositories
-#cite(<9978190>,form:"normal").
+#cite(<9978190>, form: "normal").
 
 Our testing environments supports three distinct architectures:
 
@@ -231,13 +231,13 @@ Each scenario's `Makefile` essentially contain four essential steps only:
 #info-box[
   All source code and scenario files are available for reference under the
   `lib/` directory of this master's thesis source code
-  #cite(<PolMasterThesis>, form:"normal"). Each scenario's directory contains
+  #cite(<PolMasterThesis>, form: "normal"). Each scenario's directory contains
   its own `Makefile`, which is not included in this document for brevity
   reasons. However, these makefiles can be used to locally reproduce the steps
   outlined in this document.
 ]
 
-Our GitHub Actions workflows #cite(<r13yBuildScenarios>,form:"normal") use
+Our GitHub Actions workflows #cite(<r13yBuildScenarios>, form: "normal") use
 these Makefiles, automating the execution of each scenario and ensuring
 consistency and repeatability in the process. By doing so, they empower users to
 locally reproduce the steps outlined in this document with full transparency.
@@ -256,7 +256,7 @@ manager to compute the hash of a path.
   anywhere, not just to files within the Nix ecosystem. This command
   distinguishes itself by its capacity to hash directories in addition to files.
   An alternative to this approach could have been the use of a
-  #gls("SWHID") #cite(<hal-01865790>,form:"normal").
+  #gls("SWHID") #cite(<hal-01865790>, form: "normal").
 ]
 
 The `nix` command is available on systems with Nix installed. The difference
@@ -342,7 +342,7 @@ Therefore, reproducibility of the build environment is not guaranteed.
 
 == Evaluation 2 - Docker <ch3-tool2>
 
-Docker #cite(<docker>,form:"normal") has revolutionised software deployment by
+Docker #cite(<docker>, form: "normal") has revolutionised software deployment by
 encapsulating applications in containers, ensuring they run consistently across
 any environment. Unlike traditional virtual machines, Docker containers are
 lightweight, share the host's kernel, and bundle applications with their
@@ -513,8 +513,8 @@ closer to achieving true reproducibility in containerised environments.
 @guixwebsite is an advanced package manager, designed to provide reproducible,
 user-controlled, and transparent package management. It leverages functional
 programming concepts to ensure reproducibility and reliability, using the GNU
-Guile #cite(<guile>, form:"normal") programming language for its core daemon,
-package definitions and system configurations #cite(<courtes2013functional>,form:"normal").
+Guile #cite(<guile>, form: "normal") programming language for its core daemon,
+package definitions and system configurations #cite(<courtes2013functional>, form: "normal").
 
 Central to Guix's philosophy is the concept of reproducible builds and
 environments. This ensures that software can be built in a deterministic manner,
@@ -524,17 +524,17 @@ and libraries, in a way that they can be precisely recreated. It supports
 transactional package upgrades and rollbacks, making system modifications
 risk-free by allowing users to revert to previous states easily.
 
-Guix uses GNU Guile #cite(<guile>,form:"normal"), a Scheme
-#cite(<scheme>,form:"normal") implementation, allowing for more expressive and
+Guix uses GNU Guile #cite(<guile>, form: "normal"), a Scheme
+#cite(<scheme>, form: "normal") implementation, allowing for more expressive and
 programmable package definitions. This choice reflects Guix's emphasis on
 customization and alignment with the @fsfwebsite project's philosophy, rejecting
 proprietary blobs and
 aiming for complete software freedom, which may limit hardware compatibility but
-enhance long-term reproducibility #cite(<9403875>,form:"normal"). Nonetheless,
+enhance long-term reproducibility #cite(<9403875>, form: "normal"). Nonetheless,
 users have the liberty to extend Guix with custom packages, whether free or not,
 without compromising the tool's reproducibility capabilities. In case of
 disappearing upstream sources, Guix can leverage Software Heritage
-#cite(<swh>, form:"normal") to retrieve source code, ensuring long-term
+#cite(<swh>, form: "normal") to retrieve source code, ensuring long-term
 accessibility even if the original source disappears. While Guix's reliance on a
 general-purpose functional programming language may present a steep learning
 curve, it offers extensive flexibility for those proficient in Lisp-like
@@ -971,13 +971,10 @@ issue and try to find the root cause of the discrepancy, for example, using
   caption: [Checking discrepancies between two builds using `diffoscope`],
 ) <ch3-hello-world-typst-rebuild-diffoscope>
 
-#figure(
-  image("../../resources/images/diffoscope-typst.svg"),
-  caption: [
-    A visual comparison with `diffoscope` of two #gls("PDF") files generated
-    from the same Typst document
-  ],
-) <ch3-nix-typst-diff>
+#figure(image("../../resources/images/diffoscope-typst.svg"), caption: [
+  A visual comparison with `diffoscope` of two #gls("PDF") files generated
+  from the same Typst document
+]) <ch3-nix-typst-diff>
 
 `diffoscope` visually compares the discrepancy between the two #gls("PDF")
 files. From the report in @ch3-nix-typst-diff, the highlighted difference seems

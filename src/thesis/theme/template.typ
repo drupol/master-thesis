@@ -21,10 +21,10 @@
       },
     )
 
-    let section = hydra(
-      selectors.by-level(min: 2),
-      display: (_context, element) => element.body,
-    )
+    let section = hydra(selectors.by-level(min: 2), display: (
+      _context,
+      element,
+    ) => element.body)
     let items = (smallcaps(chapter), h(1fr), emph(section))
 
     if calc.even(current) {
@@ -181,7 +181,9 @@
         subsection,
         subsubsection,
       ) = counter(heading).at(el.label)
-      link(el.label)[Chapter #chapter, subsection #section.#subsection.#subsubsection]
+      link(
+        el.label,
+      )[Chapter #chapter, subsection #section.#subsection.#subsubsection]
     } else {
       link(el.label)[#it]
     }
@@ -224,7 +226,7 @@
     // FIX left alignment of glossary:
     // With glossary 0.5.1 it is necessary
     // to overwrite figure captions to be aligned left
-    show figure.caption: c => block(width:100%,align(left, c.body))
+    show figure.caption: c => block(width: 100%, align(left, c.body))
 
     print-glossary(show-all: true, terms)
   }
@@ -243,7 +245,7 @@
         strong(it)
       }
 
-      heading(numbering: none, outlined: false, )[Contents]
+      heading(numbering: none, outlined: false)[Contents]
       outline(title: "", indent: 1.5em, depth: 3)
     }
 
@@ -298,7 +300,9 @@
     )
 
     // List of definitions.
-    [#heading(numbering: none)[List of definitions] #label("list-of-definitions")]
+    [#heading(numbering: none)[List of definitions] #label(
+        "list-of-definitions",
+      )]
     outline(title: "", target: figure.where(kind: "definition"))
 
     leftblank(weak: false)

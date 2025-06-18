@@ -799,13 +799,10 @@ time in which the computation is executed. This addition further refines the
 definition of inputs and outputs, emphasising the dynamic and context-dependent
 nature of computational processes.
 
-#figure(
-  include "../../resources/typst/inputs-and-outputs-part3.typ",
-  caption: [
-    The input is now composed of the program and its parameters and the
-    environment where it is going to be evaluated.
-  ],
-) <inputs-outputs-part3>
+#figure(include "../../resources/typst/inputs-and-outputs-part3.typ", caption: [
+  The input is now composed of the program and its parameters and the
+  environment where it is going to be evaluated.
+]) <inputs-outputs-part3>
 
 We could break down the environment further. However, as we delve deeper into
 segmenting the components essential for a computation, the process becomes
@@ -866,14 +863,11 @@ inputs to produce an output. This does not necessarily imply that the outputs
 are correct. Note that, #emph[correct] means that the evaluation has
 successfully completed without errors.
 
-#figure(
-  include "../../resources/typst/inputs-and-outputs-part4.typ",
-  caption: [
-    The evaluation of inputs into outputs where the input is composed of the
-    program and its parameters and the environment where it is going to be
-    evaluated.
-  ],
-) <inputs-outputs-part4>
+#figure(include "../../resources/typst/inputs-and-outputs-part4.typ", caption: [
+  The evaluation of inputs into outputs where the input is composed of the
+  program and its parameters and the environment where it is going to be
+  evaluated.
+]) <inputs-outputs-part4>
 
 #definition(term: "Evaluation", name: "def-evaluation")[
   $"eval": (F, I, E) -> R$ is a function that evaluates a function $f$ and its
@@ -1291,13 +1285,10 @@ mirrors the recent CVE-2024-3094 #cite(<CVE-2024-3094>, form: "normal") in the
 applications and highlighted the criticality of managing software supply chain
 risks.
 
-#figure(
-  include "../../resources/typst/my-app-graph-not-ok.typ",
-  caption: [
-    Dependency graph of `my-app` version `1.2.3`, where a flaw has been detected
-    in `xz` dependency
-  ],
-) <python-runtime-dependencies-graph-with-flaw>
+#figure(include "../../resources/typst/my-app-graph-not-ok.typ", caption: [
+  Dependency graph of `my-app` version `1.2.3`, where a flaw has been detected
+  in `xz` dependency
+]) <python-runtime-dependencies-graph-with-flaw>
 
 These issues are known as #emph[supply chain attacks], a type of cyber attack
 that targets vulnerabilities in the supply chain of software or hardware
@@ -2052,11 +2043,9 @@ First, we compile the sourcecode twice, creating `build1` and `build2`:
 
 Then, we use `diffoscope` to compare these builds:
 
-#figure(
-  shell(
-    file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log",
-  ),
-) <bash-diffoscope-comparison>
+#figure(shell(
+  file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log",
+)) <bash-diffoscope-comparison>
 
 The tool will generate a detailed report (@diffoscope-report) highlighting the
 differences between `build1` and `build2`. In this hypothetical example,

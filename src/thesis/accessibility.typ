@@ -20,7 +20,7 @@ accessibility:
 
 - Text formatting: the document uses high-contrast text formatting and font
   sizes that are readable across different devices and screen resolutions. The
-  `New Computer Modern` #cite(<NewComputerModern>,form:"normal") font is used,
+  `New Computer Modern` #cite(<NewComputerModern>, form: "normal") font is used,
   chosen for its clarity and readability, especially in mathematical and
   technical contexts.
 

@@ -88,5 +88,5 @@
     Emphasis on reproducibility might slow down innovation as developers might
     spend more time ensuring reproducibility rather than exploring new ideas and
     methodologies​.
-  ]
+  ],
 )

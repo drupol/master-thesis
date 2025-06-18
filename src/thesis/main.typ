@@ -1,23 +1,18 @@
 #import "imports/preamble.typ": *
 #import "theme/template.typ": *
 
-#set document(
-  title: title,
-  author: author,
-  date: none,
-  keywords: (
-    "university",
-    "umons",
-    "june 2024",
-    "master thesis",
-    "reproducibility",
-    "r13y",
-    "compilation",
-    "docker",
-    "nix",
-    "guix",
-  ),
-)
+#set document(title: title, author: author, date: none, keywords: (
+  "university",
+  "umons",
+  "june 2024",
+  "master thesis",
+  "reproducibility",
+  "r13y",
+  "compilation",
+  "docker",
+  "nix",
+  "guix",
+))
 
 #show: make-glossary
 
@@ -43,7 +38,7 @@
       key: "CC BY 4.0",
       short: "CC BY 4.0",
       long: "Creative Commons Attribution 4.0 International",
-      description: [The Creative Commons Attribution 4.0 International License #cite(<CCBy40>,form:"normal") is a widely used license that allows others to distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most flexible of the CC licenses.],
+      description: [The Creative Commons Attribution 4.0 International License #cite(<CCBy40>, form: "normal") is a widely used license that allows others to distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most flexible of the CC licenses.],
     ),
     (
       key: "CDN",
@@ -67,7 +62,7 @@
       key: "CRA",
       short: "CRA",
       long: "Cyber Resilience Act",
-      description: [The Cyber Resilience Act #cite(<CRA>,form:"normal") is a proposed European Union regulation that aims to improve the cybersecurity of digital products and services. It includes provisions for #link(<ch2-supply-chain>)[software supply chain] security, incident reporting, and security certification.],
+      description: [The Cyber Resilience Act #cite(<CRA>, form: "normal") is a proposed European Union regulation that aims to improve the cybersecurity of digital products and services. It includes provisions for #link(<ch2-supply-chain>)[software supply chain] security, incident reporting, and security certification.],
     ),
     (
       key: "CS",
@@ -108,7 +103,7 @@
       key: "HL3",
       short: "HL3",
       long: "Hippocratic Licence 3.0",
-      description: [The Hippocratic Licence 3.0 #cite(<HypocraticLicence>,form:"normal") is a software license that ensures that software is not used to contribute to human rights abuses or other unethical practices. It is designed to protect users and communities from the potential misuse of software.],
+      description: [The Hippocratic Licence 3.0 #cite(<HypocraticLicence>, form: "normal") is a software license that ensures that software is not used to contribute to human rights abuses or other unethical practices. It is designed to protect users and communities from the potential misuse of software.],
     ),
     (
       key: "IDE",
@@ -122,7 +117,7 @@
       key: "IEEE",
       short: "IEEE",
       long: "Institute of Electrical and Electronics Engineers",
-      description: [The Institute of Electrical and Electronics Engineers #cite(<ITripleE>, form:"normal"), established in 1963, is the world's largest technical professional organisation dedicated to advancing technology for the benefit of humanity. It serves as a professional association for electronic engineering, electrical engineering, and related disciplines.],
+      description: [The Institute of Electrical and Electronics Engineers #cite(<ITripleE>, form: "normal"), established in 1963, is the world's largest technical professional organisation dedicated to advancing technology for the benefit of humanity. It serves as a professional association for electronic engineering, electrical engineering, and related disciplines.],
     ),
     (
       key: "MD5",
@@ -161,7 +156,7 @@
       short: "PURL",
       plural: "PURLs",
       long: "Package URL",
-      description: [A PURL #cite(<purl>,form:"normal") is a #gls("URL") string used to identify and locate a software package in a mostly universal and uniform way across programing languages, package managers, packaging conventions, tools, APIs and databases.],
+      description: [A PURL #cite(<purl>, form: "normal") is a #gls("URL") string used to identify and locate a software package in a mostly universal and uniform way across programing languages, package managers, packaging conventions, tools, APIs and databases.],
     ),
     (
       key: "REPL",
@@ -226,7 +221,7 @@
       key: "SWHID",
       short: "SWHID",
       long: "Software Heritage Identifier",
-      description: [The Software Heritage Identifier #cite(<hal-01865790>,form:"normal") is a unique identifier for software artifacts, such as source code, that is used to track and reference software across different platforms and systems.],
+      description: [The Software Heritage Identifier #cite(<hal-01865790>, form: "normal") is a unique identifier for software artifacts, such as source code, that is used to track and reference software across different platforms and systems.],
     ),
     (
       key: "URL",

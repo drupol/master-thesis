@@ -167,7 +167,7 @@ Transitioning from BASIC, I briefly jumped on Microsoft Windows before moving to
 Linux, a platform that has since become my daily driver. In 2019, I found myself
 grappling with a sluggish laptop running a popular Linux distribution. In search
 of a faster, binary-based alternative, I transitioned to NixOS, a Linux
-distribution #cite(<hemel_2024_12906987>,form:"normal") managed by the Nix
+distribution #cite(<hemel_2024_12906987>, form: "normal") managed by the Nix
 package manager #cite(<NixOS>, form: "normal"). This shift marked the beginning
 of a totally new perspective on software development for me. It was through
 NixOS that I encountered the concept of "reproducibility" which opened my eyes
@@ -254,7 +254,7 @@ Here's a non-exhaustive list of projects I have contributed to:
   community. The program caters to both experienced Nix users and newcomers,
   offering a unique opportunity to work together on a diverse range of topics.
   During this event, I did a talk about how we use Nix at work
-  #cite(<SoN200PolDellaiera>,form:"normal").
+  #cite(<SoN200PolDellaiera>, form: "normal").
 - In a recent YouTube interview on "La Tronche En Biais"
   #cite(<teb>, form: "normal") , in a live titled "SCIENCES: Une crise de
   reproductibilité des études?" #cite(<teb-r13y-crisis-lib>, form: "normal"), I

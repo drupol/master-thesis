@@ -22,10 +22,7 @@
         e91ee846ed
       ]
     },
-    "Inputs",
-    "",
-    "Checksum",
-    "",
-    "Outputs",
+
+    "Inputs", "", "Checksum", "", "Outputs",
   )
 }

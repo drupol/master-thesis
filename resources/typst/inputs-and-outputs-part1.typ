@@ -10,9 +10,6 @@
   image("../../resources/images/computation-cogs.svg"),
   xarrow(sym: sym.arrow.r, width: 50pt, ""),
   image("../../resources/images/inputs-icon.svg"),
-  "Inputs",
-  "",
-  "Computation",
-  "",
-  "Outputs",
+
+  "Inputs", "", "Computation", "", "Outputs",
 )

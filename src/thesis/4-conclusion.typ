@@ -134,13 +134,13 @@ also not reproducible.
 
 #info-box[
   In #emph[declarative configuration management]
-  #cite(<HunterGCP>,form:"normal"), tools such as Docker, Kubernetes
-  #cite(<kubernetes>,form: "normal"), and Terraform
-  #cite(<terraform>,form: "normal") are used to specify the desired end state
+  #cite(<HunterGCP>, form: "normal"), tools such as Docker, Kubernetes
+  #cite(<kubernetes>, form: "normal"), and Terraform
+  #cite(<terraform>, form: "normal") are used to specify the desired end state
   of the system rather than the steps to achieve it. For example, a `Dockerfile`
   describes the final environment for a container, ensuring that the system
   matches predefined specifications. This method aligns with the #emph[congruent
-  system management] #cite(<Traugott2002>,form:"normal") approach, focusing on
+    system management] #cite(<Traugott2002>, form: "normal") approach, focusing on
   consistency and predictability. Declarative configurations ensure idempotence,
   meaning the same configuration can be applied multiple times without altering
   the system beyond its intended state. This abstraction makes it easier to
@@ -148,13 +148,13 @@ also not reproducible.
   achieve the desired state.
 
   In contrast, #emph[imperative configuration management]
-  #cite(<HunterGCP>,form:"normal") involves detailing the exact steps required
+  #cite(<HunterGCP>, form: "normal") involves detailing the exact steps required
   to transition a system from its current state to a desired state, providing
   granular control over the configuration process. Tools such as Ansible
   #cite(<ansible>, form: "normal"), Chef #cite(<chef>, form: "normal"), Puppet
   #cite(<puppet>, form: "normal"), and Bash scripts exemplify this approach.
   This method aligns with the #emph[convergent system management]
-  #cite(<Traugott2002>,form:"normal") approach, focusing on achieving a goal
+  #cite(<Traugott2002>, form: "normal") approach, focusing on achieving a goal
   through a series of specific actions. While imperative configurations allow
   for complex logic and conditional operations, they can be challenging to
   maintain due to their non-idempotent nature, meaning the same script can
@@ -170,7 +170,7 @@ also not reproducible.
   approach to configuration management reduces the possibility of configuration
   drift by favouring idempotence, explicit dependency graphs, and maintaining a
   strong awareness of the current state of the environment
-  #cite(<HunterGCP>,form:"normal", supplement: [p.348]).
+  #cite(<HunterGCP>, form: "normal", supplement: [p.348]).
 ]
 
 During the evaluation, I found Docker to be very easy to use. By using a simple
@@ -190,7 +190,7 @@ as good as running the software natively without containerisation, but it
 remains acceptable for most use cases. Although initiatives like DevContainer
 #cite(<devcontainer>, form: "normal") aim to offer a more integrated experience
 with #glspl("IDE", long: false) #eg[Visual Studio Code
-#cite(<vscode>, form: "normal")], working within a container introduces an
+  #cite(<vscode>, form: "normal")], working within a container introduces an
 additional layer of complexity. This can be particularly challenging to manage
 when dealing with aspects such as networking, storage, and security.
 
@@ -270,8 +270,8 @@ that has already led to some division.
 #info-box(kind: "important")[
   There are currently around 230 committers spread across the globe taking care
   of the Nix package repository on Github
-  #cite(<NixpkgsCommitters>,form:"normal"). On June 1st 2023, I've been granted
-  the status of project committer #cite(<DrupolNixCommitter>,form:"normal").
+  #cite(<NixpkgsCommitters>, form: "normal"). On June 1st 2023, I've been granted
+  the status of project committer #cite(<DrupolNixCommitter>, form: "normal").
   This status allows me to merge commits, review code, and contribute to the Nix
   ecosystem in a more direct way. However, I want to clarify that the
   conclusions of this thesis were not influenced by my role in the Nix project.
@@ -376,7 +376,7 @@ safeguard against the loss of critical software components and maintain the
 long-term reproducibility of their builds over time. Since November 2018, Guix
 has incorporated support for Software Heritage, "making it the first free
 software distribution backed by a stable archive"
-#cite(<swguix2018>, form:"normal"). This integration allows Guix to fall back to
+#cite(<swguix2018>, form: "normal"). This integration allows Guix to fall back to
 the Software Heritage archive if it fails to download source code from its
 original location. As a result, package definitions in Guix do not need to be
 modified; they still refer to the original source code URL, but the downloading
@@ -414,7 +414,7 @@ identifier for software source code, facilitating the precise identification and
 retrieval of specific software versions from the @SWHArchive.
 
 To illustrate this, the 11 June 2024, GitHub announced
-#cite(<githubSBOMPURL>,form:"normal"), that generated #gls("SBOM") files will
+#cite(<githubSBOMPURL>, form: "normal"), that generated #gls("SBOM") files will
 now include a #gls("PURL"). By including the #gls("PURL"), GitHub improves the completeness of the #gls("SBOM") data, helping users in more clearly identifying
 the packages in their repositories. This new Github feature exemplifies the
 practical benefits of adopting a standardised specification, as it addresses a
@@ -494,7 +494,7 @@ only problematic for developers but also hinder the effectiveness of valuable
 techniques in software testing research. Essentially, flaky tests pose a threat
 to the validity of methodologies that rely on the assumption that a test's
 outcome is solely determined by the source code it evaluates. From a recent
-paper #cite(<SurveyFlakyTests>,form:"normal"), a survey of software developers
+paper #cite(<SurveyFlakyTests>, form: "normal"), a survey of software developers
 found that 59% claimed to deal with flaky tests on a monthly, weekly, or daily
 basis.
 

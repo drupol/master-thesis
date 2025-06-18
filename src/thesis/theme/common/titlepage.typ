@@ -36,15 +36,12 @@
         ]
       ]
     },
-    footer: align(
-      center,
-      text(font: sans-font)[
-        #faculty #sym.diamond.filled.small
-        #university #sym.diamond.filled.small
-        20, Place du Parc #sym.diamond.filled.small
-        B-7000 Mons
-      ],
-    ),
+    footer: align(center, text(font: sans-font)[
+      #faculty #sym.diamond.filled.small
+      #university #sym.diamond.filled.small
+      20, Place du Parc #sym.diamond.filled.small
+      B-7000 Mons
+    ]),
   )
 
   set text(
@@ -69,12 +66,10 @@
       strong("Author"),
       ":",
       {
-        link("https://orcid.org/" + authorOrcId)[#author#box(
-            image(
-              "../../../../resources/images/ORCIDiD_iconvector.svg",
-              width: 10pt,
-            ),
-          )]
+        link("https://orcid.org/" + authorOrcId)[#author#box(image(
+            "../../../../resources/images/ORCIDiD_iconvector.svg",
+            width: 10pt,
+          ))]
       },
       strong("Supervisor"),
       ":",
