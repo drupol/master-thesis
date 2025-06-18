@@ -10,18 +10,16 @@
       ...
     }:
     let
-      typst = pkgs.typst.withPackages (
-        p: [
-          p.diagraph
-          p.codly
-          p.codly-languages
-          p.glossarium
-          p.xarrow
-          p.hydra
-          p.cetz
-          p.cetz-plot
-        ]
-      );
+      typst = pkgs.typst.withPackages (p: [
+        p.diagraph
+        p.codly
+        p.codly-languages
+        p.glossarium
+        p.xarrow
+        p.hydra
+        p.cetz
+        p.cetz-plot
+      ]);
 
       typst-fonts = pkgs.symlinkJoin {
         name = "typst-fonts";
