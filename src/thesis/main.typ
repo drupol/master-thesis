@@ -38,7 +38,7 @@
       key: "CC BY 4.0",
       short: "CC BY 4.0",
       long: "Creative Commons Attribution 4.0 International",
-      description: [The Creative Commons Attribution 4.0 International License #cite(<CCBy40>, form: "normal") is a widely used license that allows others to distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most flexible of the CC licenses.],
+      description: [The Creative Commons Attribution 4.0 International Licence #cite(<CCBy40>, form: "normal") is a widely used licence that allows others to distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most flexible of the CC licences.],
     ),
     (
       key: "CDN",
@@ -73,7 +73,7 @@
     (
       key: "CycloneDX",
       short: "CycloneDX",
-      description: [@cyclonedx is an open-format standard baked by the OWASP foundation and Ecma Technical Committee designed to provide comprehensive and interoperable information about the components used within software projects like software bill of materials and advanced supply chain capabilities for cyber risk reduction.],
+      description: [@cyclonedx is an open-format standard backed by the OWASP foundation and Ecma Technical Committee designed to provide comprehensive and interoperable information about the components used within software projects like software bill of materials and advanced supply chain capabilities for cyber risk reduction.],
     ),
     (
       key: "DevOps",

@@ -82,7 +82,7 @@
   ],
   [
     - Steep learning curve
-    - Pradigm shift from traditional package management systems required
+    - Paradigm shift from traditional package management systems required
   ],
   table.footer(
     table.cell(

@@ -1941,7 +1941,7 @@ consistent ordering.
 ]
 
 There are numerous situations where relying on an existing list of files can
-result in non-determinism. For instance, zhen creating an archive from a
+result in non-determinism. For instance, when creating an archive from a
 directory's contents, file systems often lack consistent ordering when listing
 files. Consequently, the arrangement of files in the archive may differ between
 builds, causing unpredictable archives. Although these archives might contain

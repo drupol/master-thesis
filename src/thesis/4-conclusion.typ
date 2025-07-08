@@ -227,7 +227,7 @@ positioning it, in my own opinion, as one of the best languages for this task.
 During the making of this thesis, I contributed to Nix and I really appreciated
 how easy it is to contribute but also the transparency of the process when it
 comes to making a change. The Nix community is very large, active and welcoming,
-and the Nix package repository `nixpkgs` is one of the most active repository
+and the Nix package repository `nixpkgs` is one of the most active repositories
 on Github #cite(<octoverse2022>, form: "normal"). Nix has completely changed the
 way I think about software management, how I consume software and how I ship
 software. I wish I had discovered it earlier.
