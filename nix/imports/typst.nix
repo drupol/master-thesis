@@ -14,7 +14,14 @@
         p.diagraph
         p.codly
         p.codly-languages
-        p.glossarium
+        (p.glossarium.overrideAttrs (oldAttrs: {
+          version = "0.5.7";
+          src = pkgs.fetchzip {
+            hash = "sha256-5+1SaEv+x4rXLNcuYQTgEegt7U1V8CWo4CY1ctM0LHA=";
+            url = "https://packages.typst.org/preview/glossarium-0.5.7.tar.gz";
+            stripRoot = false;
+          };
+        }))
         p.xarrow
         p.hydra
         p.cetz
