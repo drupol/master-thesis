@@ -6,12 +6,18 @@
     {
       pkgs,
       lib,
-      config,
       ...
     }:
     let
       typst = pkgs.typst.withPackages (p: [
-        p.diagraph
+        (p.diagraph.overrideAttrs (oldAttrs: {
+          version = "0.3.5";
+          src = pkgs.fetchzip {
+            hash = "sha256-diUbQHUePKawZLOYc09LgfH8dgENl6xWmKL42AfgYM4=";
+            url = "https://packages.typst.org/preview/diagraph-0.3.5.tar.gz";
+            stripRoot = false;
+          };
+        }))
         p.codly
         p.codly-languages
         (p.glossarium.overrideAttrs (oldAttrs: {
