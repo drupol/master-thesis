@@ -2043,9 +2043,11 @@ First, we compile the sourcecode twice, creating `build1` and `build2`:
 
 Then, we use `diffoscope` to compare these builds:
 
-#figure(shell(
-  file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log",
-)) <bash-diffoscope-comparison>
+#figure(
+  shell(
+    file: "../../../resources/sourcecode/bash/bash-diffoscope-comparison.log",
+  ),
+) <bash-diffoscope-comparison>
 
 The tool will generate a detailed report (@diffoscope-report) highlighting the
 differences between `build1` and `build2`. In this hypothetical example,
