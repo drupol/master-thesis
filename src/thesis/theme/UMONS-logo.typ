@@ -9,9 +9,9 @@
     set text(weight: 300)
     upper[
       #text(fill: umons-grey)[#underline(
-          offset: 4pt,
-          stroke: umons-red,
-        )[U]]#text(fill: umons-red)[mons]\
+        offset: 4pt,
+        stroke: umons-red,
+      )[U]]#text(fill: umons-red)[mons]\
     ]
   }
   {

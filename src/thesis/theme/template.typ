@@ -83,10 +83,10 @@
     quote(
       block: true,
       attribution: [#{
-          if quoteAttribution != none {
-            cite(form: "prose", quoteAttribution)
-          }
-        }],
+        if quoteAttribution != none {
+          cite(form: "prose", quoteAttribution)
+        }
+      }],
       quoteText,
     )
   }

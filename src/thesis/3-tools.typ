@@ -1070,24 +1070,24 @@ the build environment and dependencies, facilitating deterministic and
 reproducible builds across different systems. By capturing all dependencies and
 environment specifics in a declarative manner, Nix and Guix offer a reliable and
 transparent approach to software development. The functional deployment model
-implemented by Guix, Nix and their forks (like @lix), along with their
-transactional package upgrades and rollbacks, further enhances reproducibility
-by enabling exact replication of software environments within the same
-architecture at any point in space and time.Under the hood, they introduces a
-novel approach to addressing the challenges of reproducibility. By using a very
-specific storage model, they ensures that the resulting output directory is
-determined by the hash of all inputs. This model, while not guaranteeing bitwise
-identical binaries across all scenarios, especially across different hardware
-architectures, ensures that the process and environment for building the
-software are reproducible. Nix and Guix's model represents a significant step
-forward in mitigating reproducibility challenges within #gls("SE"). By ensuring
-that every build can be traced back to its exact dependencies and build
-environment, it enhances the reliability of software deployments. This approach
-is particularly beneficial in #gls("CICD") pipelines, where consistency and
-reliability are paramount. Achieving reproducibility in #gls("SE") is filled
-with challenges, from architecture dependencies to non-determinism in compilers.
-These solutions offers a compelling solution by ensuring reproducible build
-environments. The exploration of the concepts used in Guix and Nix, and its
-methodologies provides valuable insights into the complexities of software
-reproducibility and the necessity for continued research and development in this
-field. They both are categorised as *reproducible*.
+implemented by Guix and Nix, along with their transactional package upgrades and
+rollbacks, further enhances reproducibility by enabling exact replication of
+software environments within the same architecture at any point in space and
+time.Under the hood, they introduces a novel approach to addressing the
+challenges of reproducibility. By using a very specific storage model, they
+ensures that the resulting output directory is determined by the hash of all
+inputs. This model, while not guaranteeing bitwise identical binaries across all
+scenarios, especially across different hardware architectures, ensures that the
+process and environment for building the software are reproducible. Nix and
+Guix's model represents a significant step forward in mitigating reproducibility
+challenges within #gls("SE"). By ensuring that every build can be traced back to
+its exact dependencies and build environment, it enhances the reliability of
+software deployments. This approach is particularly beneficial in #gls("CICD")
+pipelines, where consistency and reliability are paramount. Achieving
+reproducibility in #gls("SE") is filled with challenges, from architecture
+dependencies to non-determinism in compilers. These solutions offers a
+compelling solution by ensuring reproducible build environments. The exploration
+of the concepts used in Guix and Nix, and its methodologies provides valuable
+insights into the complexities of software reproducibility and the necessity for
+continued research and development in this field. They both are categorised as
+*reproducible*.

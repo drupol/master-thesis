@@ -280,16 +280,16 @@ that has already led to some division.
 ]
 
 At the time of writing, the Nix community was facing a significant crisis,
-leading to the creation of two new forks of Nix, @lix and @aux. This
-fragmentation is a major concern for the project's future. While a new
-governance structure is being established, the community remains divided over
-different installers, the experimental Flake feature, the sponsorships policy
-and now forks. Although the current situation is not ideal, I am confident that
-the community will overcome this crisis and continue to provide an excellent
-tool for the #gls("SE") community. The controversial Flake feature has attracted
-many new users to the Nix ecosystem, and the community is growing rapidly. These
-issues are likely a result of this rapid growth and the initial lack of clear
-and transparent governance, a problem that needs to be resolved.
+leading to the creation of forks. This fragmentation is a major concern for the
+project's future. While a new governance structure is being established, the
+community remains divided over different installers, the experimental Flake
+feature, the sponsorships policy and now forks. Although the current situation
+is not ideal, I am confident that the community will overcome this crisis and
+continue to provide an excellent tool for the #gls("SE") community. The
+controversial Flake feature has attracted many new users to the Nix ecosystem,
+and the community is growing rapidly. These issues are likely a result of this
+rapid growth and the initial lack of clear and transparent governance, a problem
+that needs to be resolved.
 
 To conclude, it is essential to recognise that Nix is the result of extensive
 research and development, used in production by numerous companies and
@@ -305,8 +305,8 @@ consistency and reliability in package management.
   choice. With two decades of maturity and robustness, the Nix ecosystem is, in
   my view, currently the best concept for implementing reproducibility in
   #gls("SE"). I am convinced that Nix, or a similar technology that embraces the
-  same principles #eg[@guixwebsite, @lix, @aux], has the potential to
-  revolutionise the way software is built, used, audited, deployed and shared.
+  same principles #eg[@guixwebsite], has the potential to revolutionise the way
+  software is built, used, audited, deployed and shared.
 ]
 
 #pagebreak(weak: true)
