@@ -8,6 +8,7 @@
       treefmt = {
         projectRootFile = "flake.nix";
         programs = {
+          deadnix.enable = true;
           nixfmt.enable = true;
           prettier.enable = true;
           shfmt.enable = true;

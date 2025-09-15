@@ -82,7 +82,6 @@ I welcome and appreciate contributions from the community! Here are the ways you
 can contribute:
 
 1. **Codeberg (Preferred)**
-
    - Visit the main repository on Codeberg:
      https://codeberg.org/p1ld7a/master-thesis
    - Fork the repository and make your changes.
@@ -90,7 +89,6 @@ can contribute:
    - Ensure your code adheres to our coding guidelines and is well-documented.
 
 2. **GitHub**
-
    - Visit the mirror repository on GitHub:
      https://github.com/drupol/master-thesis
    - Fork the repository and make your changes.

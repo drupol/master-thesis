@@ -10,7 +10,7 @@
     }:
     let
       typst = pkgs.typst.withPackages (p: [
-        (p.diagraph.overrideAttrs (oldAttrs: {
+        (p.diagraph.overrideAttrs (_oldAttrs: {
           version = "0.3.5";
           src = pkgs.fetchzip {
             hash = "sha256-diUbQHUePKawZLOYc09LgfH8dgENl6xWmKL42AfgYM4=";
@@ -20,7 +20,7 @@
         }))
         p.codly
         p.codly-languages
-        (p.glossarium.overrideAttrs (oldAttrs: {
+        (p.glossarium.overrideAttrs (_oldAttrs: {
           version = "0.5.7";
           src = pkgs.fetchzip {
             hash = "sha256-5+1SaEv+x4rXLNcuYQTgEegt7U1V8CWo4CY1ctM0LHA=";
@@ -94,7 +94,7 @@
         };
 
       documentDrvs = lib.genAttrs (lib.attrNames (
-        lib.filterAttrs (k: v: (v == "directory")) (builtins.readDir ../../src)
+        lib.filterAttrs (_k: v: (v == "directory")) (builtins.readDir ../../src)
       )) (d: (mkBuildDocumentDrv "compile" d));
 
       scriptDrvs = lib.foldl' (
