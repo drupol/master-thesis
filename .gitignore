@@ -16,3 +16,4 @@ lib/**/*.pdf
 /trunk/
 cert.pem
 private-key.pem
+src/thesis/literature.bib.original

@@ -49,6 +49,7 @@
             "*.dockerfile"
             "nix/pkgs/passive/passive.sh"
             "nix/pkgs/weasel/weasel.sh"
+            "*.original"
           ];
         };
       };
