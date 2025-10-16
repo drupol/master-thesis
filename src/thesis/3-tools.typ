@@ -351,6 +351,20 @@ approach streamlines development, testing, and production workflows,
 significantly reducing compatibility issues and, to some extent, simplifying
 scalability.
 
+Prior work from #cite(<boettiger2015>, form: "author") has analysed Docker’s
+relevance to reproducible research, highlighting how containers can mitigate
+common obstacles (dependency management, incomplete documentation, code rot, and
+barriers to reuse) within a DevOps mindset. These themes motivate our evaluation
+criteria here.
+
+#info-box(kind: "info")[
+  A #gls("DevOps") approach to "documenting" an application might consist of
+  providing brief descriptions of various install paths, along with scripts or
+  "recipes" that automate setup. This can be more enjoyable and certainly easily
+  and robustly reproducible for end-users (even if your setup instructions are
+  wrong, they will be reproducibly wrong!). (@clark2014)
+]
+
 Central to Docker's appeal is its contribution to the #gls("DevOps") movement,
 fostering better collaboration between development and operations teams by
 eliminating the #emph["it works on my machine"] problem. Docker's ecosystem,
@@ -410,6 +424,10 @@ twice and extracting the resulting binary produces different checksums.
 Additionally, on lines 6 and 13, it is evident that the checksums of the images
 are inevitably different. Consequently, this method is classified as
 non-reproducible over time.
+
+This phenomenon directly reflects what @boettiger2015 described as“
+#emph[code rot] where the reproducibility of computational environments degrades
+as dependencies evolve and are no longer identical to those originally used.
 
 #heading(outlined: false, level: 3, "Reproducibility In Space")
 
@@ -476,6 +494,11 @@ been pinned to a specific commit at lines 1 and 7.
   aware of the limitations of the tools #eg[the `apk` package manager] used
   in the base image, as even with precautions, variability in the build process
   may still be introduced.
+
+  This aligns with earlier analyses by @boettiger2015 that emphasise that
+  containers improve portability but do not guarantee bit-for-bit
+  reproducibility without explicit control of upstream images and dependency
+  sources.
 ]
 
 Docker's containerization technology offers a way to create consistent software
@@ -507,6 +530,10 @@ keen awareness of these potential pitfalls. By meticulously managing base
 images, employing reliable package managers, and adhering to best practices in
 `Dockerfile` construction, one can mitigate the risks of variability and move
 closer to achieving true reproducibility in containerised environments.
+
+The sensitivity of Dockerfiles to base images and package managers echoes prior
+analyses in @boettiger2015: Docker improves run-time portability, but build
+determinism still requires disciplined version pinning and archival practices.
 
 == Evaluation 3 - Guix <ch3-tool3>
 
@@ -901,7 +928,9 @@ twice yields different resulting files.
   },
   supplement: "Terminal session",
   kind: "terminal",
-  caption: [Manually compiling a Typst document to a #gls("PDF") document in Scenario 7],
+  caption: [
+    Manually compiling a Typst document to a #gls("PDF") document in Scenario 7
+  ],
 ) <ch3-hello-world-typst-build-log>
 
 While viewing the resulting #gls("PDF") files side by side, we notice that they

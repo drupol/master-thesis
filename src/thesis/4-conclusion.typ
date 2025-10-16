@@ -192,7 +192,10 @@ remains acceptable for most use cases. Although initiatives like DevContainer
 with #glspl("IDE", long: false) #eg[Visual Studio Code
   #cite(<vscode>, form: "normal")], working within a container introduces an
 additional layer of complexity. This can be particularly challenging to manage
-when dealing with aspects such as networking, storage, and security.
+when dealing with aspects such as networking, storage, and security. Consistent
+with @boettiger2015, Docker primarily enhances portability and operational
+reproducibility, whereas true reproducible builds require stricter version
+pinning, scripted provisioning, and archival of image layers.
 
 Guix has been an interesting tool to evaluate. While the learning curve is
 steeper than Docker, the benefits are significant. I appreciated the strict and
