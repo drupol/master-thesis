@@ -346,8 +346,8 @@ reproducibility at build time, but not at run time.
     shell(file: "../../../resources/sourcecode/montecarlo-pi-compilation.log")
   },
   caption: [
-    Building the same source code multiple times always yields the same binary
-    executable
+    Rebuilding the same source yields identical binaries. Matching `sha256sum`
+    checksums confirm bit‑for‑bit reproducibility (See #ref(<checksum>)).
   ],
   supplement: "Terminal session",
   kind: "terminal",
@@ -434,7 +434,7 @@ user is not assured.
 #figure(
   shell(file: "../../../resources/sourcecode/datetime.c.log"),
   caption: [
-    An example of program that it neither reproducible at build time and
+    An example of a program that is neither reproducible at build time nor at
     run time.
   ],
   supplement: "Terminal session",
@@ -1096,7 +1096,7 @@ consistently obtain identical results across multiple runs of a computation.
   Once that condition is met, the computation is considered to be reproducible.
 ]
 
-The set $I$ and $E$, respectically representing the set of all possible inputs
+The set $I$ and $E$, respectively representing the set of all possible inputs
 and the hardware and software environment including the date and time, are also
 considered as abstractions. In reality, these sets are complex entities composed
 of interdependent components. For the purpose of this definition, however, they
