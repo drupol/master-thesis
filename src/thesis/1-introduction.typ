@@ -74,6 +74,12 @@ both repeatability and reproducibility are fundamental practices in #gls("SE"),
 ensuring that studies can not only be repeated under the same conditions but
 also reproduced and validated in different contexts.
 
+In 2014, @Collberg2014 conducted a large-scale empirical study that confirmed
+this challenge by showing that fewer than 25% of computer-systems papers could
+be successfully built and executed, revealing that reproducibility is hindered
+not only by technical limitations but also by cultural and institutional
+barriers.
+
 In 2020, the United States sustained a sophisticated cyberattack known as
 SolarWinds. This meticulously orchestrated campaign apparently attributed to
 Russia persisted undetected for months and was enabled through a backdoor
