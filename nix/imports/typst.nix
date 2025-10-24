@@ -10,24 +10,10 @@
     }:
     let
       typst = pkgs.typst.withPackages (p: [
-        (p.diagraph.overrideAttrs (_oldAttrs: {
-          version = "0.3.5";
-          src = pkgs.fetchzip {
-            hash = "sha256-diUbQHUePKawZLOYc09LgfH8dgENl6xWmKL42AfgYM4=";
-            url = "https://packages.typst.org/preview/diagraph-0.3.5.tar.gz";
-            stripRoot = false;
-          };
-        }))
+        p.diagraph
         p.codly
         p.codly-languages
-        (p.glossarium.overrideAttrs (_oldAttrs: {
-          version = "0.5.7";
-          src = pkgs.fetchzip {
-            hash = "sha256-5+1SaEv+x4rXLNcuYQTgEegt7U1V8CWo4CY1ctM0LHA=";
-            url = "https://packages.typst.org/preview/glossarium-0.5.7.tar.gz";
-            stripRoot = false;
-          };
-        }))
+        p.glossarium
         p.xarrow
         p.hydra
         p.cetz

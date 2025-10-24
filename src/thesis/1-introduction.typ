@@ -195,8 +195,8 @@ exploring the depths and implications of reproducibility in #gls("SE").
 
 Here's a non-exhaustive list of projects I have contributed to:
 - In the Linux NixOS operating system:
-  - I created around 600 pull requests #cite(<drupolPrOnNix>, form: "normal").
-  - I made around 2800 reviews #cite(<drupolReviewOnNix>, form: "normal").
+  - I created around 900 pull requests #cite(<drupolPrOnNix>, form: "normal").
+  - I made around 4000 reviews #cite(<drupolReviewOnNix>, form: "normal").
   - After months of dedicated effort, I developed a wrapper for building
     reproducible Composer-based PHP applications
     #cite(<drupolPhpBuilderOnNix>, form: "normal"), resolving a significant
