@@ -53,7 +53,7 @@ jobs:
                   cp -ar thesis/* output/
 
             - name: Upload build assets
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v5
               with:
                   name: artefacts
                   path: output

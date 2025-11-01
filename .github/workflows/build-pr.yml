@@ -42,7 +42,7 @@ jobs:
                   for f in *.pdf; do mv ${f} $(printf '%s\n' "${{ github.run_number }}--${f%.pdf}--${{ github.sha }}.pdf"); done
 
             - name: Upload build assets
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v5
               with:
                   name:
                       pdf--branch-${{ steps.extract_branch.outputs.branch
