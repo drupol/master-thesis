@@ -152,7 +152,8 @@ also not reproducible.
   to transition a system from its current state to a desired state, providing
   granular control over the configuration process. Tools such as Ansible
   #cite(<ansible>, form: "normal"), Chef #cite(<chef>, form: "normal"), Puppet
-  #cite(<puppet>, form: "normal"), and Bash scripts exemplify this approach.
+  #cite(<puppet>, form: "normal"), and Bash scripts exemplify this approach,
+  achieving idempotency through careful implementation.
   This method aligns with the #emph[convergent system management]
   #cite(<Traugott2002>, form: "normal") approach, focusing on achieving a goal
   through a series of specific actions. While imperative configurations allow

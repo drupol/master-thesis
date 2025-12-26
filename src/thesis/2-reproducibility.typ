@@ -511,6 +511,39 @@ Docker images and highlights the need for a nuanced approach to classifying
 software reproducibility, recognising the spectrum between
 #emph[Not reproducible] and #emph[Reproducible].
 
+=== Configuration Management
+
+In the pursuit of reproducible environments, the paradigm of configuration
+management adopted is a determining factor. As systems grow in complexity, the
+methods used to orchestrate and maintain their state directly influence the
+reliability and reproducibility of the environment. Broadly, these methods fall
+into two categories: imperative and declarative.
+
+Imperative configuration management tools, exemplified by Ansible, operate by
+defining a sequence of instructions to transition a system from its current
+state to a desired state. This approach is analogous to following a strict route
+itinerary: one must execute a specific set of steps—installing a package,
+editing a configuration file, restarting a service—to reach the objective. While
+such tools significantly streamline system administration, often characterized
+as providing a guided map for a complex journey, their reliance on procedure
+introduces potential fragility. Idempotency in these systems (the property that
+applying the same configuration multiple times yields the same result) is
+typically achieved through careful implementation rather than being an intrinsic
+property of the design. Consequently, if the initial state varies or if external
+factors intervene, the final outcome may diverge, threatening reproducibility.
+
+In contrast, declarative configuration management, as seen in tools like
+Nix, abstracts the procedural complexity. The user defines the *desired state*
+(the #emph[what]) rather than the *method* (the #emph[how]). This shifts the
+paradigm from navigating the route step-by-step to simply defining the final
+coordinates. The system takes responsibility for reconciling the current state
+with the defined configuration. In this model, the entire configuration serves
+as a single source of truth. Idempotency and reproducibility are achieved by
+design where the system ensures that a specific configuration will invariably
+produce the identical state, regardless of the starting condition. This
+deterministic nature eliminates the ambiguity of imperative scripts and provides
+a rigorous foundation for reproducible computational environments.
+
 === Open Source
 
 #info-box(kind: "cite", footer: [@Donoho2009])[
@@ -1644,11 +1677,11 @@ of the environment​​ #cite(<HunterGCP>, form: "normal", supplement: [p. 348]
   technologies, further complicating the distinction between imperative and
   declarative configuration management. The boundaries between these paradigms
   are often blurred, as it's rarely a matter of black and white. For instance,
-  while Nix and Guix are primarily categorised as declarative, they occasionally
-  rely on imperative languages #eg[shell scripts, Python] to perform specific
-  tasks. This illustrates that even tools labelled as declarative can integrate
-  aspects of imperative configuration management, adding nuance to their
-  classification.
+  while Nix and Guix are primarily categorised as declarative and where
+  idempotency is achieved through their design, they occasionally rely on
+  imperative languages #eg[shell scripts, Python] to perform specific tasks.
+  This illustrates that even tools labelled as declarative can integrate aspects
+  of imperative configuration management, adding nuance to their classification.
 ] <info-box-docker-classification>
 
 === Computational Environments <ch2-environments>
