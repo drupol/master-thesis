@@ -215,7 +215,7 @@ Here's a non-exhaustive list of projects I have contributed to:
     reproducibility, explaining the reasons why it should be included:
     - In PHPUnit, the PHP testing framework
       #cite(<drupolPhpunitPR5576>, form: "normal")\;
-    - In PsySH, a PHP #gls("REPL", long: false)
+    - In PsySH, a PHP #gls("REPL", first: true)
       #cite(<drupolPsyshIssue767>, form: "normal")\;
     - In GrumPHP, a code quality tool
       #cite(<drupolGrumphpIssue1095>, form: "normal")\;

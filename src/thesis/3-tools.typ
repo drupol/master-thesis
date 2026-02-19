@@ -687,7 +687,7 @@ with the need to embrace its unique approach to system configuration and package
 management, representing a paradigm shift for new users.
 
 #info-box(kind: "conclusion")[
-  Nix essentially modifies the #gls("POSIX", long: false) standard by installing
+  Nix essentially modifies the #gls("POSIX", first: true) standard by installing
   software in unique locations rather than following the shared file structure
   described by the #gls("FHS"). This seemingly minor change brings about several
   advantageous properties, such as software composition, immutability,

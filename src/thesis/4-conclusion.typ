@@ -190,8 +190,8 @@ the intermediary VM layer. On Linux based architectures, the performance are not
 as good as running the software natively without containerisation, but it
 remains acceptable for most use cases. Although initiatives like DevContainer
 #cite(<devcontainer>, form: "normal") aim to offer a more integrated experience
-with #glspl("IDE", long: false) #eg[Visual Studio Code
-  #cite(<vscode>, form: "normal")], working within a container introduces an
+with #glspl("IDE", first: true) #eg[Visual Studio Code
+#cite(<vscode>, form: "normal")], working within a container introduces an
 additional layer of complexity. This can be particularly challenging to manage
 when dealing with aspects such as networking, storage, and security. Consistent
 with @boettiger2015, Docker primarily enhances portability and operational

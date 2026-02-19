@@ -747,8 +747,8 @@ operations.
 In #gls("CS") (@functions-in-cs), a function necessitates an environment in
 which it will be evaluated, effectively making, to some extent, this environment
 an extra input parameter per se. This computational environment, which
-encompasses the hardware #eg[filesystem, memory, #gls("CPU", long: false)],
-software #eg[#gls("OS", long: false)] and date #eg[the current date and
+encompasses the hardware #eg[filesystem, memory, #gls("CPU", first: true)],
+software #eg[#gls("OS", first: true)] and date #eg[the current date and
   time], may influence the function's behaviour and output. Consequently,
 functions in #gls("CS") are inherently designed to interact with and adapt to
 their environment, thereby making them dynamic and versatile but also
@@ -1066,10 +1066,10 @@ unique" is used because, in theory, it is possible for two different inputs to
 produce the same hash, an occurrence known as a #emph[collision]. The ability to
 find collisions undermines the security of the algorithm. There are different
 types of algorithms to calculate a checksum
-#eg[#gls("MD5", long: false), #gls("SHA1", long: false),
-  #gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
+#eg[#gls("MD5", first: true), #gls("SHA1", first: true),
+  #gls("SHA2", first: true)]. Older algorithms like #gls("MD5", first: true) have
 known vulnerabilities that allow collision attacks while more modern algorithms
-like SHA-256 (#gls("SHA2", long: false)) are currently considered to be pretty
+like SHA-256 (#gls("SHA2", first: true)) are currently considered to be pretty
 much impossible to crack.
 
 While the mathematical theory allows for the possibility of collisions in
@@ -1244,14 +1244,14 @@ the components required to build and operate a piece of software, including all
 applied patches and licensing information in a structured and well-known format.
 
 There are multiple existing formats and standards, the most common ones are:
-- #gls("SPDX", long: true): A comprehensive standard maintained by the Linux
+- #gls("SPDX", first: false): A comprehensive standard maintained by the Linux
   Foundation, designed to facilitate license compliance, security, and broader
   software component analysis through a detailed documentation approach,
   supporting multiple formats like RDF, JSON, and YAML. It caters to a wide
   range of stakeholders, including software companies, legal teams, and
   open-source projects, with a particular strength in granular licensing
   details.
-- #gls("CycloneDX", long: false): A lightweight #gls("SBOM") standard aimed at
+- #gls("CycloneDX", first: true): A lightweight #gls("SBOM") standard aimed at
   enhancing application security and managing software supply chain risks. It
   emphasises simplicity and efficiency, supporting formats such as XML, JSON,
   and ProtoBuf, and is particularly tailored towards the identification of
@@ -1958,7 +1958,7 @@ reliable method for software version identification.
 It is important to ensure that processing multiple files in a stable order
 remains stable.
 
-Listing files relies on the low-level #gls("POSIX", long: false) call `readdir`, which itself is
+Listing files relies on the low-level #gls("POSIX", first: true) call `readdir`, which itself is
 dependent on the filesystem in use and therefore does not guarantee any
 consistent ordering.
 
