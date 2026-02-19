@@ -1059,7 +1059,7 @@ process.
   supplement: [Table],
 ) <ch3-table-conclusion>
 
-In evaluating the reproducibility of various tools and methodologies within, a
+In evaluating the reproducibility of various tools and methodologies, a
 particular focus has been set on the bare compilation method (@ch3-tool1). This
 approach, characterised by its reliance on the host operating system's installed
 software for compiling source code into executable programs, presents a nuanced

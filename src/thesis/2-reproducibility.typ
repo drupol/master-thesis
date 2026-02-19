@@ -777,7 +777,7 @@ Inputs and outputs can vary widely, ranging from user interactions and network
 connections to files and directories. The nature of these inputs and outputs
 greatly impacts the reproducibility of computational processes.
 
-Consider user interactions, such as mouse or eyes movements. These are
+Consider user interactions, such as mouse or eye movements. These are
 inherently challenging to replicate precisely due to their dynamic and
 unpredictable nature. For instance, reproducing the exact trajectory of a mouse
 movement is virtually impossible due to the minute variations in human actions.
@@ -1069,8 +1069,8 @@ types of algorithms to calculate a checksum
 #eg[#gls("MD5", first: true), #gls("SHA1", first: true),
   #gls("SHA2", first: true)]. Older algorithms like #gls("MD5", first: true) have
 known vulnerabilities that allow collision attacks while more modern algorithms
-like SHA-256 (#gls("SHA2", first: true)) are currently considered to be pretty
-much impossible to crack.
+like SHA-256 (#gls("SHA2", first: true)) are currently considered virtually
+impossible to crack.
 
 While the mathematical theory allows for the possibility of collisions in
 checksum hashes, their application in modern checksum algorithms tells a
@@ -1269,13 +1269,15 @@ The #gls("CRA") #cite(<CRA>, form: "normal") mandates the incorporation of a
 software security and transparency. This requirement marks a significant
 advancement in enhancing the integrity and security of software, ensuring that
 all components are meticulously documented and traceable throughout the software
-lifecycle. While the #gls("CRA") includes multiple measures, most will take
-effect three years after its passage, likely in early 2027. Specifically,
-regarding #gls("SBOM"), the following applies to products with digital elements
-available: #quote[identify and document vulnerabilities and components contained
-  in products with digital elements, including by drawing up a software bill of
-  materials in a commonly used and machine-readable format covering at the very
-  least the top-level dependencies of the products]
+lifecycle. The #gls("CRA") officially entered into force in late 2024. While it
+includes multiple measures, most will take effect after a 36-month transition
+period, in late 2027, with specific vulnerability reporting obligations applying
+as early as late 2026. Specifically, regarding #gls("SBOM"), the following
+applies to products with digital elements available: #quote[identify and
+  document vulnerabilities and components contained in products with digital
+  elements, including by drawing up a software bill of materials in a commonly
+  used and machine-readable format covering at the very least the top-level
+  dependencies of the products]
 #cite(<CRA>, supplement: "Annex I, Part II (1)", form: "normal").
 
 ==== Supply Chain <ch2-supply-chain>
@@ -1494,15 +1496,15 @@ and at any point in the past or future​​​​.
 
 Reproducibility relies on stable, consistent and well-maintained codebases but
 also heavily depends on stable, consistent and well-maintained environments as
-seen in #ref(<ch2-deterministic-builds-and-environments>). In addition, a critical component is
-environment configuration management. Configuration management plays a critical
-role in ensuring reproducibility by mitigating the non-deterministic behaviours
-introduced by configuration drifts.
+seen in #ref(<ch2-deterministic-builds-and-environments>). In addition, a
+critical component is environment configuration management. Configuration
+management plays a critical role in ensuring reproducibility by mitigating the
+non-deterministic behaviours introduced by configuration drifts.
 
 #info-box[
-  Configuration drifts occurs when changes to an environment
-  accumulate over time, leading to variations that deviate from the desired or
-  initial configuration state, thus introducing non-determinism.
+  Configuration drifts occur when changes to an environment accumulate over
+  time, leading to variations that deviate from the desired or initial
+  configuration state, thus introducing non-determinism.
 ]
 
 This section examines key configuration management models and paradigms,
@@ -1584,9 +1586,9 @@ goal of this model, providing the highest level of determinism and reliability
 in system behaviours.
 
 Congruent management, particularly through the adoption of immutable
-environment (#ref(<ch2-environments>)), ensures that environment remain in a
-well-defined state, thus maximising reproducibility. However, this approach can
-lack the flexibility required for dynamic environments, where each minor
+environment (#ref(<ch2-environments>)), ensures that the environment remains in
+a well-defined state, thus maximising reproducibility. However, this approach
+can lack the flexibility required for dynamic environments, where each minor
 adjustments may necessitate rebuilding the entire system. This limitation
 highlights the importance of carefully choosing between convergent and congruent
 approaches based on the environment's needs.
@@ -2145,7 +2147,7 @@ challenges identified herein and to foster an ecosystem where reproducible
 research and development are not merely aspirational goals but operational
 norms.
 
-In fine, this chapter serve as both a foundation and a bridge. It offers a
+In fine, this chapter serves as both a foundation and a bridge. It offers a
 comprehensive understanding of reproducibility that is critical for appreciating
 the significance of the solutions and methodologies discussed in the chapters
 that follow. It is within this framework that we continue our quest to demystify
