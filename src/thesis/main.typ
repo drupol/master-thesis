@@ -62,7 +62,13 @@
       key: "CRA",
       short: "CRA",
       long: "Cyber Resilience Act",
-      description: [The Cyber Resilience Act #cite(<CRA>, form: "normal") is a proposed European Union regulation that aims to improve the cybersecurity of digital products and services. It includes provisions for #link(<ch2-supply-chain>)[software supply chain] security, incident reporting, and security certification.],
+      description: [
+        The Cyber Resilience Act #cite(<CRA>, form: "normal") is a European
+        Union regulation enacted in 2024 that aims to improve the cybersecurity
+        of digital products and services. It includes provisions for
+        #link(<ch2-supply-chain>)[software supply chain] security, incident
+        reporting, and security certification.
+      ],
     ),
     (
       key: "CS",
@@ -156,7 +162,7 @@
       short: "PURL",
       plural: "PURLs",
       long: "Package URL",
-      description: [A PURL #cite(<purl>, form: "normal") is a #gls("URL") string used to identify and locate a software package in a mostly universal and uniform way across programing languages, package managers, packaging conventions, tools, APIs and databases.],
+      description: [A PURL #cite(<purl>, form: "normal") is a #gls("URL") string used to identify and locate a software package in a mostly universal and uniform way across programming languages, package managers, packaging conventions, tools, APIs and databases.],
     ),
     (
       key: "REPL",

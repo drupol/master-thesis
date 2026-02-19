@@ -6,9 +6,9 @@
   columns: (1fr, 1fr, 1fr, 1fr, 1fr),
   rows: (40pt, 25pt),
   image("../../resources/images/inputs-cube.svg"),
-  xarrow(sym: sym.arrow.r, width: 50pt, ""),
+  xarrow(sym: sym.arrow.r, size: 50pt, ""),
   image("../../resources/images/computation-cogs.svg"),
-  xarrow(sym: sym.arrow.r, width: 50pt, ""),
+  xarrow(sym: sym.arrow.r, size: 50pt, ""),
   image("../../resources/images/inputs-icon.svg"),
 
   "Inputs", "", "Computation", "", "Outputs",

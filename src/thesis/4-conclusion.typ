@@ -141,11 +141,11 @@ also not reproducible.
   describes the final environment for a container, ensuring that the system
   matches predefined specifications. This method aligns with the #emph[congruent
     system management] #cite(<Traugott2002>, form: "normal") approach, focusing on
-  consistency and predictability. Declarative configurations ensure idempotence,
-  meaning the same configuration can be applied multiple times without altering
-  the system beyond its intended state. This abstraction makes it easier to
-  understand and maintain, as the system determines the necessary actions to
-  achieve the desired state.
+  consistency and predictability. Declarative configurations ensures
+  idempotence, meaning the same configuration can be applied multiple times
+  without altering the system beyond its intended state. This abstraction makes
+  it easier to understand and maintain, as the system determines the necessary
+  actions to achieve the desired state.
 
   In contrast, #emph[imperative configuration management]
   #cite(<HunterGCP>, form: "normal") involves detailing the exact steps required
@@ -190,7 +190,7 @@ the intermediary VM layer. On Linux based architectures, the performance are not
 as good as running the software natively without containerisation, but it
 remains acceptable for most use cases. Although initiatives like DevContainer
 #cite(<devcontainer>, form: "normal") aim to offer a more integrated experience
-with #glspl("IDE", long: false) #eg[Visual Studio Code
+with #glspl("IDE", first: true) #eg[Visual Studio Code
   #cite(<vscode>, form: "normal")], working within a container introduces an
 additional layer of complexity. This can be particularly challenging to manage
 when dealing with aspects such as networking, storage, and security. Consistent
@@ -689,16 +689,17 @@ reproducibility can significantly enhance the quality of fact-checking by
 providing clear, transparent methodologies and robust data that others can
 independently verify. This rigorous approach ensures the credibility of
 scientific research and fosters critical thinking skills. By engaging in
-reproducible research practices, individuals develop a keen critical thinking,
-which is essential for evaluating information, identifying biases, and making
-informed decisions. Teaching the principles of reproducibility and fact-checking
-from an early age is crucial. Incorporating these concepts into school curricula
-helps students develop critical thinking skills early on, empowering them to
-question assumptions, evaluate evidence, understand the scientific process and
-verify by themselves. Educating students about the importance of transparency,
-data integrity, and methodological rigour lays the foundation for a more
-scientifically literate and critically minded society. By fostering these skills
-from the beginning of their education, we can equip future generations with the
-tools they need to navigate the complex and information-rich world.
+reproducible research practices, individuals develop a keen critical thinking
+skills, which is essential for evaluating information, identifying biases, and
+making informed decisions. Teaching the principles of reproducibility and
+fact-checking from an early age is crucial. Incorporating these concepts into
+school curricula helps students develop critical thinking skills early on,
+empowering them to question assumptions, evaluate evidence, understand the
+scientific process and verify by themselves. Educating students about the
+importance of transparency, data integrity, and methodological rigour lays the
+foundation for a more scientifically literate and critically minded society. By
+fostering these skills from the beginning of their education, we can equip
+future generations with the tools they need to navigate the complex and
+information-rich world.
 
 #leftblank(weak: false)
