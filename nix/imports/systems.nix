@@ -3,5 +3,5 @@
   ...
 }:
 {
-  systems = import inputs.systems;
+  systems = inputs.nixpkgs.lib.systems.flakeExposed;
 }

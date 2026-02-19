@@ -511,6 +511,39 @@ Docker images and highlights the need for a nuanced approach to classifying
 software reproducibility, recognising the spectrum between
 #emph[Not reproducible] and #emph[Reproducible].
 
+=== Configuration Management
+
+In the pursuit of reproducible environments, the paradigm of configuration
+management adopted is a determining factor. As systems grow in complexity, the
+methods used to orchestrate and maintain their state directly influence the
+reliability and reproducibility of the environment. Broadly, these methods fall
+into two categories: imperative and declarative.
+
+Imperative configuration management tools, exemplified by Ansible, operate by
+defining a sequence of instructions to transition a system from its current
+state to a desired state. This approach is analogous to following a strict route
+itinerary: one must execute a specific set of steps—installing a package,
+editing a configuration file, restarting a service—to reach the objective. While
+such tools significantly streamline system administration, often characterized
+as providing a guided map for a complex journey, their reliance on procedure
+introduces potential fragility. Idempotency in these systems (the property that
+applying the same configuration multiple times yields the same result) is
+typically achieved through careful implementation rather than being an intrinsic
+property of the design. Consequently, if the initial state varies or if external
+factors intervene, the final outcome may diverge, threatening reproducibility.
+
+In contrast, declarative configuration management, as seen in tools like
+Nix, abstracts the procedural complexity. The user defines the *desired state*
+(the #emph[what]) rather than the *method* (the #emph[how]). This shifts the
+paradigm from navigating the route step-by-step to simply defining the final
+coordinates. The system takes responsibility for reconciling the current state
+with the defined configuration. In this model, the entire configuration serves
+as a single source of truth. Idempotency and reproducibility are achieved by
+design where the system ensures that a specific configuration will invariably
+produce the identical state, regardless of the starting condition. This
+deterministic nature eliminates the ambiguity of imperative scripts and provides
+a rigorous foundation for reproducible computational environments.
+
 === Open Source
 
 #info-box(kind: "cite", footer: [@Donoho2009])[
@@ -714,8 +747,8 @@ operations.
 In #gls("CS") (@functions-in-cs), a function necessitates an environment in
 which it will be evaluated, effectively making, to some extent, this environment
 an extra input parameter per se. This computational environment, which
-encompasses the hardware #eg[filesystem, memory, #gls("CPU", long: false)],
-software #eg[#gls("OS", long: false)] and date #eg[the current date and
+encompasses the hardware #eg[filesystem, memory, #gls("CPU", first: true)],
+software #eg[#gls("OS", first: true)] and date #eg[the current date and
   time], may influence the function's behaviour and output. Consequently,
 functions in #gls("CS") are inherently designed to interact with and adapt to
 their environment, thereby making them dynamic and versatile but also
@@ -744,7 +777,7 @@ Inputs and outputs can vary widely, ranging from user interactions and network
 connections to files and directories. The nature of these inputs and outputs
 greatly impacts the reproducibility of computational processes.
 
-Consider user interactions, such as mouse or eyes movements. These are
+Consider user interactions, such as mouse or eye movements. These are
 inherently challenging to replicate precisely due to their dynamic and
 unpredictable nature. For instance, reproducing the exact trajectory of a mouse
 movement is virtually impossible due to the minute variations in human actions.
@@ -1033,11 +1066,11 @@ unique" is used because, in theory, it is possible for two different inputs to
 produce the same hash, an occurrence known as a #emph[collision]. The ability to
 find collisions undermines the security of the algorithm. There are different
 types of algorithms to calculate a checksum
-#eg[#gls("MD5", long: false), #gls("SHA1", long: false),
-  #gls("SHA2", long: false)]. Older algorithms like #gls("MD5", long: false) have
+#eg[#gls("MD5", first: true), #gls("SHA1", first: true),
+  #gls("SHA2", first: true)]. Older algorithms like #gls("MD5", first: true) have
 known vulnerabilities that allow collision attacks while more modern algorithms
-like SHA-256 (#gls("SHA2", long: false)) are currently considered to be pretty
-much impossible to crack.
+like SHA-256 (#gls("SHA2", first: true)) are currently considered virtually
+impossible to crack.
 
 While the mathematical theory allows for the possibility of collisions in
 checksum hashes, their application in modern checksum algorithms tells a
@@ -1211,14 +1244,14 @@ the components required to build and operate a piece of software, including all
 applied patches and licensing information in a structured and well-known format.
 
 There are multiple existing formats and standards, the most common ones are:
-- #gls("SPDX", long: true): A comprehensive standard maintained by the Linux
+- #gls("SPDX", first: false): A comprehensive standard maintained by the Linux
   Foundation, designed to facilitate license compliance, security, and broader
   software component analysis through a detailed documentation approach,
   supporting multiple formats like RDF, JSON, and YAML. It caters to a wide
   range of stakeholders, including software companies, legal teams, and
   open-source projects, with a particular strength in granular licensing
   details.
-- #gls("CycloneDX", long: false): A lightweight #gls("SBOM") standard aimed at
+- #gls("CycloneDX", first: true): A lightweight #gls("SBOM") standard aimed at
   enhancing application security and managing software supply chain risks. It
   emphasises simplicity and efficiency, supporting formats such as XML, JSON,
   and ProtoBuf, and is particularly tailored towards the identification of
@@ -1236,13 +1269,15 @@ The #gls("CRA") #cite(<CRA>, form: "normal") mandates the incorporation of a
 software security and transparency. This requirement marks a significant
 advancement in enhancing the integrity and security of software, ensuring that
 all components are meticulously documented and traceable throughout the software
-lifecycle. While the #gls("CRA") includes multiple measures, most will take
-effect three years after its passage, likely in early 2027. Specifically,
-regarding #gls("SBOM"), the following applies to products with digital elements
-available: #quote[identify and document vulnerabilities and components contained
-  in products with digital elements, including by drawing up a software bill of
-  materials in a commonly used and machine-readable format covering at the very
-  least the top-level dependencies of the products]
+lifecycle. The #gls("CRA") officially entered into force in late 2024. While it
+includes multiple measures, most will take effect after a 36-month transition
+period, in late 2027, with specific vulnerability reporting obligations applying
+as early as late 2026. Specifically, regarding #gls("SBOM"), the following
+applies to products with digital elements available: #quote[identify and
+  document vulnerabilities and components contained in products with digital
+  elements, including by drawing up a software bill of materials in a commonly
+  used and machine-readable format covering at the very least the top-level
+  dependencies of the products]
 #cite(<CRA>, supplement: "Annex I, Part II (1)", form: "normal").
 
 ==== Supply Chain <ch2-supply-chain>
@@ -1461,15 +1496,15 @@ and at any point in the past or future​​​​.
 
 Reproducibility relies on stable, consistent and well-maintained codebases but
 also heavily depends on stable, consistent and well-maintained environments as
-seen in #ref(<ch2-deterministic-builds-and-environments>). In addition, a critical component is
-environment configuration management. Configuration management plays a critical
-role in ensuring reproducibility by mitigating the non-deterministic behaviours
-introduced by configuration drifts.
+seen in #ref(<ch2-deterministic-builds-and-environments>). In addition, a
+critical component is environment configuration management. Configuration
+management plays a critical role in ensuring reproducibility by mitigating the
+non-deterministic behaviours introduced by configuration drifts.
 
 #info-box[
-  Configuration drifts occurs when changes to an environment
-  accumulate over time, leading to variations that deviate from the desired or
-  initial configuration state, thus introducing non-determinism.
+  Configuration drifts occur when changes to an environment accumulate over
+  time, leading to variations that deviate from the desired or initial
+  configuration state, thus introducing non-determinism.
 ]
 
 This section examines key configuration management models and paradigms,
@@ -1551,9 +1586,9 @@ goal of this model, providing the highest level of determinism and reliability
 in system behaviours.
 
 Congruent management, particularly through the adoption of immutable
-environment (#ref(<ch2-environments>)), ensures that environment remain in a
-well-defined state, thus maximising reproducibility. However, this approach can
-lack the flexibility required for dynamic environments, where each minor
+environment (#ref(<ch2-environments>)), ensures that the environment remains in
+a well-defined state, thus maximising reproducibility. However, this approach
+can lack the flexibility required for dynamic environments, where each minor
 adjustments may necessitate rebuilding the entire system. This limitation
 highlights the importance of carefully choosing between convergent and congruent
 approaches based on the environment's needs.
@@ -1644,11 +1679,11 @@ of the environment​​ #cite(<HunterGCP>, form: "normal", supplement: [p. 348]
   technologies, further complicating the distinction between imperative and
   declarative configuration management. The boundaries between these paradigms
   are often blurred, as it's rarely a matter of black and white. For instance,
-  while Nix and Guix are primarily categorised as declarative, they occasionally
-  rely on imperative languages #eg[shell scripts, Python] to perform specific
-  tasks. This illustrates that even tools labelled as declarative can integrate
-  aspects of imperative configuration management, adding nuance to their
-  classification.
+  while Nix and Guix are primarily categorised as declarative and where
+  idempotency is achieved through their design, they occasionally rely on
+  imperative languages #eg[shell scripts, Python] to perform specific tasks.
+  This illustrates that even tools labelled as declarative can integrate aspects
+  of imperative configuration management, adding nuance to their classification.
 ] <info-box-docker-classification>
 
 === Computational Environments <ch2-environments>
@@ -1925,7 +1960,7 @@ reliable method for software version identification.
 It is important to ensure that processing multiple files in a stable order
 remains stable.
 
-Listing files relies on the low-level #gls("POSIX", long: false) call `readdir`, which itself is
+Listing files relies on the low-level #gls("POSIX", first: true) call `readdir`, which itself is
 dependent on the filesystem in use and therefore does not guarantee any
 consistent ordering.
 
@@ -2112,7 +2147,7 @@ challenges identified herein and to foster an ecosystem where reproducible
 research and development are not merely aspirational goals but operational
 norms.
 
-In fine, this chapter serve as both a foundation and a bridge. It offers a
+In fine, this chapter serves as both a foundation and a bridge. It offers a
 comprehensive understanding of reproducibility that is critical for appreciating
 the significance of the solutions and methodologies discussed in the chapters
 that follow. It is within this framework that we continue our quest to demystify
