@@ -67,7 +67,7 @@ jobs:
             - name: Download build assets (${{ matrix.assets.input }})
               uses: actions/download-artifact@v7
               with:
-                path: artefacts
+                  path: artefacts
 
             - name: Rename files
               working-directory: artefacts
