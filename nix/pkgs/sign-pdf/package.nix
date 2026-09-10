@@ -1,7 +1,6 @@
 { pkgs, ... }:
 pkgs.writeShellApplication {
   name = "sign-pdf";
-
   runtimeInputs = [ pkgs.open-pdf-sign ];
 
   text = ''
