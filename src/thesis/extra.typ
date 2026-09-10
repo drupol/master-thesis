@@ -8,9 +8,10 @@ repository #cite(<PolMasterThesis>, form: "normal"). That repository will be mad
 public after the oral defense and necessary internal cleanup. Automated and
 reproducible builds were managed via GitHub Actions
 #cite(<ghActions>, form: "normal"), ensuring that a new compiled version was
-published at each commit to the project. Additionally, I'm planning to publish
-it on Zenodo #cite(<Zenodo>, form: "normal") after the necessary formalities are
-completed.
+published at each commit to the project. Additionally, publication on Zenodo
+#cite(<Zenodo>, form: "normal") is planned once the necessary formalities have
+been completed.
+
 
 This work is licenced under a dual license: the #gls("CC BY 4.0") and the
 #gls("HL3") licences. You are free to share and adapt the material under the
